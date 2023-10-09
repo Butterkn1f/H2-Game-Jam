@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf2259f2f8065e469d25254498fe155, type: 3}
+  m_Name: Temp Location
+  m_EditorClassIdentifier: 
+  LocationName: Singapore
+  CustomerList:
+  - {fileID: 11400000, guid: 9cdfae1849b059449b48897e101176ba, type: 2}
+  - {fileID: 11400000, guid: 099be880664402b43b89ee04d8887ffd, type: 2}
+  - {fileID: 11400000, guid: 7ebe7ada7a5d53944917d3edbf00a817, type: 2}
+  BackgroundImage: {fileID: 21300000, guid: f399b1b8a21d2944e86b8a7e71eec6d9, type: 3}
