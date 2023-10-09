@@ -30,12 +30,9 @@ public class LevelManager : MonoBehaviour
         _backgroundImage.sprite = _currentLevelData.LevelLocation.BackgroundImage;
         // Make sure it doesnt get squashed
         _backgroundImage.SetNativeSize();
-        
 
         _customerManager = GetComponent<CustomerManager>();
         _customerManager.SetCustomerList(_currentLevelData.LevelLocation.CustomerList);
-        _customerManager.SendNewCustomer();
-        Debug.Log("What.");
     }
 
     // Update is called once per frame

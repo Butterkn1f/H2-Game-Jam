@@ -15,4 +15,6 @@ public class CustomerData : ScriptableObject
     // Character Sprite
     public Sprite CharacterSprite;
 
+    public float PatienceDuration = 15.0f;
+
 }

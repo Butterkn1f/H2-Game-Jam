@@ -355,6 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e31d4c2f8dc444ba47939264205bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentCustomer:
+    value: {fileID: 0}
   _customerPrefab: {fileID: 1574223426170646692, guid: 71f942de3d0162f4298179419c8ddf51, type: 3}
   _windowObject: {fileID: 256446632}
 --- !u!4 &596267448
