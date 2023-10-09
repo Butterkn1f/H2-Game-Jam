@@ -13,7 +13,7 @@ public class LineObject : MonoBehaviour
     private LineRenderer _lineRenderer;
     private Camera _camera;
 
-    private readonly List<Vector2> _points = new List<Vector2>();
+    public readonly List<Vector2> _points = new List<Vector2>();
     public int PointCount => _points.Count;
 
     /// <summary>

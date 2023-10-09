@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
+using static RecognitionManager;
 
 public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
 {
@@ -10,9 +12,11 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     #endregion
 
     private CompositeDisposable _pressDisposables;
+    private CompositeDisposable _drawFinishedDisposables;
 
     private Camera _camera;
     [HideInInspector] public LineObject _lineObject;
+    [HideInInspector] public event Action<DollarPoint[]> OnDrawFinished;
 
     /// <summary>
     /// Initialize variables
@@ -22,19 +26,29 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     {
         _camera = Camera.main;
         _lineObject = null;
-        _pressDisposables = new CompositeDisposable();
-        SubscribeStateChange();
+        SubscribePressEvents(true);
     }
 
     /// <summary>
     /// Enable or disable drawing based on GameManager's states
     /// GameManagerの状態に応じた描画の有効化・無効化
     /// </summary>
-    private void SubscribeStateChange()
+    public void SubscribePressEvents(bool isSubscribe)
     {
-        SubscribeBeginPress();
-        SubscribePressing();
-        SubscribeReleasePress();
+        if (isSubscribe)
+        {
+            if (_pressDisposables == null || _pressDisposables.Count == 0)
+            {
+                _pressDisposables = new CompositeDisposable();
+                SubscribeBeginPress();
+                SubscribePressing();
+                SubscribeReleasePress();
+            }
+        }
+        else
+        {
+            _pressDisposables.Dispose();
+        }
 
         /*GameManager.Instance.GameState.State.Subscribe(state =>
         {
@@ -84,16 +98,11 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
             .AddTo(_pressDisposables);
     }
 
-    private void UnsubscribeAllPressEvents()
-    {
-        _pressDisposables.Dispose();
-    }
-
     /// <summary>
     /// Switch GameManager states and instantiate a new line prefab
     /// GameManagerの状態を切り替え、新しいラインプレファブをインスタンス化する
     /// </summary>
-    private void BeginDraw()
+    public void BeginDraw()
     {
         /*GameManager.Instance.GameState.SetState(GameStateType.Drawing);*/
         ResetDrawing();
@@ -123,18 +132,40 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
         if (_lineObject == null)
             return;
 
-/*        if (_lineObject.PointCount < 2) // Not a line! セリフではありません！
+        if (_lineObject.PointCount < 2) // Not a line! セリフではありません！
         {
             Destroy(_lineObject.gameObject);
         }
         else
         {
-            _lineObject.EnablePhysics();
-            GameManager.Instance.GameState.SetState(GameStateType.Testing);
-        }*/
+            if (RecognitionManager.Instance._state == RecognizerState.RECOGNITION)
+            {
+                // Invoke draw immediately
+                InvokeDrawFinished();
+            }
+
+            // Else, do nothing, just wait for space bar press
+        }
     }
 
-    private void ResetDrawing()
+    private void InvokeDrawFinished(bool resetDrawing = false)
+    {
+        if (!_lineObject)
+            return;
+        List<DollarPoint> _drawPoints = new List<DollarPoint>();
+        foreach (Vector2 point in _lineObject._points)
+        {
+            _drawPoints.Add(new DollarPoint() { Point = point, StrokeIndex = 0 });
+        }
+
+        OnDrawFinished?.Invoke(_drawPoints.ToArray());
+
+        if (resetDrawing) {
+            ResetDrawing();
+        }
+    }
+
+    public void ResetDrawing()
     {
         _pressDisposables = new CompositeDisposable();
         if (_lineObject == null)
@@ -142,5 +173,24 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
 
         Destroy(_lineObject.gameObject);
         _lineObject = null;
+    }
+
+    public void SubscribeDrawFinished(bool isSubscribe)
+    {
+        if (isSubscribe)
+        {
+            if (_drawFinishedDisposables == null || _drawFinishedDisposables.Count == 0)
+            {
+                _drawFinishedDisposables = new CompositeDisposable();
+                Observable.EveryUpdate()
+                .Where(_ => Input.GetKeyUp(KeyCode.Space))
+                .Subscribe(_ => InvokeDrawFinished(true))
+                .AddTo(_drawFinishedDisposables);
+            }
+        }
+        else
+        {
+            _drawFinishedDisposables?.Dispose();
+        }
     }
 }
