@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DayTimer : MonoBehaviour
 {
+    // Simple timer
     // Day Timer variables
     private bool _timerEnabled = false;
     [SerializeField, Range(10, 600)] private float DayDuration = 180;

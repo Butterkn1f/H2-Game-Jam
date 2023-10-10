@@ -15,6 +15,7 @@ public class CustomerData : ScriptableObject
     // Character Sprite
     public Sprite CharacterSprite;
 
-    public float PatienceDuration = 15.0f;
+    // How long the customer will wait for 
+    [SerializeField, Range(1, 60)] public float PatienceDuration = 15.0f;
 
 }

@@ -22,7 +22,7 @@ public class LevelData : ScriptableObject
     public LocationData LevelLocation;
 
     // Available recipes in this level
-
+    // TO LI LIAN: add the level specific recipes in here 
     
     // Other information (delete if needed)
     [Tooltip("Amount to be removed when calculating revenue")]

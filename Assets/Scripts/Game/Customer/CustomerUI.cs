@@ -14,6 +14,9 @@ using UniRx;
 /// </summary>
 public class CustomerUI : MonoBehaviour
 {
+    /// <summary>
+    /// A simple data container containing a mood emoji pair (for patience)
+    /// </summary>
     [Serializable]
     private struct customerEmotion
     {
@@ -21,9 +24,11 @@ public class CustomerUI : MonoBehaviour
         public Sprite Emoji;
     }
 
+    // Total list of mood emoji pairs
     [SerializeField] private List<customerEmotion> _moodEmojis;
 
-    private bool _isActive;
+    private bool _isActive; // Toggles the update of the character animation
+    public float IntroAnimationDuration = 0.75f; 
 
     // UI elements
     [SerializeField] private GameObject _feelingBubble;
@@ -41,13 +46,7 @@ public class CustomerUI : MonoBehaviour
         _foodBubble.GetComponent<RectTransform>().localScale = Vector3.zero;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-    }
-
+    // Introduction animation
     public void IntroAnim()
     {
         Sequence introSequence = DOTween.Sequence();
@@ -55,9 +54,12 @@ public class CustomerUI : MonoBehaviour
         introSequence.Join(_foodBubble.GetComponent<RectTransform>().DOScale(1.25f, 0.25f));
         introSequence.Append(_feelingBubble.GetComponent<RectTransform>().DOScale(1.0f, 0.5f));
         introSequence.Join(_foodBubble.GetComponent<RectTransform>().DOScale(1.0f, 0.5f));
-        introSequence.AppendCallback(() => _isActive = true);
+        introSequence.AppendCallback(() => _isActive = true); // Set behaviour is true after animation starts
+
+        // TODO: set floating animation on the bubble
     }
 
+    // Outro animation
     public void OutroAnim()
     {
         _isActive = false;

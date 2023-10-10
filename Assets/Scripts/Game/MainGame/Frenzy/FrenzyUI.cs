@@ -19,7 +19,7 @@ public class FrenzyUI : MonoBehaviour
     // Frenzy Mode Variables
     [SerializeField] private GameObject _frenzyBackground;
     [SerializeField] private GameObject _frenzyText;
-    [SerializeField] private GameObject _bunnyZoomImage;
+    [SerializeField] private GameObject _bunnyZoomImage; // The bunny image to pop up
 
     // Start is called before the first frame update
     void Start()

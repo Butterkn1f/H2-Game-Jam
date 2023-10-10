@@ -6,10 +6,10 @@ using UnityEngine;
 public class Frenzy : MonoBehaviour
 {
     // Normal frenzy variables
-    public ReactiveProp<float> _frenzyPercentage = new ReactiveProp<float>();
-    [SerializeField, Range(0, 2)] private float _frenzyBarDecreaseRate = 1;
+    public ReactiveProp<float> _frenzyPercentage = new ReactiveProp<float>(); // How close the player is to getting a frenzy in percentage
+    [SerializeField, Range(0, 2)] private float _frenzyBarDecreaseRate = 1; // How fast / slow the frenzy bar decreases
 
-    [SerializeField, Range(1, 20)] private float _frenzyDuration = 10;
+    [SerializeField, Range(1, 20)] private float _frenzyDuration = 10; // How long the frenzy mode duration is
 
     // Frenzy mode variables
     private bool _frenzyEnabled = false;

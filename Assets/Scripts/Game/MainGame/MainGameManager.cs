@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using Common.DesignPatterns;
+using UniRx.Extention;
 
 public class MainGameManager : Singleton<MainGameManager>
 {
     // Main Game
-    private MainGameState _gameState;
+    public ReactiveProp<MainGameState> GameState = new ReactiveProp<MainGameState>();
 
     // Frenzy Manager
     private Frenzy _frenzy;
@@ -28,6 +29,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy = GetComponent<Frenzy>();
         _dayTimer = GetComponent<DayTimer>();
 
+        GameState.SetValue(MainGameState.CHAT);
     }
 
     // Update is called once per frame
@@ -51,11 +53,16 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer.StartTimer();
 
         _customerManager.SendNewCustomer();
+
+        GameState.SetValue(MainGameState.MAIN_GAME);
+       
     }
 
     public void EndGame()
     {
         _dayTimer.EndTimer();
+
+        GameState.SetValue(MainGameState.GAME_OVER);
 
         // End frenzy, if any
         _frenzy.BreakFrenzy();
@@ -65,6 +72,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
 
         // Play end of game animation
+        // TODO: put all the UI/aesthetics in a different class
         StartCoroutine(EndOfGameAnimation());
     }
 
@@ -74,6 +82,10 @@ public class MainGameManager : Singleton<MainGameManager>
         ResultsUI.Instance.IntroResult();
     }
 
+    /// <summary>
+    /// This function is called when the player finishes an order
+    /// TO LI LIAN: this is impt for ya..
+    /// </summary>
     public void FinishOrder()
     {
         // Send the next customer in 
@@ -85,6 +97,9 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy.AddFrenzyMeter();
     }
 
+    /// <summary>
+    /// This function is called when the player misses the timing for the order 
+    /// </summary>
     public void BreakOrder()
     {
         // Get frenzy num

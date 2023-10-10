@@ -7,20 +7,25 @@ using DG.Tweening;
 using Common.DesignPatterns;
 
 /// <summary>
-/// This class manages the overall functions of all the customers.
+/// This class manages the overall functions of the customers (as a whole)
 /// </summary>
+[RequireComponent(typeof(CustomerAnimation))]
+[RequireComponent(typeof(CustomerUI))]
+[RequireComponent(typeof(CustomerBehavior))]
 public class CustomerManager : Singleton<CustomerManager>
 {
-    // Character list to check for new customer
+    // A reference list of all the customers
     private List<CustomerData> _customerList;
-    private CustomerData _currentCustomer;
+    private CustomerData _currentCustomer; // Current customer
 
-    // Make this into an object pool pls
-    private GameObject _currentCustomerObject;
-
+    // TODO: Make this into an object pool pls
+    private GameObject _currentCustomerObject; // The current customer object
 
     // Prefab for customer objects
-    [SerializeField] private GameObject _customerPrefab;
+    [Tooltip("Customer prefab to be instantiated")]
+    [SerializeField] private GameObject _customerPrefab; // Get a reference for the customer prefab (to be instantiated)
+
+    [Tooltip("Window parent object (so that it spawns where we want it to)")]
     [SerializeField] private GameObject _windowObject;
 
 
@@ -30,7 +35,11 @@ public class CustomerManager : Singleton<CustomerManager>
         _currentCustomerObject = null;
     }
 
-
+    /// <summary>
+    /// Sets the list of customers that we can choose from
+    /// For area specific customers 
+    /// </summary>
+    /// <param name="newCustomerList">List of customers to be randomised from</param>
     public void SetCustomerList(List<CustomerData> newCustomerList)
     {
         _customerList = newCustomerList;
@@ -72,29 +81,37 @@ public class CustomerManager : Singleton<CustomerManager>
             }
         }
 
+        // Spawn a new customer object
         _currentCustomerObject = Instantiate(_customerPrefab, _windowObject.transform);
 
+        // Give it the correct data
         _currentCustomer = newCustomerData;
         _currentCustomerObject.GetComponent<Image>().sprite = _currentCustomer.CharacterSprite;
 
-        // Generate order beforehand
+        // TO LI LIAN: Generate an order here maybe? 
+        // TO LI LIAN: Use the customer UI to display the current dish
 
         // Play intro animation (sliding in)
         StartCoroutine(IntroAnimationSeqence());
     }
 
+    /// <summary>
+    /// The main character introduction animation
+    /// </summary>
+    /// <param name="IntroDelay">Any delays to be played (in case you want to delay for some reason)</param>
     private IEnumerator IntroAnimationSeqence(float IntroDelay = 0)
     {
         yield return new WaitForSeconds(IntroDelay);
-        _currentCustomerObject.GetComponent<CustomerAnimation>().PlayIntroAnimation();
+
+        _currentCustomerObject.GetComponent<CustomerAnimation>().PlayIntroAnimation(); // Play customer slide in
 
         yield return new WaitForSeconds(0.5f);
 
-        _currentCustomerObject.GetComponent<CustomerUI>().IntroAnim();
+        _currentCustomerObject.GetComponent<CustomerUI>().IntroAnim(); // Speech bubble pop
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(_currentCustomerObject.GetComponent<CustomerUI>().IntroAnimationDuration);
 
-        _currentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration);
+        _currentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration); // Start the timer after animation is done
     }
 
     private IEnumerator OutroAnimationSequence(bool sendNextCharacter = true)

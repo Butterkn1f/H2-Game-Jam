@@ -16,4 +16,6 @@ public class LocationData : ScriptableObject
 
     // Location specific backgrounds
     public Sprite BackgroundImage;
+
+    // TO LI LIAN: map can be put here maybe
 }

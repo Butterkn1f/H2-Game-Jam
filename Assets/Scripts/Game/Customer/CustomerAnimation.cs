@@ -5,8 +5,9 @@ using UnityEngine.UI;
 using DG.Tweening;
 
 /// <summary>
-/// This class controls the animation for the customer (to be added into itself)
+/// This class controls the animations for the customer
 /// </summary>
+[RequireComponent(typeof(RectTransform))]
 public class CustomerAnimation : MonoBehaviour
 {
     private RectTransform _rectTransform;
@@ -18,33 +19,32 @@ public class CustomerAnimation : MonoBehaviour
         _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x + GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
     }
 
+    /// <summary>
+    /// This function plays the introduction animation for the character (sliding in)
+    /// </summary>
     public void PlayIntroAnimation()
     {
-        // It should work without this line because its in start
-        // but it doesnt. which is fucking weird.
         _rectTransform = GetComponent<RectTransform>();
 
-        // Set up initial positioning
-        _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x + GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
+        // Set up initial positioning (just in case)
+        _rectTransform.anchoredPosition = new Vector2(GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
 
         // Slide to the left
         _rectTransform.DOMoveX(0, 1.0f).SetEase(Ease.OutCubic);
     }
 
+    /// <summary>
+    /// This function plays the outro animation for the character (sliding out)
+    /// </summary>
     public void PlayOutroAnimation()
     {
         Sequence seq = DOTween.Sequence();
 
         seq.Append(_rectTransform.DOAnchorPos(new Vector2(_rectTransform.anchoredPosition.x - GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y), 1.0f).SetEase(Ease.InCubic));
-        // Delete the object afterwards
+
+        // Deactivate the gameobject
         seq.AppendCallback(() => { this.gameObject.SetActive(false); });
         seq.AppendInterval(0.5f);
         seq.AppendCallback(() => { Destroy(this.gameObject); } );
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
