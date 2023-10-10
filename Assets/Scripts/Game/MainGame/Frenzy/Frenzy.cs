@@ -12,7 +12,7 @@ public class Frenzy : MonoBehaviour
     [SerializeField, Range(1, 20)] private float _frenzyDuration = 10;
 
     // Frenzy mode variables
-    bool _frenzyEnabled = false;
+    private bool _frenzyEnabled = false;
     private float _frenzyModeTimer;
 
     // Start is called before the first frame update
@@ -51,6 +51,8 @@ public class Frenzy : MonoBehaviour
         }
     }
 
+    
+
     public void AddFrenzyMeter(float amountToAdd = 0.25f)
     {
         if (_frenzyEnabled)
@@ -67,6 +69,19 @@ public class Frenzy : MonoBehaviour
             GetComponent<FrenzyUI>().StartFrenzy();
             _frenzyModeTimer = _frenzyDuration;
         }
+    }
+
+    public void BreakFrenzy()
+    {
+        if (_frenzyEnabled)
+        {
+            // End the frenzy mode
+            _frenzyEnabled = false;
+            _frenzyModeTimer = 0;
+            _frenzyPercentage.SetValue(0);
+            GetComponent<FrenzyUI>().EndFrenzy();
+        }
+
     }
 
     public void BreakFrenzyMeter()

@@ -6,7 +6,7 @@ public class DayTimer : MonoBehaviour
 {
     // Day Timer variables
     private bool _timerEnabled = false;
-    [SerializeField, Range(30, 600)] private float DayDuration = 180;
+    [SerializeField, Range(10, 600)] private float DayDuration = 180;
 
     private float _timeCounter = 0;
 
@@ -29,7 +29,7 @@ public class DayTimer : MonoBehaviour
         {
             if (_timeCounter > 0)
             {
-                _timeCounter -= Time.deltaTime; 
+                _timeCounter -= Time.deltaTime;
             }
             else
             {

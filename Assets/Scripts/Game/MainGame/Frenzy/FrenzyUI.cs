@@ -28,6 +28,7 @@ public class FrenzyUI : MonoBehaviour
 
         _frenzyBackground.SetActive(false);
         _frenzyText.SetActive(false);
+        _bunnyZoomImage.SetActive(false);
     }
 
     private void UpdateFrenzyBar(float newFrenzyBar)
@@ -43,12 +44,28 @@ public class FrenzyUI : MonoBehaviour
         rectTransform.DOAnchorPosY(0, 1.0f).SetEase(Ease.OutCubic);
     }
 
+    private void BunnyIntro()
+    {
+        RectTransform rectTransform = _bunnyZoomImage.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, - (_bunnyZoomImage.gameObject.GetComponentInParent<RectTransform>().rect.height * 2));
+        _bunnyZoomImage.SetActive(true);
+        rectTransform.DOAnchorPosY(90, 1.0f).SetEase(Ease.OutCubic);
+    }
+
     private void FrenzyBackgroundOutro()
     {
         RectTransform rectTransform = _frenzyBackground.GetComponent<RectTransform>();
         Sequence seq = DOTween.Sequence();
-        seq.Append(rectTransform.DOAnchorPosY((_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
+        seq.Append(rectTransform.DOAnchorPosY(- (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _frenzyBackground.SetActive(false));
+    }
+
+    private void BunnyOutro()
+    {
+        RectTransform rectTransform = _bunnyZoomImage.GetComponent<RectTransform>();
+        Sequence seq = DOTween.Sequence();
+        seq.Append(rectTransform.DOAnchorPosY(-(_bunnyZoomImage.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
+        seq.AppendCallback(() => _bunnyZoomImage.SetActive(false));
     }
 
     private void FrenzyTextIntro()
@@ -72,10 +89,12 @@ public class FrenzyUI : MonoBehaviour
     {
         FrenzyBackgroundIntro();
         FrenzyTextIntro();
+        BunnyIntro();
     }
 
     public void EndFrenzy()
     {
         FrenzyBackgroundOutro();
+        BunnyOutro();
     }
 }

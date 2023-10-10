@@ -26,6 +26,8 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();
+        _dayTimer = GetComponent<DayTimer>();
+
     }
 
     // Update is called once per frame
@@ -34,6 +36,10 @@ public class MainGameManager : Singleton<MainGameManager>
         if (Input.GetKeyDown(KeyCode.P))
         {
             FinishOrder();
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            StartGame();
         }
     }
 
@@ -51,10 +57,14 @@ public class MainGameManager : Singleton<MainGameManager>
     {
         _dayTimer.EndTimer();
 
+        // End frenzy, if any
+        _frenzy.BreakFrenzy();
+        _customerManager.LeaveCurrentCustomer(false);
+
         // Calculate money
 
 
-        // Show results page
+        // Play end of game animation
     }
 
     public void FinishOrder()
