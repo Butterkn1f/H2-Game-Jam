@@ -11,6 +11,7 @@ public class DishItem : MonoBehaviour
 
     private Color targetColor = Color.white;
     private Sequence sequence = null;
+    private Sequence floatSequence = null;
 
     public Shape Shape = null;
     private void AnimateActivate()
@@ -21,6 +22,15 @@ public class DishItem : MonoBehaviour
 
             .Append(_image.rectTransform.DOScale(Vector3.one, 0.25f))
             .Join(_image.DOColor(targetColor, 0.25f));
+    }
+
+    private void BeginFloatAnimation()
+    {
+        var floatOffset = Random.Range()
+        floatSequence = DOTween.Sequence();
+        floatSequence.Append(transform.DOBlendableMoveBy(new Vector3(0, 111, 0), 1.5f))
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetEase(Ease.InOutQuad);
     }
 
     public void Initialize(Shape shape)
