@@ -15,7 +15,7 @@ public class CustomerAnimation : MonoBehaviour
     void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
-
+        _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x + GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
     }
 
     public void PlayIntroAnimation()

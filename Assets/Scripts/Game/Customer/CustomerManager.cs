@@ -6,17 +6,18 @@ using UniRx;
 using DG.Tweening;
 using Common.DesignPatterns;
 
+/// <summary>
+/// This class manages the overall functions of all the customers.
+/// </summary>
 public class CustomerManager : Singleton<CustomerManager>
 {
     // Character list to check for new customer
     private List<CustomerData> _customerList;
     private CustomerData _currentCustomer;
-    public ReactiveProperty<CustomerData> CurrentCustomer = new ReactiveProperty<CustomerData>();
 
     // Make this into an object pool pls
     private GameObject _currentCustomerObject;
 
-    // Level editable panels
 
     // Prefab for customer objects
     [SerializeField] private GameObject _customerPrefab;
@@ -40,16 +41,6 @@ public class CustomerManager : Singleton<CustomerManager>
     /// </summary>
     public void SendNewCustomer()
     {
-        // Don't send a new customer if the existing customer is still in the window
-        if (_currentCustomerObject != null)
-        {
-            //return;
-
-            // For testing only?? Probably should delete this soon
-            _currentCustomerObject.GetComponent<CustomerAnimation>().PlayOutroAnimation();
-
-        }
-
         // initialise temporary variables
         CustomerData newCustomerData = null;
         bool temporaryCheck = false;
@@ -89,8 +80,35 @@ public class CustomerManager : Singleton<CustomerManager>
         // Generate order beforehand
 
         // Play intro animation (sliding in)
+        StartCoroutine(IntroAnimationSeqence());
+    }
+
+    private IEnumerator IntroAnimationSeqence(float IntroDelay = 0)
+    {
+        yield return new WaitForSeconds(IntroDelay);
         _currentCustomerObject.GetComponent<CustomerAnimation>().PlayIntroAnimation();
+
+        yield return new WaitForSeconds(0.5f);
+
+        _currentCustomerObject.GetComponent<CustomerUI>().IntroAnim();
+
+        yield return new WaitForSeconds(1.0f);
+
         _currentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration);
+    }
+
+    private IEnumerator OutroAnimationSequence(bool sendNextCharacter = true)
+    {
+        // For testing only?? Probably should delete this soon
+        _currentCustomerObject.GetComponent<CustomerUI>().OutroAnim();
+        yield return new WaitForSeconds(0.25f);
+        _currentCustomerObject.GetComponent<CustomerAnimation>().PlayOutroAnimation();
+
+
+        if (sendNextCharacter)
+        {
+            SendNewCustomer();
+        }
     }
 
     /// <summary>
@@ -98,17 +116,11 @@ public class CustomerManager : Singleton<CustomerManager>
     /// </summary>
     public void LeaveCurrentCustomer(bool sendNextCharacter = true)
     {
-        if (sendNextCharacter)
-        {
-            SendNewCustomer();
-        }
+        StartCoroutine(OutroAnimationSequence(sendNextCharacter));
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SendNewCustomer();
-        }
+        
     }
 }
