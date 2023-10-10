@@ -15,6 +15,8 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     private CompositeDisposable _drawFinishedDisposables;
 
     private Camera _camera;
+    private bool _isDrawing;
+    public bool IsOverDrawingArea;
     [HideInInspector] public LineObject _lineObject;
     [HideInInspector] public event Action<DollarPoint[]> OnDrawFinished;
 
@@ -26,6 +28,8 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     {
         _camera = Camera.main;
         _lineObject = null;
+        IsOverDrawingArea = false;
+        _isDrawing = false;
         SubscribePressEvents(true);
     }
 
@@ -105,9 +109,13 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     public void BeginDraw()
     {
         /*GameManager.Instance.GameState.SetState(GameStateType.Drawing);*/
+        if (!IsOverDrawingArea || _isDrawing)
+            return;
+
         ResetDrawing();
         GameObject newLine = Instantiate(_linePrefab);
         _lineObject = newLine.GetComponent<LineObject>();
+        _isDrawing = true;
     }
 
     /// <summary>
@@ -116,11 +124,18 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     /// </summary>
     private void Draw()
     {
-        if (_lineObject == null)
+        if (_lineObject == null || !_isDrawing)
             return;
 
-        Vector2 newPos = _camera.ScreenToWorldPoint(Input.mousePosition);
-        _lineObject.AddPoint(newPos);
+        if (!IsOverDrawingArea)
+        {
+            EndDraw();
+        }
+        else
+        {
+            Vector2 newPos = _camera.ScreenToWorldPoint(Input.mousePosition);
+            _lineObject.AddPoint(newPos);
+        }
     }
 
     /// <summary>
@@ -146,6 +161,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
 
             // Else, do nothing, just wait for space bar press
         }
+        _isDrawing = false;
     }
 
     private void InvokeDrawFinished(bool resetDrawing = false)
