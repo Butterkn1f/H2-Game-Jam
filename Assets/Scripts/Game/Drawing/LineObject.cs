@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using DG.Tweening;
 
 [RequireComponent(typeof(LineRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,7 +11,7 @@ using System.Linq;
 
 public class LineObject : MonoBehaviour
 {
-    private LineRenderer _lineRenderer;
+    public LineRenderer _lineRenderer;
     private Camera _camera;
 
     public readonly List<Vector2> _points = new List<Vector2>();
@@ -21,6 +22,11 @@ public class LineObject : MonoBehaviour
     /// 変数の初期化
     /// </summary>
     private void Start()
+    {
+        Initialize();
+    }
+
+    public void Initialize()
     {
         _lineRenderer = GetComponent<LineRenderer>();
         _camera = Camera.main;
@@ -64,5 +70,10 @@ public class LineObject : MonoBehaviour
         _lineRenderer.positionCount++;
         _lineRenderer.SetPosition(PointCount, newPoint);
         _points.Add(newPoint);
+    }
+
+    public Color2 GetCurrentColor2()
+    {
+        return new Color2(_lineRenderer.colorGradient.colorKeys[0].color, _lineRenderer.colorGradient.colorKeys[1].color);
     }
 }

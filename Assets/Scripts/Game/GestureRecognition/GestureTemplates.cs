@@ -1,7 +1,9 @@
+using DG.Tweening.Plugins.Core.PathCore;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -49,10 +51,23 @@ public class GestureTemplates
 
     private void Load()
     {
-        string path = Application.persistentDataPath + "/MagicBun_SavedTemplates.json";
-        if (File.Exists(path))
+        GestureTemplates data  = new GestureTemplates();
+        TextAsset asset = Resources.Load<TextAsset>("MagicBun_SavedTemplates");
+        if (asset)
         {
-            GestureTemplates data = JsonUtility.FromJson<GestureTemplates>(File.ReadAllText(path));
+            data = JsonUtility.FromJson<GestureTemplates>(asset.text);
+        }
+        else
+        {
+            string path = Application.persistentDataPath + "/MagicBun_SavedTemplates.json";
+            if (File.Exists(path))
+            {
+                data = JsonUtility.FromJson<GestureTemplates>(File.ReadAllText(path));
+            }
+        }
+
+        if (data != null)
+        {
             RawTemplates.Clear();
             RawTemplates.AddRange(data.RawTemplates);
             ProceedTemplates.Clear();

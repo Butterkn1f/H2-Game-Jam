@@ -3,10 +3,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
+using DG.Tweening;
 
 public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionManager>
 {
     private DrawManager _drawManager;
+    private Sequence lineSequence;
     [SerializeField] private Button _templateModeButton;
     [SerializeField] private Button _reviewTemplates;
     [SerializeField] private TMP_InputField _templateName;
@@ -15,8 +17,9 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     [SerializeField] private Canvas _templateCanvas;
 
     private GestureTemplates _templates => GestureTemplates.Get();
-    private static readonly DollarOneRecognizer _dollarOneRecognizer = new DollarOneRecognizer();
-    private IRecognizer _currentRecognizer = _dollarOneRecognizer;
+    //private static readonly DollarOneRecognizer _dollarOneRecognizer = new DollarOneRecognizer();
+    private static readonly DollarPRecognizer _dollarPRecognizer = new DollarPRecognizer();
+    private IRecognizer _currentRecognizer = _dollarPRecognizer;
     [HideInInspector] public RecognizerState _state = RecognizerState.RECOGNITION;
 
     public enum RecognizerState
@@ -74,7 +77,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
             _templateCanvas.gameObject.SetActive(false);
             SetupState(RecognizerState.RECOGNITION);
         }
-        _drawManager.ResetDrawing();
     }
 
     private void SetupState(RecognizerState state)
@@ -98,6 +100,7 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
         {
             DrawManager.Instance.SubscribePressEvents(true);
         }
+        _drawManager.ResetDrawing();
     }
 
     private void OnDrawFinished(DollarPoint[] points)
@@ -111,21 +114,48 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
         }
         else
         {
-            //  (string, float) result = _dollarOneRecognizer.DoRecognition(points, 64, _templates.GetTemplates());
-            (string, float) result = _currentRecognizer.DoRecognition(points, 64,
-                _templates.RawTemplates);
-            string resultText = "";
-            if (_currentRecognizer is DollarOneRecognizer)
-            {
-                resultText = $"Recognized: {result.Item1}, Score: {result.Item2}";
-            }
-            Debug.Log(resultText);
+            RecognizePoints(points);
         }
+    }
+
+    private void RecognizePoints(DollarPoint[] points)
+    {
+        //  (string, float) result = _dollarOneRecognizer.DoRecognition(points, 64, _templates.GetTemplates());
+        (string, float) result = _currentRecognizer.DoRecognition(points, 64, _templates.RawTemplates);
+        Debug.Log($"Recognized: {result.Item1}, Distance: {result .Item2}");
+
+        Shape shape = null;
+        lineSequence = DOTween.Sequence();
+        Color2 currColor = _drawManager._lineObject.GetCurrentColor2();
+        if (result.Item2 <= 2)
+        {
+            shape = _drawManager.GetShapeFromName(result.Item1);
+            if (shape != null)
+            {
+                Color2 tarColor = new Color2(shape.Color, shape.Color);
+                lineSequence.Append(_drawManager._lineObject._lineRenderer
+                    .DOColor(currColor, tarColor, 0.25f))
+                    .AppendInterval(0.15f);
+
+                currColor = tarColor;
+            }
+        }
+
+        Color2 invisColor = new Color2(currColor.ca * new Vector4(1, 1, 1, 0), currColor.cb * new Vector4(1, 1, 1, 0));
+        lineSequence.Append(_drawManager._lineObject._lineRenderer
+                .DOColor(currColor, invisColor, 0.5f));
+
+        DishManager.Instance.CheckDrawnShape(shape);
     }
 
     protected override void OnApplicationQuit()
     {
         base.OnApplicationQuit();
         _templates.Save();
+    }
+
+    public void StopLineAnimation()
+    {
+        lineSequence.Kill();
     }
 }

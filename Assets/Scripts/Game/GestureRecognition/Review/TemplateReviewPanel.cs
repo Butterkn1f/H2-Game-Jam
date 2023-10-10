@@ -5,14 +5,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(DisplayTemplate))]
+
 public class TemplateReviewPanel : MonoBehaviour
 {
     [SerializeField] private RectTransform _panel;
-    [SerializeField] private DisplayTemplate _displayTemplate;
     [SerializeField] private TMP_Dropdown _templateNameFromList;
     [SerializeField] private Button _previous;
     [SerializeField] private Button _next;
     [SerializeField] private Button _remove;
+    private DisplayTemplate _displayTemplate;
 
     private List<string> _templateNames;
     private GestureTemplates _templates => GestureTemplates.Get();
@@ -23,6 +25,7 @@ public class TemplateReviewPanel : MonoBehaviour
 
     public void Awake()
     {
+        _displayTemplate = GetComponent<DisplayTemplate>();
         _previous.onClick.AddListener(() => ChooseTemplateIndex(-1));
         _next.onClick.AddListener(() => ChooseTemplateIndex(1));
         _remove.onClick.AddListener(RemoveTemplate);
@@ -49,7 +52,6 @@ public class TemplateReviewPanel : MonoBehaviour
     public void SetVisibility(bool visible)
     {
         _panel.gameObject.SetActive(visible);
-        _displayTemplate.gameObject.SetActive(visible);
         if (visible)
         {
             UpdateState();
@@ -103,6 +105,7 @@ public class TemplateReviewPanel : MonoBehaviour
         string chosenTemplate = _templateNames[choose];
         _currentTemplateName = chosenTemplate;
         _currentTemplateIndex = 0;
+
         UpdateState();
     }
 

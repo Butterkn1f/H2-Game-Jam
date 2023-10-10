@@ -9,6 +9,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     #region Customizable Variables
     [SerializeField] private GameObject _linePrefab;
     public float MinPointDistance = 0.15f;
+    public List<Shape> Shapes = new List<Shape>();
     #endregion
 
     private CompositeDisposable _pressDisposables;
@@ -16,7 +17,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
 
     private Camera _camera;
     private bool _isDrawing;
-    public bool IsOverDrawingArea;
+    [HideInInspector] public bool IsOverDrawingArea;
     [HideInInspector] public LineObject _lineObject;
     [HideInInspector] public event Action<DollarPoint[]> OnDrawFinished;
 
@@ -106,10 +107,10 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     /// Switch GameManager states and instantiate a new line prefab
     /// GameManagerの状態を切り替え、新しいラインプレファブをインスタンス化する
     /// </summary>
-    public void BeginDraw()
+    public void BeginDraw(bool skipChecks = false)
     {
         /*GameManager.Instance.GameState.SetState(GameStateType.Drawing);*/
-        if (!IsOverDrawingArea || _isDrawing)
+        if (!skipChecks && (!IsOverDrawingArea || _isDrawing))
             return;
 
         ResetDrawing();
@@ -183,6 +184,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
 
     public void ResetDrawing()
     {
+        RecognitionManager.Instance.StopLineAnimation();
         _pressDisposables = new CompositeDisposable();
         if (_lineObject == null)
             return;
@@ -208,5 +210,10 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
         {
             _drawFinishedDisposables?.Dispose();
         }
+    }
+
+    public Shape GetShapeFromName(string name)
+    {
+        return Shapes.Find(s => s.Name == name);
     }
 }
