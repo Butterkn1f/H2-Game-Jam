@@ -10,7 +10,6 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     #region Customizable Variables
     [SerializeField] private GameObject _dishItemPrefab;
     [SerializeField] private RectTransform _tableParentTransform;
-    [SerializeField] private TextMeshProUGUI _text;
     public List<Dish> Dishes = new List<Dish>();
     #endregion
 
@@ -110,7 +109,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     {
         ResetDish();
         _currDish = Dishes[Random.Range(0, Dishes.Count)];
-        _text.text = _currDish.Name;
+        Debug.Log(_currDish.Name);
         InitializeDishItems();
         _currItemIndex = 0;
     }
