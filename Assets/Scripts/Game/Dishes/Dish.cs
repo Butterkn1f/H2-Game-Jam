@@ -5,7 +5,7 @@ using UnityEngine;
 public class Dish
 {
     public string Name;
-    public Texture Sprite;
+    public Sprite Sprite;
     public int MinIngredients;
     public int MaxIngredients;
     public List<string> AllowedIngredients;

@@ -36,7 +36,7 @@ public class CustomerUI : MonoBehaviour
     private CustomerMood _currentMood;
 
     [SerializeField] private GameObject _foodBubble;
-    [SerializeField] private Image _orderImage;
+    public Image OrderImage;
 
     // Start is called before the first frame update
     void Start()

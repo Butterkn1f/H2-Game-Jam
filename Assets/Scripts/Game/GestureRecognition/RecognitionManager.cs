@@ -9,12 +9,17 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 {
     private DrawManager _drawManager;
     private Sequence lineSequence;
+
+    #region Customizable Values
     [SerializeField] private Button _templateModeButton;
     [SerializeField] private Button _reviewTemplates;
     [SerializeField] private TMP_InputField _templateName;
     [SerializeField] private TemplateReviewPanel _templateReviewPanel;
 
     [SerializeField] private Canvas _templateCanvas;
+
+    [SerializeField] private Gradient _frenzyColor;
+    #endregion
 
     private GestureTemplates _templates => GestureTemplates.Get();
     //private static readonly DollarOneRecognizer _dollarOneRecognizer = new DollarOneRecognizer();
@@ -33,7 +38,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     public struct GestureTemplate
     {
         public string Name;
-        // TODO: Colour?
         public DollarPoint[] Points;
 
         public GestureTemplate(string templateName, DollarPoint[] preparePoints)
@@ -127,11 +131,25 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
         Shape shape = null;
         lineSequence = DOTween.Sequence();
         Color2 currColor = _drawManager._lineObject.GetCurrentColor2();
-        if (result.Item2 <= 2)
+
+        if (Frenzy.Instance.FrenzyEnabled.GetValue())
         {
+            // Correct no matter what is drawn
+            // Blend from default to frenzy line's color
+            Color2 tarColor = new Color2(_frenzyColor.colorKeys[0].color, _frenzyColor.colorKeys[1].color);
+            lineSequence.Append(_drawManager._lineObject._lineRenderer
+                .DOColor(currColor, tarColor, 0.25f))
+                .AppendInterval(0.15f);
+
+            currColor = tarColor;
+        }
+        else if (result.Item2 <= 2)
+        {
+            // Check for shape recognition
             shape = _drawManager.GetShapeFromName(result.Item1);
             if (shape != null)
             {
+                // Blend from default to target shape's color
                 Color2 tarColor = new Color2(shape.Color, shape.Color);
                 lineSequence.Append(_drawManager._lineObject._lineRenderer
                     .DOColor(currColor, tarColor, 0.25f))
@@ -141,6 +159,7 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
             }
         }
 
+        // Fade out line
         Color2 invisColor = new Color2(currColor.ca * new Vector4(1, 1, 1, 0), currColor.cb * new Vector4(1, 1, 1, 0));
         lineSequence.Append(_drawManager._lineObject._lineRenderer
                 .DOColor(currColor, invisColor, 0.5f));

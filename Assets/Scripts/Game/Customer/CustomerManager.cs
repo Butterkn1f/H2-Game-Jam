@@ -19,7 +19,7 @@ public class CustomerManager : Singleton<CustomerManager>
     private CustomerData _currentCustomer; // Current customer
 
     // TODO: Make this into an object pool pls
-    private GameObject _currentCustomerObject; // The current customer object
+    public GameObject CurrentCustomerObject; // The current customer object
 
     // Prefab for customer objects
     [Tooltip("Customer prefab to be instantiated")]
@@ -32,7 +32,7 @@ public class CustomerManager : Singleton<CustomerManager>
     public void Start()
     {
         _currentCustomer = null;
-        _currentCustomerObject = null;
+        CurrentCustomerObject = null;
     }
 
     /// <summary>
@@ -82,14 +82,13 @@ public class CustomerManager : Singleton<CustomerManager>
         }
 
         // Spawn a new customer object
-        _currentCustomerObject = Instantiate(_customerPrefab, _windowObject.transform);
+        CurrentCustomerObject = Instantiate(_customerPrefab, _windowObject.transform);
 
         // Give it the correct data
         _currentCustomer = newCustomerData;
-        _currentCustomerObject.GetComponent<Image>().sprite = _currentCustomer.CharacterSprite;
+        CurrentCustomerObject.GetComponent<Image>().sprite = _currentCustomer.CharacterSprite;
 
-        // TO LI LIAN: Generate an order here maybe? 
-        // TO LI LIAN: Use the customer UI to display the current dish
+        DishManager.Instance.RandomizeNewDish();
 
         // Play intro animation (sliding in)
         StartCoroutine(IntroAnimationSeqence());
@@ -103,23 +102,23 @@ public class CustomerManager : Singleton<CustomerManager>
     {
         yield return new WaitForSeconds(IntroDelay);
 
-        _currentCustomerObject.GetComponent<CustomerAnimation>().PlayIntroAnimation(); // Play customer slide in
+        CurrentCustomerObject.GetComponent<CustomerAnimation>().PlayIntroAnimation(); // Play customer slide in
 
         yield return new WaitForSeconds(0.5f);
 
-        _currentCustomerObject.GetComponent<CustomerUI>().IntroAnim(); // Speech bubble pop
+        CurrentCustomerObject.GetComponent<CustomerUI>().IntroAnim(); // Speech bubble pop
 
-        yield return new WaitForSeconds(_currentCustomerObject.GetComponent<CustomerUI>().IntroAnimationDuration);
+        yield return new WaitForSeconds(CurrentCustomerObject.GetComponent<CustomerUI>().IntroAnimationDuration);
 
-        _currentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration); // Start the timer after animation is done
+        CurrentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration); // Start the timer after animation is done
     }
 
     private IEnumerator OutroAnimationSequence(bool sendNextCharacter = true)
     {
         // For testing only?? Probably should delete this soon
-        _currentCustomerObject.GetComponent<CustomerUI>().OutroAnim();
+        CurrentCustomerObject.GetComponent<CustomerUI>().OutroAnim();
         yield return new WaitForSeconds(0.25f);
-        _currentCustomerObject.GetComponent<CustomerAnimation>().PlayOutroAnimation();
+        CurrentCustomerObject.GetComponent<CustomerAnimation>().PlayOutroAnimation();
 
 
         if (sendNextCharacter)

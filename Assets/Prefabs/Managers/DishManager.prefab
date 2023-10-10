@@ -46,10 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dishItemPrefab: {fileID: 2860153864162391233, guid: 9e6f12520b4007c42aba48fe1e037eb1, type: 3}
   _tableParentTransform: {fileID: 0}
-  _text: {fileID: 0}
   Dishes:
   - Name: Chicken Rice
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 7bf8b30c96cb2ee4f95ff4aa0c80348a, type: 3}
     MinIngredients: 3
     MaxIngredients: 5
     AllowedIngredients:
@@ -57,14 +56,14 @@ MonoBehaviour:
     - Circle
     - Horizontal
   - Name: Carrot Cake
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: f0cad740376d96a49a89e673fbbd64aa, type: 3}
     MinIngredients: 2
     MaxIngredients: 3
     AllowedIngredients:
     - Up
     - Circle
   - Name: Satay
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 28d7ebfd7dfb08541aa014dd2409b942, type: 3}
     MinIngredients: 2
     MaxIngredients: 4
     AllowedIngredients:

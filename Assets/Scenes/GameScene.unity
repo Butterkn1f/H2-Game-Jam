@@ -411,6 +411,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5616682030411236318}
     - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key0.b
+      value: 0.9538593
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key1.b
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key1.g
+      value: 0.09718758
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
+      propertyPath: _frenzyColor.key1.r
+      value: 0.43221045
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
       propertyPath: _templateModeButton
       value: 
       objectReference: {fileID: 5616682030411236319}
@@ -735,7 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f41d2dc21b4b34e9346a4a0a70aa0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DayDuration: 10
+  DayDuration: 180
 --- !u!114 &573939394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e31d4c2f8dc444ba47939264205bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentCustomerObject: {fileID: 0}
   _customerPrefab: {fileID: 1574223426170646692, guid: 71f942de3d0162f4298179419c8ddf51, type: 3}
   _windowObject: {fileID: 256446632}
 --- !u!224 &596267448
@@ -868,7 +893,7 @@ MonoBehaviour:
   _feelingBubble: {fileID: 494765715}
   _currentMoodImage: {fileID: 1135432870}
   _foodBubble: {fileID: 1250813383}
-  _orderImage: {fileID: 2091940776}
+  OrderImage: {fileID: 0}
 --- !u!114 &596267451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,17 +1220,6 @@ Transform:
   - {fileID: 417693707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2091940776 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3740484761378367379, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
-  m_PrefabInstance: {fileID: 5616682030411236314}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5616682030411236314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,6 +1231,10 @@ PrefabInstance:
     - target: {fileID: 1779370724331968131, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937332124143002189, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5556440229455334045, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
       propertyPath: m_Camera

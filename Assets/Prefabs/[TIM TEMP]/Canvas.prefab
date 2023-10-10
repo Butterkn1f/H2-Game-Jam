@@ -1541,6 +1541,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3814564719060074377, guid: 71f942de3d0162f4298179419c8ddf51, type: 3}
+      propertyPath: m_Name
+      value: Food
+      objectReference: {fileID: 0}
     - target: {fileID: 4200002361820005367, guid: 71f942de3d0162f4298179419c8ddf51, type: 3}
       propertyPath: m_SizeDelta.x
       value: 284.35

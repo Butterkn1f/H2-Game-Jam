@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UniRx.Extention;
 using UnityEngine;
+using UniRx;
+using DG.Tweening;
 
-public class Frenzy : MonoBehaviour
+public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
 {
     // Normal frenzy variables
     public ReactiveProp<float> _frenzyPercentage = new ReactiveProp<float>(); // How close the player is to getting a frenzy in percentage
@@ -12,19 +14,25 @@ public class Frenzy : MonoBehaviour
     [SerializeField, Range(1, 20)] private float _frenzyDuration = 10; // How long the frenzy mode duration is
 
     // Frenzy mode variables
-    private bool _frenzyEnabled = false;
+    public ReactiveProp<bool> FrenzyEnabled = new ReactiveProp<bool>();
     private float _frenzyModeTimer;
 
     // Start is called before the first frame update
     void Start()
     {
+        FrenzyEnabled.SetValue(false);
         _frenzyPercentage.SetValue(0);
+
+        FrenzyEnabled.Value.Subscribe(enabled =>
+        {
+            DOTween.timeScale = enabled ? 1.5f : 1;
+        }).AddTo(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!_frenzyEnabled)
+        if (!FrenzyEnabled.GetValue())
         {
             if (_frenzyPercentage.GetValue() > 0)
             {
@@ -42,7 +50,7 @@ public class Frenzy : MonoBehaviour
             else
             {
                 // End the frenzy mode
-                _frenzyEnabled = false;
+                FrenzyEnabled.SetValue(false);
                 _frenzyModeTimer = 0;
                 _frenzyPercentage.SetValue(0);
                 GetComponent<FrenzyUI>().EndFrenzy();
@@ -55,7 +63,7 @@ public class Frenzy : MonoBehaviour
 
     public void AddFrenzyMeter(float amountToAdd = 0.25f)
     {
-        if (_frenzyEnabled)
+        if (FrenzyEnabled.GetValue())
         {
             // Don't add when the bar is already full 
             return;
@@ -65,7 +73,7 @@ public class Frenzy : MonoBehaviour
         
         if (_frenzyPercentage.GetValue() >= 1)
         {
-            _frenzyEnabled = true;
+            FrenzyEnabled.SetValue(true);
             GetComponent<FrenzyUI>().StartFrenzy();
             _frenzyModeTimer = _frenzyDuration;
         }
@@ -73,10 +81,10 @@ public class Frenzy : MonoBehaviour
 
     public void BreakFrenzy()
     {
-        if (_frenzyEnabled)
+        if (FrenzyEnabled.GetValue())
         {
             // End the frenzy mode
-            _frenzyEnabled = false;
+            FrenzyEnabled.SetValue(false);
             _frenzyModeTimer = 0;
             _frenzyPercentage.SetValue(0);
             GetComponent<FrenzyUI>().EndFrenzy();

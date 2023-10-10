@@ -31,7 +31,6 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
         _lineObject = null;
         IsOverDrawingArea = false;
         _isDrawing = false;
-        SubscribePressEvents(true);
     }
 
     /// <summary>

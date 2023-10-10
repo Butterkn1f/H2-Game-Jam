@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad681a71a808e82408c3d65fce9defe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountTimer: 0
 --- !u!114 &6517382702079008161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,10 +126,11 @@ MonoBehaviour:
     Emoji: {fileID: 21300000, guid: 6ead3395484558a4f9c06141b37cb524, type: 3}
   - Mood: 3
     Emoji: {fileID: 21300000, guid: 17e1489c7b6b49a439496bff0f6693e7, type: 3}
+  IntroAnimationDuration: 0.75
   _feelingBubble: {fileID: 7208007961384458767}
   _currentMoodImage: {fileID: 645512453845480798}
   _foodBubble: {fileID: 4752331629245960926}
-  _orderImage: {fileID: 6018960297561766470}
+  OrderImage: {fileID: 6018960297561766470}
 --- !u!1 &2416108995328011971
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 1544547179023997994}
   - component: {fileID: 6018960297561766470}
   m_Layer: 5
-  m_Name: Emoji
+  m_Name: Food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

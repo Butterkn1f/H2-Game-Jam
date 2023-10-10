@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class DishItem : MonoBehaviour
 {
-    [SerializeField] public Image _image;
+    public Image _image;
     [SerializeField] private Color _initialColor;
+    [SerializeField] private Sprite _frenzySprite;
 
     private Color targetColor = Color.white;
     private Sequence sequence = null;
@@ -15,7 +16,7 @@ public class DishItem : MonoBehaviour
 
     public Shape Shape = null;
 
-    private void AnimateActivate()
+    public Sequence AnimateActivate()
     {
         // Grow to a lighter color, then shrink back to original color and target color
         sequence = DOTween.Sequence();
@@ -24,6 +25,8 @@ public class DishItem : MonoBehaviour
 
             .Append(_image.rectTransform.DOScale(Vector3.one, 0.25f))
             .Join(_image.DOColor(targetColor, 0.25f));
+
+        return sequence;
     }
 
     public void BeginFloatAnimation()
@@ -35,18 +38,68 @@ public class DishItem : MonoBehaviour
             .SetEase(Ease.InOutSine);
     }
 
+    public void ServeCustomerAnimation()
+    {
+        var dishSequence = DOTween.Sequence();
+
+        if (Frenzy.Instance.FrenzyEnabled.GetValue())
+        {
+            // Throw food diagonally, immediately slide in new customer
+            var rectTransform = GetComponent<RectTransform>();
+            rectTransform.SetParent(rectTransform.parent.parent, true);
+            var pos = rectTransform.localPosition;
+            rectTransform.anchorMin = new Vector2(0f, 0.5f);
+            rectTransform.localPosition = pos;
+
+            MainGameManager.Instance.FinishOrder();
+
+            dishSequence.Append(rectTransform.DOAnchorPos(new Vector2(-200, 500), 0.8f))
+                .Join(_image.DOFade(0, 0.8f).SetEase(Ease.InCirc))
+                .OnComplete(() =>
+                {
+                    Destroy(gameObject);
+                });
+        }
+        else
+        {
+            // Serve customer up, wait for serving to complete before sliding in new customer
+            dishSequence.AppendInterval(0.1f);
+            dishSequence.Append(_image.rectTransform.DOAnchorPosY(300, 0.5f))
+                .Join(_image.DOFade(0, 0.4f))
+                .OnComplete(() =>
+                {
+                    Destroy(gameObject);
+                    MainGameManager.Instance.FinishOrder();
+                });
+        }
+    }
+
     public void Initialize(Shape shape)
     {
         Shape = shape;
-        targetColor = shape.Color;
         _image.color = _initialColor;
-        _image.sprite = shape.Sprite;
+        targetColor = Frenzy.Instance.FrenzyEnabled.GetValue() ? Color.white : shape.Color;
+        _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ? _frenzySprite : shape.Sprite;
         BeginFloatAnimation();
     }
 
-    public void ActivateItem()
+    public void InitializeDish(Dish dish)
     {
-        AnimateActivate();
+        _image.rectTransform.localScale = new Vector3(2, 2, 2);
+        _image.color = Color.white;
+        _image.sprite = dish.Sprite;
+    }
+
+    public void ToggleFrenzySprite(bool isFrenzy)
+    {
+        _image.sprite = isFrenzy ? _frenzySprite : Shape.Sprite;
+        targetColor = isFrenzy ? Color.white : Shape.Color;
+
+        // Also update color if changing frenzy but already activated
+        if (_image.color.a == 1)
+        {
+            _image.color = targetColor;
+        }
     }
 
     public void KillAnimation()

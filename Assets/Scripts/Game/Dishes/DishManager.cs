@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UniRx;
 
 public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 {
@@ -15,11 +16,18 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private Dish _currDish = null;
     private int _currItemIndex = -1;
-    private List<DishItem> _items = new List<DishItem>();
+    private List<DishItem> _items = new List<DishItem>(); // TODO: Object pool this
 
-    void Start()
+    private void Start()
     {
-        RandomizeNewDish();
+        Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
+        {
+            foreach (DishItem item in _items)
+            {
+                item.ToggleFrenzySprite(enabled);
+            }
+
+        }).AddTo(this);
     }
 
     private void InitializeDishItems()
@@ -71,17 +79,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void ResetDish()
     {
-        foreach(DishItem dishItem in _items)
-        {
-            dishItem.KillAnimation();
-        }
-
-        foreach (Transform child in _tableParentTransform)
-        {
-            Destroy(child.gameObject);
-        }
-
-        _items.Clear();
+        _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = true;
         _currDish = null;
         _currItemIndex = -1;
     }
@@ -91,7 +89,10 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = false;
 
         var mergeSequence = DOTween.Sequence();
-        foreach(RectTransform child in _tableParentTransform)
+        if (Frenzy.Instance.FrenzyEnabled.GetValue())
+            mergeSequence.timeScale = 2;
+
+        foreach (RectTransform child in _tableParentTransform)
         {
             var pos = child.localPosition;
             child.anchorMax = child.anchorMin = new Vector2(0.5f, 0.5f);
@@ -102,6 +103,25 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         mergeSequence.OnComplete(() =>
         {
             // TODO: poof!
+
+            // Destroy dishes behind poof
+            foreach (DishItem item in _items)
+            {
+                item.KillAnimation();
+            }
+            foreach (Transform child in _tableParentTransform)
+            {
+                Destroy(child.gameObject);
+            }
+            _items.Clear();
+
+            // Instantiate current dish behind poof so that when poof disappears dish is there
+            // TODO: Object pool this too
+            GameObject dishObject = Instantiate(_dishItemPrefab, _tableParentTransform);
+            DishItem dishItem = dishObject.GetComponent<DishItem>();
+            dishItem.InitializeDish(_currDish);
+
+            dishItem.ServeCustomerAnimation();
         });
     }
 
@@ -109,29 +129,28 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     {
         ResetDish();
         _currDish = Dishes[Random.Range(0, Dishes.Count)];
-        Debug.Log(_currDish.Name);
+        CustomerManager.Instance.CurrentCustomerObject.GetComponent<CustomerUI>().OrderImage.sprite = _currDish.Sprite;
+
         InitializeDishItems();
         _currItemIndex = 0;
     }
 
     public void CheckDrawnShape(Shape shape)
     {
-        if (shape == null)
+        if (shape == null && !Frenzy.Instance.FrenzyEnabled.GetValue())
             return;
 
         if (_currItemIndex >= 0 && _currItemIndex < _items.Count)
         {
             DishItem currItem = _items[_currItemIndex];
-            if (shape == currItem.Shape)
+            if (shape == currItem.Shape || Frenzy.Instance.FrenzyEnabled.GetValue())
             {
-                currItem.ActivateItem();
-                _currItemIndex++;
+                currItem.AnimateActivate();
 
-                if (_currItemIndex == _items.Count)
+                _currItemIndex++;
+                if (_currItemIndex >= _items.Count)
                 {
-                    // TODO: Next customer call
                     MergeIngredients();
-                    //RandomizeNewDish();
                 }
             }
         }
