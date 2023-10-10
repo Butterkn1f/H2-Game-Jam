@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class DishManager : Common.DesignPatterns.Singleton<DishManager>
@@ -88,7 +89,21 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void MergeIngredients()
     {
+        _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = false;
 
+        var mergeSequence = DOTween.Sequence();
+        foreach(RectTransform child in _tableParentTransform)
+        {
+            var pos = child.localPosition;
+            child.anchorMax = child.anchorMin = new Vector2(0.5f, 0.5f);
+            child.localPosition = pos;
+            mergeSequence.Join(child.DOAnchorPosX(0, 0.5f));
+        }
+
+        mergeSequence.OnComplete(() =>
+        {
+            // TODO: poof!
+        });
     }
 
     public void RandomizeNewDish()
@@ -116,7 +131,8 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
                 if (_currItemIndex == _items.Count)
                 {
                     // TODO: Next customer call
-                    RandomizeNewDish();
+                    MergeIngredients();
+                    //RandomizeNewDish();
                 }
             }
         }
