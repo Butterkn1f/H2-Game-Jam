@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Common.DesignPatterns;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResultsUI : Singleton<ResultsUI>
 {
@@ -22,5 +24,13 @@ public class ResultsUI : Singleton<ResultsUI>
     void Update()
     {
         
+    }
+
+    public void IntroResult()
+    {
+        float opacity = _background.GetComponent<Image>().color.a;
+        _background.GetComponent<Image>().color = Color.clear;
+        _background.SetActive(true);
+        _background.GetComponent<Image>().DOFade(opacity, 1.0f);
     }
 }

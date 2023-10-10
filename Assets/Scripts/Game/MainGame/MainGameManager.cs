@@ -65,6 +65,13 @@ public class MainGameManager : Singleton<MainGameManager>
 
 
         // Play end of game animation
+        StartCoroutine(EndOfGameAnimation());
+    }
+
+    public IEnumerator EndOfGameAnimation()
+    {
+        yield return new WaitForSeconds(1.0f);
+        ResultsUI.Instance.IntroResult();
     }
 
     public void FinishOrder()
