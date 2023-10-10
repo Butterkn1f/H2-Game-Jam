@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 {
@@ -54,11 +55,16 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         }
 
         // Create dish items based on shapes
-        foreach(Shape shape in shapes)
+        for(int i = 0; i < shapes.Count; ++i)
         {
+            var sign = (i % 2 == 0) ? 1 : -1;
+            var floatOffset = Random.Range(10f, 30f) * sign;
+
             GameObject item = Instantiate(_dishItemPrefab, _tableParentTransform);
             DishItem dishItem = item.GetComponent<DishItem>();
-            dishItem.Initialize(shape);
+
+            dishItem._image.rectTransform.anchoredPosition = new Vector2(0, floatOffset);
+            dishItem.Initialize(shapes[i]);
             _items.Add(dishItem);
         }
     }
