@@ -21,6 +21,10 @@ public class LevelData : ScriptableObject
     [Tooltip("Current Level Location Data (Scriptable Object)")]
     public LocationData LevelLocation;
 
+    // Add pre-level talking dialogue
+    [Tooltip("Start of level chat ID")]
+    public string ChatID;
+
     // Available recipes in this level
     // TO LI LIAN: add the level specific recipes in here 
     
