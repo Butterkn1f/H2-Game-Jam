@@ -15,4 +15,5 @@ MonoBehaviour:
   LevelNumber: 1
   LevelName: Level 1
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
+  ChatID: '#PEEPEE'
   IngredientCost: 0
