@@ -41,7 +41,6 @@ public class MainGameManager : Singleton<MainGameManager>
         }
         if (Input.GetKeyDown(KeyCode.O))
         {
-            StartGame();
         }
     }
 
@@ -53,7 +52,6 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer.StartTimer();
 
         _customerManager.SendNewCustomer();
-        StartGameAnimation();
     }
 
     /// <summary>
@@ -62,6 +60,7 @@ public class MainGameManager : Singleton<MainGameManager>
     public void StartGameAnimation()
     {
         GameState.SetValue(MainGameState.MAIN_GAME);
+        StartGame();
     }
 
     public void EndGame()

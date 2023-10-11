@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bdcadd9ae14d234c8ab120984a67e2d, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: 3f09eaea2a5c77349952c672478af917, type: 3}
+  m_Name: Chat List
   m_EditorClassIdentifier: 
-  LevelNumber: 1
-  LevelName: Level 1
-  LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
-  ChatID: '#PEEPEE'
-  IngredientCost: 0
+  ChatNodeList: []
