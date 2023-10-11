@@ -103,7 +103,7 @@ public class CustomerUI : MonoBehaviour
             Sequence shakeSequence = DOTween.Sequence();
 
             // TODO: make this more impact
-            shakeSequence.Append(_feelingBubbleRectTransform.DOScale(3.0f, 0.2f).SetEase(Ease.OutCubic));
+            shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.5f, 0.2f).SetEase(Ease.OutCubic));
             shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.0f, 0.2f).SetEase(Ease.InCubic));
         }
 

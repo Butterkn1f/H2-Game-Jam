@@ -86,6 +86,11 @@ public class MainGameManager : Singleton<MainGameManager>
     /// </summary>
     public void FinishOrder()
     {
+        if (GameState.GetValue() != MainGameState.MAIN_GAME)
+        {
+            return;
+        }
+
         // Send the next customer in 
         _customerManager.LeaveCurrentCustomer();
 

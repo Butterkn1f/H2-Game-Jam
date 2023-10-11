@@ -51,7 +51,7 @@ public class MainGameUI : Singleton<MainGameUI>
                 _gameAnimation.TruckIntroSequence(1.0f);
                 break;
             case MainGameState.GAME_OVER:
-                _resultsUI.IntroResult(_gameAnimation.OutroSeqDuration - 1.0f);
+                _resultsUI.IntroResult(_gameAnimation.OutroSeqDuration);
                 break;
         }
 
