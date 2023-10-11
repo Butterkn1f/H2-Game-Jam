@@ -176,17 +176,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: _ingredientItemPrefab
-      value: 
-      objectReference: {fileID: 2860153864162391233, guid: 928f1ac2483183441b8f4c2839c9b807, type: 3}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
       propertyPath: _tableParentTransform
       value: 
       objectReference: {fileID: 5616682030411236315}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: _ingredientButtons.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
       propertyPath: _ingredientButtons.Array.data[0]
       value: 
@@ -203,42 +195,6 @@ PrefabInstance:
       propertyPath: _ingredientButtons.Array.data[3]
       value: 
       objectReference: {fileID: 563874874}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[0].Ingredients.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[1].Ingredients.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[2].Ingredients.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[0].Ingredients.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[0].Ingredients.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[1].Ingredients.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[1].Ingredients.Array.data[1]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[2].Ingredients.Array.data[0]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
-      propertyPath: Dishes.Array.data[2].Ingredients.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -459,22 +415,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7856687689636221111, guid: d417069d3719d0d4da4480c86b3bcb9f, type: 3}
-      propertyPath: Shapes.Array.data[0].Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b2ee148cee44c9e44aef0f973c7d705b, type: 3}
-    - target: {fileID: 7856687689636221111, guid: d417069d3719d0d4da4480c86b3bcb9f, type: 3}
-      propertyPath: Shapes.Array.data[1].Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2fd671735dfd1074492d20bb5a03c735, type: 3}
-    - target: {fileID: 7856687689636221111, guid: d417069d3719d0d4da4480c86b3bcb9f, type: 3}
-      propertyPath: Shapes.Array.data[2].Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: dec6a0f78cf2ecb428b23dc345a21d91, type: 3}
-    - target: {fileID: 7856687689636221111, guid: d417069d3719d0d4da4480c86b3bcb9f, type: 3}
-      propertyPath: Shapes.Array.data[3].Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6c0f779c14a85b845a509073b1f65b96, type: 3}
     - target: {fileID: 8664615517248116610, guid: d417069d3719d0d4da4480c86b3bcb9f, type: 3}
       propertyPath: m_Name
       value: DrawManager
@@ -837,30 +777,6 @@ PrefabInstance:
       propertyPath: _reviewTemplates
       value: 
       objectReference: {fileID: 5616682030411236318}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.b
-      value: 0.9538593
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.b
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.g
-      value: 0.09718758
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.r
-      value: 0.43221045
-      objectReference: {fileID: 0}
     - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
       propertyPath: _templateModeButton
       value: 

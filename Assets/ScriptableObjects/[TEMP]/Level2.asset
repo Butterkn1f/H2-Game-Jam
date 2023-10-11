@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bdcadd9ae14d234c8ab120984a67e2d, type: 3}
-  m_Name: Level1
+  m_Name: Level2
   m_EditorClassIdentifier: 
   LevelNumber: 1
   LevelName: Level 1
@@ -18,15 +18,9 @@ MonoBehaviour:
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
   ChatID: '#PEEPEE'
   Ingredients:
-  - NormalSprite: {fileID: 21300000, guid: e343df0d06912054693288f8f48377af, type: 3}
-    FrenzySprite: {fileID: 21300000, guid: 09285a01ec81c43419a8be9305ca2aff, type: 3}
-    Type: 0
   - NormalSprite: {fileID: 21300000, guid: 1824f276b6b5d5749bd5155a4bd04077, type: 3}
     FrenzySprite: {fileID: 21300000, guid: a2ffcf029107e4244bd1a8f1c4b90e01, type: 3}
     Type: 1
-  - NormalSprite: {fileID: 21300000, guid: 3b523d00307b12c4d866fab037212072, type: 3}
-    FrenzySprite: {fileID: 21300000, guid: e28037c39eb770740aa71f67a21bd6a1, type: 3}
-    Type: 2
   - NormalSprite: {fileID: 21300000, guid: 2af498ab18dd1254fa411a1bc3267378, type: 3}
     FrenzySprite: {fileID: 21300000, guid: 08e87a8f0ab1b17428d94d73018b082c, type: 3}
     Type: 3
@@ -37,16 +31,4 @@ MonoBehaviour:
     MaxShapes: 3
     Ingredients: 0100000003000000
     AllowedShapes: 0100000002000000
-  - Name: Carrot Cake
-    Sprite: {fileID: 21300000, guid: f0cad740376d96a49a89e673fbbd64aa, type: 3}
-    MinShapes: 3
-    MaxShapes: 4
-    Ingredients: 0000000003000000
-    AllowedShapes: 0000000002000000
-  - Name: Chicken Rice
-    Sprite: {fileID: 21300000, guid: 7bf8b30c96cb2ee4f95ff4aa0c80348a, type: 3}
-    MinShapes: 3
-    MaxShapes: 5
-    Ingredients: 000000000100000002000000
-    AllowedShapes: 000000000100000003000000
   IngredientCost: 0

@@ -7,11 +7,11 @@ using UnityEngine.UI;
 /// This class contains the overall behaviors for the level 
 /// This includes setting the whole level up, and other things (undecided)
 /// </summary>
-public class LevelManager : MonoBehaviour
+public class LevelManager : Common.DesignPatterns.Singleton<LevelManager>
 {
     #region level-specific variables
 
-    [SerializeField] private LevelData _currentLevelData;
+    [SerializeField] public LevelData _currentLevelData;
 
     #endregion
 
