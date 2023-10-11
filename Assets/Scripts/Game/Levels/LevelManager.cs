@@ -32,6 +32,9 @@ public class LevelManager : MonoBehaviour
         _customerManager = CustomerManager.Instance;
         _customerManager.SetCustomerList(_currentLevelData.LevelLocation.CustomerList);
 
+        // TODO: Initialize dishes from level data here
+        DishManager.Instance.InitializeIngredientButtons();
+
         ChatGetter.Instance.StartChat(_currentLevelData.ChatID);
     }
 

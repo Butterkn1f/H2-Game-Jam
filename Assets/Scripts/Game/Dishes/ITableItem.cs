@@ -10,6 +10,7 @@ public abstract class ITableItem : MonoBehaviour
     protected Color targetColor = Color.white;
     protected Sequence sequence = null;
     protected Sequence floatSequence = null;
+    protected Sequence FadeSequence = null;
 
     public virtual Sequence AnimateActivate()
     {
@@ -37,7 +38,14 @@ public abstract class ITableItem : MonoBehaviour
     {
         floatSequence.Kill();
         sequence.Kill();
+        FadeSequence.Kill();
     }
 
     public abstract void ToggleFrenzySprite(bool isFrenzy);
+
+    public virtual void TransitionOut()
+    {
+        KillAnimation();
+        Destroy(gameObject);
+    }
 }

@@ -5,12 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UniRx;
+using System.Linq;
 
 public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 {
     #region Customizable Variables
     [SerializeField] private GameObject _dishItemPrefab;
+    [SerializeField] private GameObject _ingredientItemPrefab;
     [SerializeField] private RectTransform _tableParentTransform;
+    [SerializeField] private List<IngredientButton> _ingredientButtons;
     public List<Ingredient> Ingredients = new List<Ingredient>();
     public List<Dish> Dishes = new List<Dish>();
     #endregion
@@ -21,6 +24,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void Start()
     {
+        SubscribeGameState();
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
         {
             foreach (var item in _items)
@@ -31,8 +35,52 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         }).AddTo(this);
     }
 
+    private void SubscribeGameState()
+    {
+        MainGameManager.Instance.GameState.Value.Subscribe(state =>
+        {
+            switch(state)
+            {
+                case MainGameState.GAME_PREPARE:
+                    RandomizeNewDish();
+                    break;
+
+                case MainGameState.GAME_COOK:
+                    InitializeDishItems();
+                    break;
+
+                case MainGameState.GAME_WAIT:
+                    ResetDish();
+                    break;
+
+                default:
+                    break;
+            }
+        }).AddTo(this);
+    }
+
+    private void InitializeIngredients()
+    {
+        for(int i = 0; i < _currDish.Ingredients.Count; ++i)
+        {
+            var ingredient = Ingredients.Find(ing => ing.Type == _currDish.Ingredients[i]);
+            var sign = (i % 2 == 0) ? 1 : -1;
+            var floatOffset = Random.Range(10f, 30f) * sign;
+
+            GameObject item = Instantiate(_ingredientItemPrefab, _tableParentTransform);
+            IngredientItem ingItem = item.GetComponent<IngredientItem>();
+
+            ingItem._image.rectTransform.anchoredPosition = new Vector2(0, floatOffset);
+            ingItem.Initialize(ingredient);
+            _items.Add(ingItem);
+        }
+    }
+
     private void InitializeDishItems()
     {
+        ClearTableItems();
+        _currItemIndex = 0;
+
         // Add all allowed shapes first,
         // Then add random number of excess
         int itemQty = Random.Range(_currDish.MinShapes, _currDish.MaxShapes + 1);
@@ -80,9 +128,20 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     public void ResetDish()
     {
+        ClearTableItems();
+
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = true;
         _currDish = null;
         _currItemIndex = -1;
+    }
+
+    private void ClearTableItems()
+    {
+        foreach (var item in _items)
+        {
+            item.TransitionOut();
+        }
+        _items.Clear();
     }
 
     private void MergeShapes()
@@ -106,15 +165,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
             // TODO: poof!
 
             // Destroy dishes behind poof
-            foreach (DishItem item in _items)
-            {
-                item.KillAnimation();
-            }
-            foreach (Transform child in _tableParentTransform)
-            {
-                Destroy(child.gameObject);
-            }
-            _items.Clear();
+            ClearTableItems();
 
             // Instantiate current dish behind poof so that when poof disappears dish is there
             // TODO: Object pool this too
@@ -128,12 +179,10 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     public void RandomizeNewDish()
     {
-        ResetDish();
         _currDish = Dishes[Random.Range(0, Dishes.Count)];
         CustomerManager.Instance.CurrentCustomerObject.GetComponent<CustomerUI>().OrderImage.sprite = _currDish.Sprite;
 
-        InitializeDishItems();
-        _currItemIndex = 0;
+        InitializeIngredients();
     }
 
     public void CheckDrawnShape(Shape shape)
@@ -141,19 +190,68 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         if (shape == null && !Frenzy.Instance.FrenzyEnabled.GetValue())
             return;
 
-        if (_currItemIndex >= 0 && _currItemIndex < _items.Count)
+        if (Frenzy.Instance.FrenzyEnabled.GetValue() && MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_PREPARE)
+        {
+            // Adding ingredients, slowly increment addition
+            IngredientItem item = (IngredientItem)_items.Find(i =>
+            !(i as IngredientItem).IsActive);
+
+            if (item != null)
+            {
+                item.AnimateActivate();
+                // Check whether all items in list are active
+                if (!_items.Any(item => (item as IngredientItem).IsActive == false))
+                {
+                    // If so, switch to next state
+                    MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_COOK);
+                }
+            }
+        }
+
+        else if (_currItemIndex >= 0 && _currItemIndex < _items.Count)
         {
             DishItem currItem = (DishItem)_items[_currItemIndex];
             if (shape == currItem.Shape || Frenzy.Instance.FrenzyEnabled.GetValue())
             {
                 currItem.AnimateActivate();
-
                 _currItemIndex++;
                 if (_currItemIndex >= _items.Count)
                 {
                     MergeShapes();
                 }
             }
+        }
+    }
+
+    public bool CheckAddIngredient(Ingredient ingredient)
+    {
+        if (_currDish.Ingredients.Contains(ingredient.Type))
+        {
+            IngredientItem item = (IngredientItem)_items.Find(i => 
+            (i as IngredientItem).Ingredient.Type == ingredient.Type);
+
+            if (item != null)
+            {
+                item.AnimateActivate();
+
+                // Check whether all items in list are active
+                if (!_items.Any(item => (item as IngredientItem).IsActive == false))
+                {
+                    // If so, switch to next state
+                    MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_COOK);
+                }
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void InitializeIngredientButtons()
+    {
+        for (int i = 0; i < _ingredientButtons.Count; ++i)
+        {
+            _ingredientButtons[i].Initialize(Ingredients[i]);
         }
     }
 }

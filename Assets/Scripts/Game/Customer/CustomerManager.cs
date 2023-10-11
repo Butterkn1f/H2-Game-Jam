@@ -88,7 +88,7 @@ public class CustomerManager : Singleton<CustomerManager>
         _currentCustomer = newCustomerData;
         CurrentCustomerObject.GetComponent<Image>().sprite = _currentCustomer.CharacterSprite;
 
-        DishManager.Instance.RandomizeNewDish();
+        MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_PREPARE);
 
         // Play intro animation (sliding in)
         StartCoroutine(IntroAnimationSeqence());
@@ -134,6 +134,7 @@ public class CustomerManager : Singleton<CustomerManager>
     /// </summary>
     public void LeaveCurrentCustomer(bool sendNextCharacter = true)
     {
+        MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_WAIT);
         StartCoroutine(OutroAnimationSequence(sendNextCharacter));
     }
 

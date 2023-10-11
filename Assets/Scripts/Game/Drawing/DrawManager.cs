@@ -31,6 +31,58 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
         _lineObject = null;
         IsOverDrawingArea = false;
         _isDrawing = false;
+        SubscribeGameState();
+        SubscribeFrenzy();
+    }
+
+    private void SubscribeGameState()
+    {
+        MainGameManager.Instance.GameState.Value.Subscribe(state =>
+        {
+            switch (state)
+            {
+                case MainGameState.GAME_PREPARE:
+                    // During frenzy, begin allowing to draw at preparation state
+                    if (Frenzy.Instance.FrenzyEnabled.GetValue() == true)
+                        SubscribePressEvents(true);
+                    break;
+
+                case MainGameState.GAME_COOK:
+                    // Begin allowing to draw during cooking state only when not in frenzy
+                    // if in frenzy, events are already subscribed so no need to do so again
+                    if (Frenzy.Instance.FrenzyEnabled.GetValue() == false)
+                        SubscribePressEvents(true);
+                    break;
+
+                case MainGameState.GAME_WAIT:
+                    SubscribePressEvents(false);
+                    break;
+
+                default:
+                    break;
+
+            }
+        }).AddTo(this);
+    }
+
+    private void SubscribeFrenzy()
+    {
+        Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
+        {
+            if (enabled)
+            {
+                if (MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_PREPARE)
+                {
+                    // Enable ability to draw for ingredients in frenzy mode
+                    SubscribePressEvents(true);
+                }
+            }
+            else if (MainGameManager.Instance.GameState.GetValue() != MainGameState.GAME_COOK)
+            {
+                // After fever is over, if not in cooking state, remove ability to draw
+                SubscribePressEvents(false);
+            }
+        }).AddTo(this);
     }
 
     /// <summary>
@@ -41,41 +93,22 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     {
         if (isSubscribe)
         {
-            if (_pressDisposables == null || _pressDisposables.Count == 0)
-            {
-                _pressDisposables = new CompositeDisposable();
-                SubscribeBeginPress();
-                SubscribePressing();
-                SubscribeReleasePress();
-            }
+            SubscribePressEvents(false);
+            _pressDisposables = new CompositeDisposable();
+            SubscribeBeginPress();
+            SubscribePressing();
+            SubscribeReleasePress();
         }
         else
         {
-            _pressDisposables.Dispose();
-        }
-
-        /*GameManager.Instance.GameState.State.Subscribe(state =>
-        {
-            switch (state)
+            if (_pressDisposables != null)
             {
-                case GameStateType.Playing:
-                    SubscribeBeginPress();
-                    SubscribePressing();
-                    SubscribeReleasePress();
-                    break;
+                ResetDrawing();
+                _pressDisposables.Dispose();
+                _pressDisposables = null;
 
-                case GameStateType.Testing:
-                    UnsubscribeAllPressEvents();
-                    break;
-
-                case GameStateType.Initialize:
-                    ResetDrawing();
-                    break;
-
-                default:
-                    break;
             }
-        }).AddTo(this);*/
+        }
     }
 
     private void SubscribeBeginPress()
@@ -144,7 +177,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     /// </summary>
     private void EndDraw()
     {
-        if (_lineObject == null)
+        if (_lineObject == null || !_isDrawing)
             return;
 
         if (_lineObject.PointCount < 2) // Not a line! セリフではありません！
@@ -184,12 +217,12 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     public void ResetDrawing()
     {
         RecognitionManager.Instance.StopLineAnimation();
-        _pressDisposables = new CompositeDisposable();
         if (_lineObject == null)
             return;
 
         Destroy(_lineObject.gameObject);
         _lineObject = null;
+        _isDrawing = false;
     }
 
     public void SubscribeDrawFinished(bool isSubscribe)

@@ -73,11 +73,13 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     {
         if (_state == RecognizerState.RECOGNITION)
         {
+            MainGameManager.Instance.GameState.SetValue(MainGameState.DEBUG);
             _templateCanvas.gameObject.SetActive(true);
             SetupState(RecognizerState.TEMPLATE);
         }
         else
         {
+            MainGameManager.Instance.GameState.SetValue(MainGameState.NONE);
             _templateCanvas.gameObject.SetActive(false);
             SetupState(RecognizerState.RECOGNITION);
         }
@@ -95,14 +97,16 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 
         // If state is not recognition, subscribe to space check to invoke draw finished
         _drawManager.SubscribeDrawFinished(state != RecognizerState.RECOGNITION);
-
-        if (state == RecognizerState.TEMPLATE_REVIEW)
+        if (MainGameManager.Instance.GameState.GetValue() == MainGameState.DEBUG)
         {
-            DrawManager.Instance.SubscribePressEvents(false);
-        }
-        else
-        {
-            DrawManager.Instance.SubscribePressEvents(true);
+            if (state == RecognizerState.TEMPLATE_REVIEW)
+            {
+                DrawManager.Instance.SubscribePressEvents(false);
+            }
+            else
+            {
+                DrawManager.Instance.SubscribePressEvents(true);
+            }
         }
         _drawManager.ResetDrawing();
     }
@@ -126,7 +130,7 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     {
         //  (string, float) result = _dollarOneRecognizer.DoRecognition(points, 64, _templates.GetTemplates());
         (string, float) result = _currentRecognizer.DoRecognition(points, 64, _templates.RawTemplates);
-        Debug.Log($"Recognized: {result.Item1}, Distance: {result .Item2}");
+        //Debug.Log($"Recognized: {result.Item1}, Distance: {result .Item2}");
 
         Shape shape = null;
         lineSequence = DOTween.Sequence();
@@ -176,6 +180,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 
     public void StopLineAnimation()
     {
-        lineSequence.Kill();
+        lineSequence?.Kill();
     }
 }

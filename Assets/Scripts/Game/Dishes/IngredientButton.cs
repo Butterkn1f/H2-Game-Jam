@@ -21,22 +21,38 @@ public class IngredientButton : MonoBehaviour
     private Sequence _itemSequence;
     [HideInInspector] public Ingredient Ingredient = null;
 
-    void Start()
-    {
-        //gameObject.SetActive(false);
-        _button = GetComponent<Button>();
-        _image = GetComponent<Image>();
-
-        //_button.enabled = false;
-        _button.onClick.AddListener(delegate () { AddIngredient(); });
-        //SubscribeFrenzy();
-    }
-
     private void SubscribeFrenzy()
     {
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
         {
             _image.sprite = enabled ? Ingredient.FrenzySprite : Ingredient.NormalSprite;
+            
+            if (!enabled && MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_PREPARE)
+            {
+                // if stopped frenzy and is currently in preparation state, enable buttons
+                _button.enabled = true;
+            }
+        }).AddTo(this);
+    }
+
+    private void SubscribeGameState()
+    {
+        MainGameManager.Instance.GameState.Value.Subscribe(state =>
+        {
+            switch (state)
+            {
+                case MainGameState.GAME_PREPARE:
+                    if (!Frenzy.Instance.FrenzyEnabled.GetValue())
+                        _button.enabled = true;
+                    break;
+
+                case MainGameState.GAME_COOK:
+                        _button.enabled = false;
+                    break;
+
+                default:
+                    break;
+            }
         }).AddTo(this);
     }
 
@@ -70,14 +86,25 @@ public class IngredientButton : MonoBehaviour
 
     public void Initialize(Ingredient ingredient)
     {
+        gameObject.SetActive(false);
+        _button = GetComponent<Button>();
+        _image = GetComponent<Image>();
+
+        _button.enabled = false;
+        _button.onClick.AddListener(delegate () { AddIngredient(); });
+        SubscribeFrenzy();
+        SubscribeGameState();
+
         _image.sprite = ingredient.NormalSprite;
         Ingredient = ingredient;
-        _button.enabled = true;
         gameObject.SetActive(true);
     }
 
     public void AddIngredient()
     {
-        AnimateFlyToPot();
+        if (DishManager.Instance.CheckAddIngredient(Ingredient))
+        {
+            AnimateFlyToPot();
+        }
     }
 }

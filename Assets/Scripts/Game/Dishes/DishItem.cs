@@ -49,6 +49,10 @@ public class DishItem : ITableItem
         targetColor = Frenzy.Instance.FrenzyEnabled.GetValue() ? Color.white : shape.Color;
         _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ? _frenzySprite : shape.Sprite;
         BeginFloatAnimation();
+
+        // Fade in animation
+        FadeSequence = DOTween.Sequence();
+        FadeSequence.Append(_image.DOFade(_initialColor.a, 0.25f));
     }
 
     public void InitializeDish(Dish dish)
