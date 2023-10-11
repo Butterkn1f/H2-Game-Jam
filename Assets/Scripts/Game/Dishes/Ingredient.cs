@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Ingredient : MonoBehaviour
+public class Ingredient
 {
     public Sprite NormalSprite;
     public Sprite FrenzySprite;
