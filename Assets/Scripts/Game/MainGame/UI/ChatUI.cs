@@ -5,14 +5,9 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ResultsUI : Singleton<ResultsUI>
+public class ChatUI : Singleton<ChatUI>
 {
-    // Results screen gameobject variables
     [SerializeField] private GameObject _background;
-    [SerializeField] private GameObject _paper;
-
-    // Result screen variables
-
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +18,20 @@ public class ResultsUI : Singleton<ResultsUI>
     // Update is called once per frame
     void Update()
     {
-        
     }
 
-    public void IntroResult()
+    public void SetUpChat()
     {
-        float opacity = _background.GetComponent<Image>().color.a;
-        _background.GetComponent<Image>().color = Color.clear;
         _background.SetActive(true);
-        _background.GetComponent<Image>().DOFade(opacity, 1.0f);
+    }
+
+    public void OutroResult()
+    {
+        // Add the whole chat remove animation
+        Sequence outroSeq = DOTween.Sequence();
+
+        outroSeq.Append(_background.GetComponent<Image>().DOFade(0, 1.0f));
+        outroSeq.AppendCallback(() => _background.SetActive(false));
+
     }
 }
