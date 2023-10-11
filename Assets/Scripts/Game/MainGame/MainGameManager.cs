@@ -30,7 +30,6 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer = GetComponent<DayTimer>();
 
         GameState.SetValue(MainGameState.CHAT);
-        StartGame();
     }
 
     // Update is called once per frame
@@ -80,7 +79,6 @@ public class MainGameManager : Singleton<MainGameManager>
     public IEnumerator EndOfGameAnimation()
     {
         yield return new WaitForSeconds(1.0f);
-        ResultsUI.Instance.IntroResult();
     }
 
     /// <summary>
@@ -113,6 +111,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
 public enum MainGameState
 {
+    NONE,
     CHAT,
     MAIN_GAME,
     GAME_OVER
