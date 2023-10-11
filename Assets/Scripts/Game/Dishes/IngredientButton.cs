@@ -30,7 +30,7 @@ public class IngredientButton : MonoBehaviour
             if (!enabled && MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_PREPARE)
             {
                 // if stopped frenzy and is currently in preparation state, enable buttons
-                _button.enabled = true;
+                _button.interactable = true;
             }
         }).AddTo(this);
     }
@@ -43,11 +43,11 @@ public class IngredientButton : MonoBehaviour
             {
                 case MainGameState.GAME_PREPARE:
                     if (!Frenzy.Instance.FrenzyEnabled.GetValue())
-                        _button.enabled = true;
+                        _button.interactable = true;
                     break;
 
                 case MainGameState.GAME_COOK:
-                        _button.enabled = false;
+                        _button.interactable = false;
                     break;
 
                 default:
@@ -90,7 +90,7 @@ public class IngredientButton : MonoBehaviour
         _button = GetComponent<Button>();
         _image = GetComponent<Image>();
 
-        _button.enabled = false;
+        _button.interactable = false;
         _button.onClick.AddListener(delegate () { AddIngredient(); });
         SubscribeFrenzy();
         SubscribeGameState();
