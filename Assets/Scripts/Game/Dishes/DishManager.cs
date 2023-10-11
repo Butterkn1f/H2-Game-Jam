@@ -52,7 +52,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         }
 
         shapes.AddRange(starterShapes);
-        // Shuffle shapes using fisher–yates algorithm
+        // Shuffle shapes using fisherï¿½yates algorithm
         for (int i = 0; i < shapes.Count; i++)
         {
             // Pick random Element

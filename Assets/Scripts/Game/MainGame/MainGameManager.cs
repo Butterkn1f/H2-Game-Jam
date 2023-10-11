@@ -53,32 +53,31 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer.StartTimer();
 
         _customerManager.SendNewCustomer();
+        StartGameAnimation();
+    }
 
+    /// <summary>
+    /// Trigger all the animations to be played 
+    /// </summary>
+    public void StartGameAnimation()
+    {
         GameState.SetValue(MainGameState.MAIN_GAME);
-       
     }
 
     public void EndGame()
     {
         _dayTimer.EndTimer();
 
-        GameState.SetValue(MainGameState.GAME_OVER);
-
         // End frenzy, if any
         _frenzy.BreakFrenzy();
+
+        // Customer should leave
         _customerManager.LeaveCurrentCustomer(false);
 
         // Calculate money
 
-
-        // Play end of game animation
-        // TODO: put all the UI/aesthetics in a different class
-        StartCoroutine(EndOfGameAnimation());
-    }
-
-    public IEnumerator EndOfGameAnimation()
-    {
-        yield return new WaitForSeconds(1.0f);
+        // Trigger animations
+        GameState.SetValue(MainGameState.GAME_OVER);
     }
 
     /// <summary>
