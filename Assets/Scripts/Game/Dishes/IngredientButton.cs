@@ -53,7 +53,7 @@ public class IngredientButton : MonoBehaviour
         GameObject obj = Instantiate(_ghostItemPrefab, ownTransform.parent);
         SpawnedItem = obj.GetComponent<RectTransform>();
         SpawnedItem.localPosition = ownTransform.localPosition;
-        SpawnedItem.SetParent(ownTransform.parent.parent, true);
+        SpawnedItem.SetParent(_potTransform, true);
 
         SpawnedItem.sizeDelta = new Vector2(ownTransform.rect.width, ownTransform.rect.height);
         obj.GetComponent<Image>().sprite = _image.sprite;
