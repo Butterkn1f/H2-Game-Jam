@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Line
-  - 
+  - VFX
   - 
   - 
   - 
@@ -47,12 +47,15 @@ TagManager:
   - name: Midground
     uniqueID: 1196048313
     locked: 0
-  - name: Line
-    uniqueID: 3968111203
-    locked: 0
   - name: Foreground
     uniqueID: 3770513189
     locked: 0
+  - name: Line
+    uniqueID: 3968111203
+    locked: 0
   - name: UI
     uniqueID: 423061013
+    locked: 0
+  - name: VFX
+    uniqueID: 3568263793
     locked: 0

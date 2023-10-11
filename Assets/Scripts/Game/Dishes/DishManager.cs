@@ -11,18 +11,19 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     #region Customizable Variables
     [SerializeField] private GameObject _dishItemPrefab;
     [SerializeField] private RectTransform _tableParentTransform;
+    public List<Ingredient> Ingredients = new List<Ingredient>();
     public List<Dish> Dishes = new List<Dish>();
     #endregion
 
     private Dish _currDish = null;
     private int _currItemIndex = -1;
-    private List<DishItem> _items = new List<DishItem>(); // TODO: Object pool this
+    private List<ITableItem> _items = new List<ITableItem>(); // TODO: Object pool this
 
     private void Start()
     {
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
         {
-            foreach (DishItem item in _items)
+            foreach (var item in _items)
             {
                 item.ToggleFrenzySprite(enabled);
             }
@@ -32,17 +33,17 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void InitializeDishItems()
     {
-        // Add all allowed ingredients first,
+        // Add all allowed shapes first,
         // Then add random number of excess
-        int itemQty = Random.Range(_currDish.MinIngredients, _currDish.MaxIngredients + 1);
+        int itemQty = Random.Range(_currDish.MinShapes, _currDish.MaxShapes + 1);
 
         List<Shape> starterShapes = new List<Shape>();
-        foreach(string ingredient in _currDish.AllowedIngredients)
+        foreach(var shape in _currDish.AllowedShapes)
         {
             if (starterShapes.Count >= itemQty)
                 break;
 
-            starterShapes.Add(DrawManager.Instance.GetShapeFromName(ingredient));
+            starterShapes.Add(DrawManager.Instance.GetShapeFromType(shape));
         }
 
         List<Shape> shapes = new List<Shape>();
@@ -77,14 +78,14 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         }
     }
 
-    private void ResetDish()
+    public void ResetDish()
     {
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = true;
         _currDish = null;
         _currItemIndex = -1;
     }
 
-    private void MergeIngredients()
+    private void MergeShapes()
     {
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = false;
 
@@ -142,7 +143,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
         if (_currItemIndex >= 0 && _currItemIndex < _items.Count)
         {
-            DishItem currItem = _items[_currItemIndex];
+            DishItem currItem = (DishItem)_items[_currItemIndex];
             if (shape == currItem.Shape || Frenzy.Instance.FrenzyEnabled.GetValue())
             {
                 currItem.AnimateActivate();
@@ -150,7 +151,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
                 _currItemIndex++;
                 if (_currItemIndex >= _items.Count)
                 {
-                    MergeIngredients();
+                    MergeShapes();
                 }
             }
         }

@@ -103,6 +103,8 @@ public class MainGameManager : Singleton<MainGameManager>
         // Get frenzy num
         _frenzy.BreakFrenzyMeter();
 
+        DishManager.Instance.ResetDish();
+
         // Calculate tips and money
     }
 

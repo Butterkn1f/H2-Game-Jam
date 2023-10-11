@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8392438030723595178}
   - component: {fileID: 2016850676295200355}
   m_Layer: 6
-  m_Name: Shape
+  m_Name: Ingredient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,16 +58,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14175865, g: 0.19397178, b: 0.20754719, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f01a50a285b2604e92c0d0f81843970, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2af498ab18dd1254fa411a1bc3267378, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -85,9 +85,9 @@ GameObject:
   m_Component:
   - component: {fileID: 205016815622471724}
   - component: {fileID: 703130430907204259}
-  - component: {fileID: 8625311285568437861}
+  - component: {fileID: 6349612351029510930}
   m_Layer: 6
-  m_Name: DishItem
+  m_Name: IngredientItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2860153864162391233}
   m_CullTransparentMesh: 1
---- !u!114 &8625311285568437861
+--- !u!114 &6349612351029510930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,13 +130,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2860153864162391233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ad699ef9ecb4c141b75846e4bd7e65e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c43180c8acb79949a48cc8108d3b535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 2016850676295200355}
-  _initialColor: {r: 0.14509805, g: 0.19607843, b: 0.20754719, a: 0.3137255}
-  _frenzySprite: {fileID: 21300000, guid: 024f66feb2c3cea4fa3a4b4c8731df74, type: 3}
-  Shape:
+  _initialColor: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 0.3137255}
+  Ingredient:
+    NormalSprite: {fileID: 0}
+    FrenzySprite: {fileID: 0}
     Type: 0
-    Color: {r: 0, g: 0, b: 0, a: 0}
-    Sprite: {fileID: 0}

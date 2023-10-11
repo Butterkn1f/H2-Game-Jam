@@ -6,7 +6,8 @@ public class Dish
 {
     public string Name;
     public Sprite Sprite;
-    public int MinIngredients;
-    public int MaxIngredients;
-    public List<string> AllowedIngredients;
+    public int MinShapes;
+    public int MaxShapes;
+    public List<IngredientType> Ingredients;
+    public List<ShapeType> AllowedShapes;
 }

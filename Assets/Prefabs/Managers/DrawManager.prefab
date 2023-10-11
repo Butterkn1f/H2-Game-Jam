@@ -47,16 +47,16 @@ MonoBehaviour:
   _linePrefab: {fileID: 9045779329721867657, guid: 4d21c09df0750ee45830144e8e611cc6, type: 3}
   MinPointDistance: 0.025
   Shapes:
-  - Name: Circle
+  - Type: 0
     Color: {r: 1, g: 0.94675124, b: 0, a: 1}
     Sprite: {fileID: 21300000, guid: 2240f2ddf99d31941ba6be8a0dd77d1f, type: 3}
-  - Name: Up
+  - Type: 2
     Color: {r: 1, g: 0.13757902, b: 0, a: 1}
     Sprite: {fileID: 21300000, guid: 0f01a50a285b2604e92c0d0f81843970, type: 3}
-  - Name: Down
+  - Type: 3
     Color: {r: 0.040607452, g: 0, b: 1, a: 1}
     Sprite: {fileID: 21300000, guid: fca6d3e9890e16145bbf66bd0e997ad0, type: 3}
-  - Name: Horizontal
+  - Type: 1
     Color: {r: 0, g: 1, b: 0.25293803, a: 1}
     Sprite: {fileID: 21300000, guid: ffaeff4943ae3a8469abb9a19ce43322, type: 3}
   IsOverDrawingArea: 0
