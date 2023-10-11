@@ -11,6 +11,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     #region Customizable Variables
     [SerializeField] private GameObject _dishItemPrefab;
     [SerializeField] private RectTransform _tableParentTransform;
+    public List<Ingredient> Ingredients = new List<Ingredient>();
     public List<Dish> Dishes = new List<Dish>();
     #endregion
 
@@ -32,17 +33,17 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void InitializeDishItems()
     {
-        // Add all allowed ingredients first,
+        // Add all allowed shapes first,
         // Then add random number of excess
-        int itemQty = Random.Range(_currDish.MinIngredients, _currDish.MaxIngredients + 1);
+        int itemQty = Random.Range(_currDish.MinShapes, _currDish.MaxShapes + 1);
 
         List<Shape> starterShapes = new List<Shape>();
-        foreach(string ingredient in _currDish.AllowedIngredients)
+        foreach(var shape in _currDish.AllowedShapes)
         {
             if (starterShapes.Count >= itemQty)
                 break;
 
-            starterShapes.Add(DrawManager.Instance.GetShapeFromName(ingredient));
+            starterShapes.Add(DrawManager.Instance.GetShapeFromType(shape));
         }
 
         List<Shape> shapes = new List<Shape>();
@@ -84,7 +85,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         _currItemIndex = -1;
     }
 
-    private void MergeIngredients()
+    private void MergeShapes()
     {
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = false;
 
@@ -150,7 +151,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
                 _currItemIndex++;
                 if (_currItemIndex >= _items.Count)
                 {
-                    MergeIngredients();
+                    MergeShapes();
                 }
             }
         }

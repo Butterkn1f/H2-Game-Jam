@@ -211,8 +211,8 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
         }
     }
 
-    public Shape GetShapeFromName(string name)
+    public Shape GetShapeFromType(ShapeType type)
     {
-        return Shapes.Find(s => s.Name == name);
+        return Shapes.Find(s => s.Type == type);
     }
 }

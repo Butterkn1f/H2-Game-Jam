@@ -146,7 +146,8 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
         else if (result.Item2 <= 2)
         {
             // Check for shape recognition
-            shape = _drawManager.GetShapeFromName(result.Item1);
+            ShapeType shapeType = (ShapeType)System.Enum.Parse(typeof(ShapeType), result.Item1);
+            shape = _drawManager.GetShapeFromType(shapeType);
             if (shape != null)
             {
                 // Blend from default to target shape's color
