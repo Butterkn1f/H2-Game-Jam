@@ -30,6 +30,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer = GetComponent<DayTimer>();
 
         GameState.SetValue(MainGameState.CHAT);
+        StartGame();
     }
 
     // Update is called once per frame
