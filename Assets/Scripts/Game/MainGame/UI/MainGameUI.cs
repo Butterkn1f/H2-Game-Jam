@@ -8,8 +8,9 @@ using UniRx;
 public class MainGameUI : Singleton<MainGameUI>
 {
     // UI elements
-    private ResultsUI _resultsUI;
-    private ChatUI _chatUI;
+    [SerializeField] private ResultsUI _resultsUI;
+    [SerializeField] private MainGameAnimation _gameAnimation;
+    [SerializeField] private ChatUI _chatUI;
 
     // Temporary elements
     private MainGameState _currentGameState = MainGameState.NONE;
@@ -17,9 +18,6 @@ public class MainGameUI : Singleton<MainGameUI>
     // Start is called before the first frame update
     void Start()
     {
-        _resultsUI = ResultsUI.Instance;
-        _chatUI = ChatUI.Instance;
-
         // Subscribe to game state
         MainGameManager.Instance.GameState.Value.Subscribe(x => ChangeGameState(x));
     }
@@ -38,6 +36,7 @@ public class MainGameUI : Singleton<MainGameUI>
                 _chatUI.OutroResult();
                 break;
             case MainGameState.MAIN_GAME:
+                _gameAnimation.TruckOutroSequence(1.0f);
                 break;
             case MainGameState.GAME_OVER:
                 break;
@@ -49,9 +48,10 @@ public class MainGameUI : Singleton<MainGameUI>
                 _chatUI.SetUpChat();
                 break;
             case MainGameState.MAIN_GAME:
+                _gameAnimation.TruckIntroSequence(1.0f);
                 break;
             case MainGameState.GAME_OVER:
-                _resultsUI.IntroResult();
+                _resultsUI.IntroResult(_gameAnimation.OutroSeqDuration - 1.0f);
                 break;
         }
 

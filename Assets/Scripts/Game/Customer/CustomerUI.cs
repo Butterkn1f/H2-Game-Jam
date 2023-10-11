@@ -119,6 +119,7 @@ public enum CustomerMood
     HAPPY,
     NEUTRAL,
     ANGRY,
-    VERY_ANGRY
+    VERY_ANGRY,
+    LOVE
 }
 

@@ -27,9 +27,7 @@ public class LevelManager : MonoBehaviour
     {
         // Set background image
         // Should be in a different class
-        _backgroundImage.sprite = _currentLevelData.LevelLocation.BackgroundImage;
-        // Make sure it doesnt get squashed
-        _backgroundImage.SetNativeSize();
+        _backgroundImage.sprite = _currentLevelData.BackgroundImage;
 
         _customerManager = CustomerManager.Instance;
         _customerManager.SetCustomerList(_currentLevelData.LevelLocation.CustomerList);

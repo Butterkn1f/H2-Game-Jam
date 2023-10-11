@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelNumber: 1
   LevelName: Level 1
+  BackgroundImage: {fileID: 21300000, guid: c27c028ae1dcc3e4a86fd5342c4e22da, type: 3}
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
   ChatID: '#PEEPEE'
   IngredientCost: 0

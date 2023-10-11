@@ -15,7 +15,6 @@ public class LocationData : ScriptableObject
     public List<CustomerData> CustomerList;
 
     // Location specific backgrounds
-    public Sprite BackgroundImage;
 
     // TO LI LIAN: map can be put here maybe
 }

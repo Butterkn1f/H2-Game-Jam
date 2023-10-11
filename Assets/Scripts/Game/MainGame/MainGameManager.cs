@@ -60,7 +60,7 @@ public class MainGameManager : Singleton<MainGameManager>
     public void StartGameAnimation()
     {
         GameState.SetValue(MainGameState.MAIN_GAME);
-        StartGame();
+        
     }
 
     public void EndGame()
@@ -69,6 +69,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // End frenzy, if any
         _frenzy.BreakFrenzy();
+        _frenzy.BreakFrenzyMeter();
 
         // Customer should leave
         _customerManager.LeaveCurrentCustomer(false);

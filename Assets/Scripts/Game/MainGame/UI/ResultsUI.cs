@@ -28,9 +28,13 @@ public class ResultsUI : Singleton<ResultsUI>
 
     public void IntroResult(float delay = 0)
     {
+        Sequence seq = DOTween.Sequence();
+        seq.PrependInterval(delay);
+
         float opacity = _background.GetComponent<Image>().color.a;
         _background.GetComponent<Image>().color = Color.clear;
         _background.SetActive(true);
-        _background.GetComponent<Image>().DOFade(opacity, 1.0f);
+
+        seq.Append(_background.GetComponent<Image>().DOFade(opacity, 1.0f));
     }
 }
