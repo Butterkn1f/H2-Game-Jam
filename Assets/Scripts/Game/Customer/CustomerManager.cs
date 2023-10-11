@@ -117,7 +117,9 @@ public class CustomerManager : Singleton<CustomerManager>
     {
         // For testing only?? Probably should delete this soon
         CurrentCustomerObject.GetComponent<CustomerUI>().OutroAnim();
+
         yield return new WaitForSeconds(0.25f);
+
         CurrentCustomerObject.GetComponent<CustomerAnimation>().PlayOutroAnimation();
 
 
