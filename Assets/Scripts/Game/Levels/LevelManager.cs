@@ -33,6 +33,8 @@ public class LevelManager : MonoBehaviour
 
         _customerManager = CustomerManager.Instance;
         _customerManager.SetCustomerList(_currentLevelData.LevelLocation.CustomerList);
+
+        ChatGetter.Instance.StartChat(_currentLevelData.ChatID);
     }
 
     
