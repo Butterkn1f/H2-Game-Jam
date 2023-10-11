@@ -41,7 +41,6 @@ public class MainGameManager : Singleton<MainGameManager>
         }
         if (Input.GetKeyDown(KeyCode.O))
         {
-            StartGame();
         }
     }
 

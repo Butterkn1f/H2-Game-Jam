@@ -1487,6 +1487,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1129786210616089991, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129786210616089991, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1108.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129786210616089991, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129786210616089991, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -554.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1779370724331968131, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1586,6 +1602,22 @@ PrefabInstance:
     - target: {fileID: 7918494752285886812, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824542029785104795, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 880
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824542029785104795, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 799.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824542029785104795, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824542029785104795, guid: 9b32c86c9ead07a4296828e3aba5e05a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 356
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
