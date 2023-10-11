@@ -10,6 +10,7 @@ public class DrawManager : Common.DesignPatterns.Singleton<DrawManager>
     [SerializeField] private GameObject _linePrefab;
     public float MinPointDistance = 0.15f;
     public List<Shape> Shapes = new List<Shape>();
+    public Gradient FrenzyColor;
     #endregion
 
     private CompositeDisposable _pressDisposables;

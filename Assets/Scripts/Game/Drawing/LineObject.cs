@@ -24,6 +24,9 @@ public class LineObject : MonoBehaviour
     private void Start()
     {
         Initialize();
+
+        if (Frenzy.Instance.FrenzyEnabled.GetValue())
+            _lineRenderer.colorGradient = DrawManager.Instance.FrenzyColor;
     }
 
     public void Initialize()

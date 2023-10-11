@@ -17,8 +17,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     [SerializeField] private TemplateReviewPanel _templateReviewPanel;
 
     [SerializeField] private Canvas _templateCanvas;
-
-    [SerializeField] private Gradient _frenzyColor;
     #endregion
 
     private GestureTemplates _templates => GestureTemplates.Get();
@@ -136,18 +134,7 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
         lineSequence = DOTween.Sequence();
         Color2 currColor = _drawManager._lineObject.GetCurrentColor2();
 
-        if (Frenzy.Instance.FrenzyEnabled.GetValue())
-        {
-            // Correct no matter what is drawn
-            // Blend from default to frenzy line's color
-            Color2 tarColor = new Color2(_frenzyColor.colorKeys[0].color, _frenzyColor.colorKeys[1].color);
-            lineSequence.Append(_drawManager._lineObject._lineRenderer
-                .DOColor(currColor, tarColor, 0.25f))
-                .AppendInterval(0.15f);
-
-            currColor = tarColor;
-        }
-        else if (result.Item2 <= 2)
+        if (result.Item2 <= 2 && !Frenzy.Instance.FrenzyEnabled.GetValue())
         {
             // Check for shape recognition
             ShapeType shapeType = (ShapeType)System.Enum.Parse(typeof(ShapeType), result.Item1);
