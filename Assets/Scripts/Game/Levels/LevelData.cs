@@ -17,6 +17,8 @@ public class LevelData : ScriptableObject
     public int LevelNumber = 1;
     public string LevelName = "Level 1"; // Change/delete if necessary
 
+    public Sprite BackgroundImage;
+
     // Add location data structure here
     [Tooltip("Current Level Location Data (Scriptable Object)")]
     public LocationData LevelLocation;

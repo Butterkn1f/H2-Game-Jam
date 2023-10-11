@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +12,15 @@ public class DayTimer : MonoBehaviour
 
     private float _timeCounter = 0;
 
+    // clock
+    [SerializeField] private GameObject _clockHand;
+
     public void StartTimer()
     {
         _timerEnabled = true;
         _timeCounter = DayDuration;
+        _clockHand.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 90);
+        _clockHand.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, -90), DayDuration).SetEase(Ease.Linear);
     }
 
     public void EndTimer()
