@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f1a7ea87289f74da5e1dced6a6c345, type: 3}
   m_Name: Boar
   m_EditorClassIdentifier: 
-  Name: 
-  CharacterSprite: {fileID: 0}
-  PatienceDuration: 15
+  Name: BOAR
+  CharacterSprite: {fileID: 21300000, guid: 5d5dc20abc1709e4b8f015bad0ce0f5f, type: 3}
+  PatienceDuration: 9

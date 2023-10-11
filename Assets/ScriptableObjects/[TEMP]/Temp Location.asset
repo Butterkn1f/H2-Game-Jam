@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LocationName: Singapore
   CustomerList:
-  - {fileID: 11400000, guid: 9cdfae1849b059449b48897e101176ba, type: 2}
-  - {fileID: 11400000, guid: 099be880664402b43b89ee04d8887ffd, type: 2}
-  - {fileID: 11400000, guid: 7ebe7ada7a5d53944917d3edbf00a817, type: 2}
-  BackgroundImage: {fileID: 21300000, guid: f399b1b8a21d2944e86b8a7e71eec6d9, type: 3}
+  - {fileID: 11400000, guid: 9b9b125c9fe94db4bb653f7c2ed81409, type: 2}
+  - {fileID: 11400000, guid: ec69b2ea3da0af245841c5722ef4a8e1, type: 2}
+  - {fileID: 11400000, guid: b054d55c8d54be544b89cb1f4e58ce0c, type: 2}
