@@ -16,6 +16,9 @@ public class MainGameManager : Singleton<MainGameManager>
     // Customer Manager
     CustomerManager _customerManager;
 
+    // Money Manager
+    MoneyManager _moneyManager;
+
     // Day Timer
     DayTimer _dayTimer;
 
@@ -24,6 +27,7 @@ public class MainGameManager : Singleton<MainGameManager>
     {
         // Send the first customer
         _customerManager = CustomerManager.Instance;
+        _moneyManager = MoneyManager.Instance;
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();
@@ -41,6 +45,11 @@ public class MainGameManager : Singleton<MainGameManager>
             FinishOrder();
         }
         
+    }
+
+    public bool isEOD()
+    {
+        return _dayTimer.IsEOD();
     }
 
     /// <summary>
@@ -75,6 +84,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _customerManager.LeaveCurrentCustomer(true, false);
 
         // Calculate money
+        _moneyManager.CalculateProfit();
 
         // Trigger animations
         GameState.SetValue(MainGameState.GAME_OVER);
@@ -92,10 +102,17 @@ public class MainGameManager : Singleton<MainGameManager>
             return;
         }
 
+        if (isEOD())
+        {
+            return;
+        }
+
+        // Calculate tips and money
+        _moneyManager.AddMoney(_customerManager.CurrentCustomerObject.GetComponent<CustomerBehavior>().PatiencePercentage.GetValue());
+
         // Send the next customer in 
         _customerManager.LeaveCurrentCustomer(false);
         _customerManager.SetSuccessfulOrder();
-        // Calculate tips and money
 
         // Get frenzy num
         _frenzy.AddFrenzyMeter();
@@ -110,6 +127,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy.BreakFrenzyMeter();
 
         // Calculate tips and money
+        _moneyManager.ThrowAwayFood();
     }
 
 }

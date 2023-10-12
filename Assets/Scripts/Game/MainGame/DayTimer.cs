@@ -29,6 +29,11 @@ public class DayTimer : MonoBehaviour
         _timeCounter = 0;
     }
 
+    public bool IsEOD()
+    {
+        return (_timeCounter <= 0);
+    }
+
     // Update is called once per frame
     void Update()
     {
