@@ -38,8 +38,6 @@ public class MainGameManager : Singleton<MainGameManager>
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("Huh");
-
             FinishOrder();
         }
         

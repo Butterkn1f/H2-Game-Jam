@@ -2456,6 +2456,7 @@ MonoBehaviour:
   _chatDisplayUI: {fileID: 1309769443}
   _chatListContainer: {fileID: 11400000, guid: eb5430641e97bfe4c8b493824eb59196, type: 2}
   _speakerListContainer: {fileID: 11400000, guid: 72ee3517c81eb8c47add64deaec93a62, type: 2}
+  _button: {fileID: 688955597423947852}
 --- !u!114 &1309769442
 MonoBehaviour:
   m_ObjectHideFlags: 0
