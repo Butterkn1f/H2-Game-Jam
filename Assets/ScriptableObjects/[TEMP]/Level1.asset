@@ -49,4 +49,8 @@ MonoBehaviour:
     MaxShapes: 5
     Ingredients: 000000000100000002000000
     AllowedShapes: 000000000100000003000000
-  IngredientCost: 0
+  DishCost: 10
+  IngredientCost: 3
+  RestaurantFees: 100
+  TwoStarMarker: 100
+  ThreeStarMarker: 300

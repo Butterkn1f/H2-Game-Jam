@@ -174,7 +174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.091}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 194}
+  m_AnchoredPosition: {x: -30, y: 200}
   m_SizeDelta: {x: 695.66, y: 1180.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47033143
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Total Revenue
+  m_text: Total Profit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
   m_sharedMaterial: {fileID: 4603788775580841073, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
@@ -1606,7 +1606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _background: {fileID: 8670361625930130284}
-  _paper: {fileID: 0}
+  _paper: {fileID: 47033141}
 --- !u!1 &487035105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2151,7 @@ GameObject:
   - component: {fileID: 573939393}
   - component: {fileID: 573939392}
   - component: {fileID: 573939391}
+  - component: {fileID: 573939396}
   m_Layer: 0
   m_Name: MainGameManager
   m_TagString: Untagged
@@ -2201,7 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f41d2dc21b4b34e9346a4a0a70aa0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DayDuration: 300
+  DayDuration: 20
   _clockHand: {fileID: 452866121}
 --- !u!114 &573939394
 MonoBehaviour:
@@ -2230,6 +2231,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1738890980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &573939396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573939390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c97394dd6d69ae4aa8fbbf6febaee10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Profit: 0
+  AmountEarned: 0
+  Tips: 0
+  IngredientFees: 0
+  WasteCost: 0
+  _maxTipPercentage: 0.75
+  NumStarsEarned: 0
 --- !u!1 &596267445
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,7 +4050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Food Cost
+  m_text: Restaurant Fees
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
   m_sharedMaterial: {fileID: 4603788775580841073, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
@@ -4423,7 +4443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Franchise Fee
+  m_text: Wasted Food
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
   m_sharedMaterial: {fileID: 4603788775580841073, guid: 6a5c668e9c9bc4a4089244de5b62055d, type: 2}
@@ -4640,7 +4660,7 @@ GameObject:
   - component: {fileID: 1584418380}
   - component: {fileID: 1584418379}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: Amount Earned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5987,7 +6007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &344334887451729886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8505,7 +8525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!223 &8670361625930130285
 Canvas:
   m_ObjectHideFlags: 0
