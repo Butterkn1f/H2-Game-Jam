@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: fc35e9fa7ccae8546b9c05056413ae44
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfebbb34ccf352498b0f625f6479b5f
+      internalID: 1463522035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3320ddc430d3545ba678d8a37445e7
+      internalID: -1019453990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50351b2db3ddb74692480d6c460d283
+      internalID: 828419020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54addf9456a014a408543359bbbcb852
+      internalID: -1297504449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c11acfd34045bf49b9f9e2790e49faa
+      internalID: -1232109372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_5
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1218
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cf764c8c661fb43aeedda9776e2197
+      internalID: 368840432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac9d12ef38e15841a9eebeba29d65fb
+      internalID: -1362680819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ea3ee49ba2d3e46a0d4340b0f7d799
+      internalID: -73143589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517e8abb8ab01a140b62afb55e678281
+      internalID: -1340918092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a531a930aa0c2d5458cf573bcf34b33b
+      internalID: 1386065861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_10
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab486fb33a0dde4f87e1a5a6703e0e1
+      internalID: 2023165551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_11
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1015
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41bb62029378a442bb0e45940a55ec0
+      internalID: -1117318227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366bb6c5f336c8549b93b640a307cd09
+      internalID: 865666263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_13
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02c2c9e7ea9b7b4da19ca35ff568578
+      internalID: -1651034016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_14
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5e833bf699e4149bd504857f112780
+      internalID: 1060849563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_15
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9b963662bf2fa44981895a9a3186c3
+      internalID: 2051102399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_16
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6aa6758e6a5e4644868cee78d2830f4
+      internalID: -1070579744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_17
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 812
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d34c3be82edbb4cb2b9b560dad50c3
+      internalID: -1871732219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627f559dbdb5ecc4581f850d64d2efb0
+      internalID: 1430421858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7a964a1a6871249bc64a1e88de04bc
+      internalID: 1801830836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_20
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79982f93e2b1db04590e842c5b655123
+      internalID: -1723156495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_21
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912483aaa5e3d874c8a8936e66514cbb
+      internalID: -658941067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_22
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a0df10c472f9247bd9a39e14d16cd8
+      internalID: 1904802627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_23
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 609
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6262389259939a459afc053676407d0
+      internalID: 1618964567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9136ceedbd120264391317d6034a31db
+      internalID: -2031191135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_25
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e458957da26946b481c696efcf44d
+      internalID: 1524494148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7bd01eeceddbe4a8f037992e10588b
+      internalID: 90398821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_27
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2040604451de94a89e0c3626a4c5db
+      internalID: -1957585755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_28
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca1dbf82b5a1e649a60fa7013f2f74f
+      internalID: 1226991220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_29
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 406
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97053b4096528ff4286ceea89b5fa109
+      internalID: -63755777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ea3f294c3629f4485d621823b1047c
+      internalID: -1912140123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_31
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece546c63aa21744082c6631ffc5225b
+      internalID: -11813918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_32
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e6bd84b76a19b40aa1bc9201e22a6c
+      internalID: -1107668029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_33
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa1c5fc0412b8c4fbc7ef8eec17b9d9
+      internalID: 263731018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_34
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53277105f5f8a374da151f43e1c6c81d
+      internalID: -352852127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_35
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 203
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6e0e6be34e1ed4d8b1e38c09ccade3
+      internalID: -1167621708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5395c65ab5796a149a3b206cc44a6965
+      internalID: -44039805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_37
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44edee19add907446aec2d39d3c51aa5
+      internalID: -2055606643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_38
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aecd6fb60823484bacf10c10ec78442
+      internalID: -1755951123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_39
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 0
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dde8ce73b2a5924a827b52d2e843e40
+      internalID: -79185880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Guy_NPC_Animation 1_40
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70590f104f15e924da5a530f691286e3
+      internalID: -710870432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Koel_Guy_NPC_Animation 1_0: 1463522035
+      Koel_Guy_NPC_Animation 1_1: -1019453990
+      Koel_Guy_NPC_Animation 1_10: 2023165551
+      Koel_Guy_NPC_Animation 1_11: -1117318227
+      Koel_Guy_NPC_Animation 1_12: 865666263
+      Koel_Guy_NPC_Animation 1_13: -1651034016
+      Koel_Guy_NPC_Animation 1_14: 1060849563
+      Koel_Guy_NPC_Animation 1_15: 2051102399
+      Koel_Guy_NPC_Animation 1_16: -1070579744
+      Koel_Guy_NPC_Animation 1_17: -1871732219
+      Koel_Guy_NPC_Animation 1_18: 1430421858
+      Koel_Guy_NPC_Animation 1_19: 1801830836
+      Koel_Guy_NPC_Animation 1_2: 828419020
+      Koel_Guy_NPC_Animation 1_20: -1723156495
+      Koel_Guy_NPC_Animation 1_21: -658941067
+      Koel_Guy_NPC_Animation 1_22: 1904802627
+      Koel_Guy_NPC_Animation 1_23: 1618964567
+      Koel_Guy_NPC_Animation 1_24: -2031191135
+      Koel_Guy_NPC_Animation 1_25: 1524494148
+      Koel_Guy_NPC_Animation 1_26: 90398821
+      Koel_Guy_NPC_Animation 1_27: -1957585755
+      Koel_Guy_NPC_Animation 1_28: 1226991220
+      Koel_Guy_NPC_Animation 1_29: -63755777
+      Koel_Guy_NPC_Animation 1_3: -1297504449
+      Koel_Guy_NPC_Animation 1_30: -1912140123
+      Koel_Guy_NPC_Animation 1_31: -11813918
+      Koel_Guy_NPC_Animation 1_32: -1107668029
+      Koel_Guy_NPC_Animation 1_33: 263731018
+      Koel_Guy_NPC_Animation 1_34: -352852127
+      Koel_Guy_NPC_Animation 1_35: -1167621708
+      Koel_Guy_NPC_Animation 1_36: -44039805
+      Koel_Guy_NPC_Animation 1_37: -2055606643
+      Koel_Guy_NPC_Animation 1_38: -1755951123
+      Koel_Guy_NPC_Animation 1_39: -79185880
+      Koel_Guy_NPC_Animation 1_4: -1232109372
+      Koel_Guy_NPC_Animation 1_40: -710870432
+      Koel_Guy_NPC_Animation 1_5: 368840432
+      Koel_Guy_NPC_Animation 1_6: -1362680819
+      Koel_Guy_NPC_Animation 1_7: -73143589
+      Koel_Guy_NPC_Animation 1_8: -1340918092
+      Koel_Guy_NPC_Animation 1_9: 1386065861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

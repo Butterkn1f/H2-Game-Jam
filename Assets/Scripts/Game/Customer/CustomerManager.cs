@@ -9,9 +9,6 @@ using Common.DesignPatterns;
 /// <summary>
 /// This class manages the overall functions of the customers (as a whole)
 /// </summary>
-[RequireComponent(typeof(CustomerAnimation))]
-[RequireComponent(typeof(CustomerUI))]
-[RequireComponent(typeof(CustomerBehavior))]
 public class CustomerManager : Singleton<CustomerManager>
 {
     // A reference list of all the customers
@@ -21,18 +18,18 @@ public class CustomerManager : Singleton<CustomerManager>
     // TODO: Make this into an object pool pls
     public GameObject CurrentCustomerObject; // The current customer object
 
-    // Prefab for customer objects
-    [Tooltip("Customer prefab to be instantiated")]
-    [SerializeField] private GameObject _customerPrefab; // Get a reference for the customer prefab (to be instantiated)
-
     [Tooltip("Window parent object (so that it spawns where we want it to)")]
     [SerializeField] private GameObject _windowObject;
+
+    
 
 
     public void Start()
     {
         _currentCustomer = null;
         CurrentCustomerObject = null;
+
+        
     }
 
     /// <summary>
@@ -81,12 +78,12 @@ public class CustomerManager : Singleton<CustomerManager>
             }
         }
 
+        _currentCustomer = newCustomerData;
+
         // Spawn a new customer object
-        CurrentCustomerObject = Instantiate(_customerPrefab, _windowObject.transform);
+        CurrentCustomerObject = Instantiate(_currentCustomer.CustomerPrefab, _windowObject.transform);
 
         // Give it the correct data
-        _currentCustomer = newCustomerData;
-        CurrentCustomerObject.GetComponent<Image>().sprite = _currentCustomer.CharacterSprite;
 
         MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_PREPARE);
 

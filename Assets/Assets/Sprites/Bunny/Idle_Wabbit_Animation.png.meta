@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 992763b895deae44797f3a700b917357
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0123e47daeea384dbecd39503a6b3a1
+      internalID: -1269893130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9a2d436636689468a94cde27b1a2cd
+      internalID: 366566769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa11321ccce9a044b6c71c56a56710d
+      internalID: 459995648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded42e594b6a6647bb028e70882e14e
+      internalID: -649297835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f0a6789d244aa49930466b66cfdf7c
+      internalID: -2090681816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1842
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fac146742061c44aa5b3afda0244ff
+      internalID: -240876278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb4fe1f0cf39a747a9abaaac348063f
+      internalID: 744887661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746a01bd322a0454999b58d858f97318
+      internalID: -2057389496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2abbcf04d88bf0449bf710bf24f8b8a
+      internalID: 171538563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d008a6d7f8636664f8185a7986eeb8ff
+      internalID: 1770463365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4678dc7e144cb429503fefed0f3b9e
+      internalID: 1769317403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1535
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d706753d63861f14288b84e5da24e558
+      internalID: -1086159744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec1855759243044e8d331969e5a71c3
+      internalID: -779884513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0808c3557315c4598f2db06dbdbd50
+      internalID: 713881386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bb8c8ccb991e946ad32fb944f319e6
+      internalID: 812023798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ba3181150d8f4c9693c50bb2e11ac
+      internalID: -1396654077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75decc6eb22cb8f448e09ab0051daf23
+      internalID: -1812462556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1228
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf1c57747095ca42ab1045eecdeb85e
+      internalID: -531429074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f686dc219f6a149a66cf90f837d03a
+      internalID: -259861246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f56df15aa47864a85581a6463eff9f
+      internalID: 332157466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109411dbf810c5941b59fa282e1e0c4c
+      internalID: 2095335885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738da2688187baa4ca1ec65246fbd1dd
+      internalID: -2064021829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beefc165f6cbfa41b4ca5ffad8cebb9
+      internalID: 1855925570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 921
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1b743316e336d4aafb694a5df1f53b
+      internalID: -489055717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c891fd1a8301d04e8abf839b1bb416c
+      internalID: 1618299859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959a736603855a749918a4f3f5cf061e
+      internalID: 506625239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89884abb4feb22a4a956006e3db8ee89
+      internalID: 2120400989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc187c0ec894dd946a3e03859395ea30
+      internalID: 1050964962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabe4dc42a40ab34aaa863f8b0519a5b
+      internalID: -151957251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 614
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2198e7a9c8742cf4c8f5d305096c55bd
+      internalID: 1768988586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dd655df498ff94cb98b3e237fe4716
+      internalID: 1045541799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368892c2c17feed40995fffb599eb040
+      internalID: -1941641834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3155fdc5e5452e4ea1932a12570d62e
+      internalID: 1311398174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5025fba64e78b1f44ae60a659a11b268
+      internalID: -1514019032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaa0d42e3d971e4d8a1633e43155fe3
+      internalID: -1462536535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 307
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e83e35c5f173784abcd713354c3fed2
+      internalID: 860112863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5137cabf1186046b5d4a32bd769b82
+      internalID: 499291190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6803c86ad8586e146924ab6c75330023
+      internalID: 974929258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a876b4e2bfa4ef04287cc4a92375266c
+      internalID: 539617225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec53c910e2f95a4aac03114116fa924
+      internalID: 1697298474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c034d1266ce9e47a929b564fe2c349
+      internalID: -1798567898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Wabbit_Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bc73ced65f89646afe761277cad668
+      internalID: 1747884057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Idle_Wabbit_Animation_0: -1269893130
+      Idle_Wabbit_Animation_1: 366566769
+      Idle_Wabbit_Animation_10: 1769317403
+      Idle_Wabbit_Animation_11: -1086159744
+      Idle_Wabbit_Animation_12: -779884513
+      Idle_Wabbit_Animation_13: 713881386
+      Idle_Wabbit_Animation_14: 812023798
+      Idle_Wabbit_Animation_15: -1396654077
+      Idle_Wabbit_Animation_16: -1812462556
+      Idle_Wabbit_Animation_17: -531429074
+      Idle_Wabbit_Animation_18: -259861246
+      Idle_Wabbit_Animation_19: 332157466
+      Idle_Wabbit_Animation_2: 459995648
+      Idle_Wabbit_Animation_20: 2095335885
+      Idle_Wabbit_Animation_21: -2064021829
+      Idle_Wabbit_Animation_22: 1855925570
+      Idle_Wabbit_Animation_23: -489055717
+      Idle_Wabbit_Animation_24: 1618299859
+      Idle_Wabbit_Animation_25: 506625239
+      Idle_Wabbit_Animation_26: 2120400989
+      Idle_Wabbit_Animation_27: 1050964962
+      Idle_Wabbit_Animation_28: -151957251
+      Idle_Wabbit_Animation_29: 1768988586
+      Idle_Wabbit_Animation_3: -649297835
+      Idle_Wabbit_Animation_30: 1045541799
+      Idle_Wabbit_Animation_31: -1941641834
+      Idle_Wabbit_Animation_32: 1311398174
+      Idle_Wabbit_Animation_33: -1514019032
+      Idle_Wabbit_Animation_34: -1462536535
+      Idle_Wabbit_Animation_35: 860112863
+      Idle_Wabbit_Animation_36: 499291190
+      Idle_Wabbit_Animation_37: 974929258
+      Idle_Wabbit_Animation_38: 539617225
+      Idle_Wabbit_Animation_39: 1697298474
+      Idle_Wabbit_Animation_4: -2090681816
+      Idle_Wabbit_Animation_40: -1798567898
+      Idle_Wabbit_Animation_41: 1747884057
+      Idle_Wabbit_Animation_5: -240876278
+      Idle_Wabbit_Animation_6: 744887661
+      Idle_Wabbit_Animation_7: -2057389496
+      Idle_Wabbit_Animation_8: 171538563
+      Idle_Wabbit_Animation_9: 1770463365
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

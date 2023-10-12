@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: cda2d61b66f1d6f439d1ecf15acd13e1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3544e9018f8b2994e8b989197953155b
+      internalID: 209307838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fb471729bd93943b3f7f823a343d88
+      internalID: 475296828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc6c93cad191004ab71f225ad6df63a
+      internalID: -1602587157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c9254ba197b6748b88d58b43eb840e
+      internalID: -1189665537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1d8b4397c95ae41b8899714865976d
+      internalID: -1485554419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1224
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdef82a09622e14e87f4023913e6294
+      internalID: -2037014031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461c944eef9dd3747ab4deb42adb1012
+      internalID: -449701213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6281bd5d0763a544b892e827f8100cc
+      internalID: 1825587853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66787a0ef506eb4d81a72ac4edb6fab
+      internalID: 496155178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fb21d130fb8bd4d883d338d66e801f
+      internalID: 2068559434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f999845e895419468d6a9dae375e447
+      internalID: 53281189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1020
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9e651ab792498438954d8e15424ce0
+      internalID: 46038984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1311a9c75672ee14cb3c26b180c4e769
+      internalID: -502971588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a093cc8a2909f7844b3652b320eeadc6
+      internalID: -1006079978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eb108ee05753b4bb4de224b19c72ce
+      internalID: -465443989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6b8a054535cc44589e1cede3c45b02
+      internalID: 235281452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053a42e9aee075947b3c0e80bc455cf4
+      internalID: -143409654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 816
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0203097a95f75064a81f047120deebe3
+      internalID: 1370200417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54744a9086e94c747866f23754849743
+      internalID: 1638482799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7835daccb907584594aded7984af32d
+      internalID: -22029234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b89c58163594e8468df2ea1f4844760
+      internalID: -884539086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34dab2aa21ff6345b43da85bfee4f9a
+      internalID: -1517051327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379a2279a86a03a4a8640d810220f5f0
+      internalID: 1428591159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 612
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3177bc0f9bad0342be8a6a16e696906
+      internalID: -40663220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3c20b02bd9ff148a08872a47331100
+      internalID: -578492746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b3ca3eea9bf6c4997b4bef2b9321c7
+      internalID: 10009904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb0e0114adfde44786ce08557a297d7
+      internalID: 1335953938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ce1039bfc898342a151710e4404eea
+      internalID: -334975248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5237fcabb8e024ab3a483997be0fdf
+      internalID: 1128289659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 408
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0734fd30ad479cf4da5d3b3418956903
+      internalID: -633337982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01354e99b75390d44a1157c463b12d77
+      internalID: -828218695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9aa5568532bf14489977d7c177c8d33
+      internalID: -1152132157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc726a6b9a12114f853363bed954dc9
+      internalID: -1719863537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f4076dc8a61654686f2b9358750678
+      internalID: 907466295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c20aad0ee4f61d428fa56ee45f9c69f
+      internalID: -447619283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 204
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b2c659dcafd09469ed348e276713f9
+      internalID: 1918439889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda92cdf6fa1054438f832279f1fc72a
+      internalID: -46070610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422b011aa946e894d95deb9e1ac5cb09
+      internalID: -3662514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e145196ea6ba48f47ad8d7dbffd7c19b
+      internalID: 1232272864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61b5a3e61f734344b107ced49fd982c
+      internalID: 793311818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koel_Girl_NPC_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6295f009af9184b4e90c4a44d63fa97e
+      internalID: -1582553921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Koel_Girl_NPC_Animation_0: 209307838
+      Koel_Girl_NPC_Animation_1: 475296828
+      Koel_Girl_NPC_Animation_10: 53281189
+      Koel_Girl_NPC_Animation_11: 46038984
+      Koel_Girl_NPC_Animation_12: -502971588
+      Koel_Girl_NPC_Animation_13: -1006079978
+      Koel_Girl_NPC_Animation_14: -465443989
+      Koel_Girl_NPC_Animation_15: 235281452
+      Koel_Girl_NPC_Animation_16: -143409654
+      Koel_Girl_NPC_Animation_17: 1370200417
+      Koel_Girl_NPC_Animation_18: 1638482799
+      Koel_Girl_NPC_Animation_19: -22029234
+      Koel_Girl_NPC_Animation_2: -1602587157
+      Koel_Girl_NPC_Animation_20: -884539086
+      Koel_Girl_NPC_Animation_21: -1517051327
+      Koel_Girl_NPC_Animation_22: 1428591159
+      Koel_Girl_NPC_Animation_23: -40663220
+      Koel_Girl_NPC_Animation_24: -578492746
+      Koel_Girl_NPC_Animation_25: 10009904
+      Koel_Girl_NPC_Animation_26: 1335953938
+      Koel_Girl_NPC_Animation_27: -334975248
+      Koel_Girl_NPC_Animation_28: 1128289659
+      Koel_Girl_NPC_Animation_29: -633337982
+      Koel_Girl_NPC_Animation_3: -1189665537
+      Koel_Girl_NPC_Animation_30: -828218695
+      Koel_Girl_NPC_Animation_31: -1152132157
+      Koel_Girl_NPC_Animation_32: -1719863537
+      Koel_Girl_NPC_Animation_33: 907466295
+      Koel_Girl_NPC_Animation_34: -447619283
+      Koel_Girl_NPC_Animation_35: 1918439889
+      Koel_Girl_NPC_Animation_36: -46070610
+      Koel_Girl_NPC_Animation_37: -3662514
+      Koel_Girl_NPC_Animation_38: 1232272864
+      Koel_Girl_NPC_Animation_39: 793311818
+      Koel_Girl_NPC_Animation_4: -1485554419
+      Koel_Girl_NPC_Animation_40: -1582553921
+      Koel_Girl_NPC_Animation_5: -2037014031
+      Koel_Girl_NPC_Animation_6: -449701213
+      Koel_Girl_NPC_Animation_7: 1825587853
+      Koel_Girl_NPC_Animation_8: 496155178
+      Koel_Girl_NPC_Animation_9: 2068559434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

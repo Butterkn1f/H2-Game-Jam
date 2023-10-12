@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: f9fc1dea81daa5f4da27163778aad857
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f16faf971efcd419c08014b4713951
+      internalID: 1687022562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3af5d7b6f363a46bf13e7a8294eac9
+      internalID: 948652912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73f626a1823caf4fbca0b6f6123e8df
+      internalID: -1090375539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8baae9a3394ff8a4f95a5ddeb4a05b5e
+      internalID: -811945381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c248776de73c14c9a29c407683a57c
+      internalID: 1054840748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1836
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92fce38450ef3a4c8723f2f32770eab
+      internalID: -2024896734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a130fd8123def41a46f531db366153
+      internalID: 880419282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dad51104af3a874e8e32dac90e4ece0
+      internalID: -1305843506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a2871612a757a46911850e6aff4036
+      internalID: 145685159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d137c6e5ccab0c49be321704e19722f
+      internalID: -539339574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5f6fbe91da2954a82df32f653ecab7
+      internalID: -1001220855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1530
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507739e42d4ccf8449c0b837a622d075
+      internalID: -2088122003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d64a0469c2e1841a49656e37c86a96
+      internalID: -38936790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d77dce77d8df54b895d8396f2e4ca1
+      internalID: 362100506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82134d3c2d0ac34d817c45239a22da9
+      internalID: 1378542277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19405e43edda4f442886ea6f3b4c7bae
+      internalID: -605322542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1536f4917110634dad359de6f46caa8
+      internalID: 1432411165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1224
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664d000771108604cb2e2c941e89e232
+      internalID: -927108764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018a03b10f57d974288ed737870b2fe7
+      internalID: 569124546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465804d2004bfbe429f70eba026395f0
+      internalID: -2007689538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b0d028c65566d499c98b568400d1c7
+      internalID: -1105436534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f917bf10804a55c43afa7b5baf2c10f7
+      internalID: -352622538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd267d8f7d92e34e842b6371b4bac9f
+      internalID: -472370828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 918
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab3c576be13fe5419bdcffa1922a442
+      internalID: -241127423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f63ec58467357240987b5a032cee848
+      internalID: 2059611111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72019d6093b3ae74cb30731043ffc8d3
+      internalID: -750284390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dce15fb813138b46a4bdc29e0901029
+      internalID: 646015225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9a631c3981a654081c52ff79b8b9af
+      internalID: 1647394714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c26fbc3649e0b4e8534bb7c1c985fd
+      internalID: 1375276474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 612
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91919fe2493f3ac40b7bba1b02af9f80
+      internalID: -160913943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3923357774862254383bfb8b74a260a5
+      internalID: 1218610704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3f5149b2ccead40a712519c848bb6f
+      internalID: -209899000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9145d111023824db32488fc97e2b31
+      internalID: -111254137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af4b93be5aab784c91ff243a09ff18c
+      internalID: -1618172567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba309c69c99d3a649b6fb1ad4fc98c9a
+      internalID: 256520098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 306
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ab64aa56cfa5443903442552f0b675
+      internalID: -2062199871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a68d60bdd156b6478594a5ad0507684
+      internalID: -790983570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764a99f3e8d13d849969a5892a88ccba
+      internalID: -1859821014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8049c6bacb89e814aa91f2d6ab2e660a
+      internalID: 1895783724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8418c871898a55848ae5efe3cd79dff4
+      internalID: -1146566364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeff05badc0de834f8f1636b0250a6b9
+      internalID: -1845828112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frenzy_Wabbit_Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 327
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbc580f3964a55428101bd126fb269e
+      internalID: -1032468078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Frenzy_Wabbit_Animation_0: 1687022562
+      Frenzy_Wabbit_Animation_1: 948652912
+      Frenzy_Wabbit_Animation_10: -1001220855
+      Frenzy_Wabbit_Animation_11: -2088122003
+      Frenzy_Wabbit_Animation_12: -38936790
+      Frenzy_Wabbit_Animation_13: 362100506
+      Frenzy_Wabbit_Animation_14: 1378542277
+      Frenzy_Wabbit_Animation_15: -605322542
+      Frenzy_Wabbit_Animation_16: 1432411165
+      Frenzy_Wabbit_Animation_17: -927108764
+      Frenzy_Wabbit_Animation_18: 569124546
+      Frenzy_Wabbit_Animation_19: -2007689538
+      Frenzy_Wabbit_Animation_2: -1090375539
+      Frenzy_Wabbit_Animation_20: -1105436534
+      Frenzy_Wabbit_Animation_21: -352622538
+      Frenzy_Wabbit_Animation_22: -472370828
+      Frenzy_Wabbit_Animation_23: -241127423
+      Frenzy_Wabbit_Animation_24: 2059611111
+      Frenzy_Wabbit_Animation_25: -750284390
+      Frenzy_Wabbit_Animation_26: 646015225
+      Frenzy_Wabbit_Animation_27: 1647394714
+      Frenzy_Wabbit_Animation_28: 1375276474
+      Frenzy_Wabbit_Animation_29: -160913943
+      Frenzy_Wabbit_Animation_3: -811945381
+      Frenzy_Wabbit_Animation_30: 1218610704
+      Frenzy_Wabbit_Animation_31: -209899000
+      Frenzy_Wabbit_Animation_32: -111254137
+      Frenzy_Wabbit_Animation_33: -1618172567
+      Frenzy_Wabbit_Animation_34: 256520098
+      Frenzy_Wabbit_Animation_35: -2062199871
+      Frenzy_Wabbit_Animation_36: -790983570
+      Frenzy_Wabbit_Animation_37: -1859821014
+      Frenzy_Wabbit_Animation_38: 1895783724
+      Frenzy_Wabbit_Animation_39: -1146566364
+      Frenzy_Wabbit_Animation_4: 1054840748
+      Frenzy_Wabbit_Animation_40: -1845828112
+      Frenzy_Wabbit_Animation_41: -1032468078
+      Frenzy_Wabbit_Animation_5: -2024896734
+      Frenzy_Wabbit_Animation_6: 880419282
+      Frenzy_Wabbit_Animation_7: -1305843506
+      Frenzy_Wabbit_Animation_8: 145685159
+      Frenzy_Wabbit_Animation_9: -539339574
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

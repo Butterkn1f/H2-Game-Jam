@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UniRx;
 using DG.Tweening;
 using TMPro;
+using UnityEditor;
 
 /// <summary>
 /// This class is in charge of the Frenzy Mode UI // Frenzy Bar
@@ -18,6 +19,7 @@ public class FrenzyUI : MonoBehaviour
 
     // Frenzy Mode Variables
     [SerializeField] private GameObject _frenzyBackground;
+    [SerializeField] private GameObject _frenzyRushlines;
     [SerializeField] private GameObject _frenzyText;
     [SerializeField] private GameObject _bunnyZoomImage; // The bunny image to pop up
 
@@ -27,6 +29,7 @@ public class FrenzyUI : MonoBehaviour
         GetComponent<Frenzy>()._frenzyPercentage.Value.Subscribe(x => UpdateFrenzyBar(x));
 
         _frenzyBackground.SetActive(false);
+        _frenzyRushlines.SetActive(false);
         _frenzyText.SetActive(false);
         _bunnyZoomImage.SetActive(false);
     }
@@ -40,16 +43,34 @@ public class FrenzyUI : MonoBehaviour
     {
         RectTransform rectTransform = _frenzyBackground.GetComponent<RectTransform>();
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, - (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2));
+        _frenzyRushlines.GetComponent<RectTransform>().localScale = new Vector2(3, 3);
         _frenzyBackground.SetActive(true);
+        _frenzyRushlines.SetActive(true);
         rectTransform.DOAnchorPosY(0, 1.0f).SetEase(Ease.OutCubic);
+        Sequence seq = DOTween.Sequence();
+        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1, 1), 2.0f).SetEase(Ease.OutCubic));
+        seq.AppendCallback(() => FrenzyRushBob());
+        
+    }
+
+    public void FrenzyRushBob()
+    {
+        Sequence seq = DOTween.Sequence();
+        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1.25f, 1.25f), 1.0f));
+        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1f, 1f), 1.0f));
+        seq.SetLoops(-1);
     }
 
     private void FrenzyBackgroundOutro()
     {
+        DOTween.Kill(_frenzyRushlines);
         RectTransform rectTransform = _frenzyBackground.GetComponent<RectTransform>();
         Sequence seq = DOTween.Sequence();
         seq.Append(rectTransform.DOAnchorPosY(- (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
+        seq.Join(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(3, 3), 1.0f).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _frenzyBackground.SetActive(false));
+        seq.AppendCallback(() => _frenzyRushlines.SetActive(false));
+
     }
 
     private void FrenzyTextIntro()
@@ -77,7 +98,9 @@ public class FrenzyUI : MonoBehaviour
         _bunnyZoomImage.SetActive(true);
         Sequence seq = DOTween.Sequence();
         seq.Append(rectTransform.DOAnchorPosY(350, 1.0f).SetEase(Ease.OutCubic));
-        seq.AppendInterval(0.5f);
+        seq.AppendCallback(() => _bunnyZoomImage.GetComponent<Animator>().SetTrigger("Frenzy"));
+        seq.AppendCallback(() => _bunnyZoomImage.GetComponent<Animator>().ResetTrigger("Frenzy"));
+        seq.AppendInterval(1.0f);
         seq.Append(rectTransform.DOAnchorPosY(-(_bunnyZoomImage.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _bunnyZoomImage.SetActive(false));
     }

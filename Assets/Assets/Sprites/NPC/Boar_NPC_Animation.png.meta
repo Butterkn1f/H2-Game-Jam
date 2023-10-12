@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 1375e481624c1604ebfb0caef9924ed9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2c5304aa421904db1598792b3a21a7
+      internalID: 1371716716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394bc55eef4169a4d87df94e318bc8ec
+      internalID: 1861601547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727dbe7000b3bfe428c975f2c01e363f
+      internalID: 109444501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572630515b0eaa74c86cc119051002dc
+      internalID: 1009033032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696b3133a4365dc4da5dea65b0024ead
+      internalID: -1687965986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1140
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8383b9ae1128140a6498a81a66faf2
+      internalID: 2002100210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c878c988d70c8f4e9ad124f40769225
+      internalID: 1973724734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c15460ae81e2874e8bd581cff3af255
+      internalID: -300416342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5dffd1fbeeb3c47a365e753d46e5a2
+      internalID: 1629668998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e934a529eb069ef45a28712ed63a69df
+      internalID: 1593218100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5a09fc132c2eb4c86301adf2c34d2e
+      internalID: -794845033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 950
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8f3432b53db72438608310f6c8652c
+      internalID: 813831536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdd67d929a8eb94bbd240080b2e78dc
+      internalID: 476216134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd90f3500832f642919b31051fd0250
+      internalID: -2089056012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a357775bfcbc384b8b033a01f5f84b8
+      internalID: -922676856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e2d6a9577f76840a3e14421160b129
+      internalID: 955425670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b1dd7bb72486b418c66fe423c8a49d
+      internalID: 1743575815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 760
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d4693e1abc90144b3f07ee66e735b0
+      internalID: -1459292032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1c89cc9a427784fb3adbdea6556a50
+      internalID: 723940033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f1fc0625a9ebf43b62cb8c45ed78e9
+      internalID: 1880388418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1943c485f6452e94eaf87a907f596f8f
+      internalID: -104449885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9774f4d28fd812418cb2f41b566ef6e
+      internalID: -1943192835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8807575333f3dfd4aa40f82f67aa5978
+      internalID: -1492045753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 570
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ba78728e7f8d84887969f18224f4af
+      internalID: 867292696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63079c0b2e28654baa76f8e37178cd7
+      internalID: -446608267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b12c302a6aacb4aa0c96e435936be8
+      internalID: -1303486671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ad33c1efd66cc41ba9841fce46528c
+      internalID: 501461736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f033c14947c84d49b25ea37bde6cdc7
+      internalID: 72046007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26993628727c63247b643a3137f6c6d1
+      internalID: -607386683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 380
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e599b3bea4d55564ba2d596b16c8a6b5
+      internalID: 1925382570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a129b7f6e7d2bc48a7f94b96858a6c4
+      internalID: 1347389045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f7491a88e7dd84084d56a9f649b481
+      internalID: 905462179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8919c186354f9a4ba30ceec4a55d552
+      internalID: 1331924689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe736cbc35d5de438495b2e93ec2714
+      internalID: -359408583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8288ea3cf7f8264eaf10e73f140e702
+      internalID: 1245973353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 190
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d44c242bf885b4d964adfd3db1d8f7
+      internalID: 110447638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af3032cc75b0364889c35e5dcc6899d
+      internalID: 1426548791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 0
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c637d4549d3f9940b80c800a7ba36d8
+      internalID: 1124340586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03eafffaf87f94f4c854133116cbeed6
+      internalID: -1898144238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 0
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943c3fe32c79ade49b0b59427b08e4ac
+      internalID: 1567203005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_NPC_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 249
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f8a322c47a75f47858d954cc535a59
+      internalID: -903248487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boar_NPC_Animation_0: 1371716716
+      Boar_NPC_Animation_1: 1861601547
+      Boar_NPC_Animation_10: -794845033
+      Boar_NPC_Animation_11: 813831536
+      Boar_NPC_Animation_12: 476216134
+      Boar_NPC_Animation_13: -2089056012
+      Boar_NPC_Animation_14: -922676856
+      Boar_NPC_Animation_15: 955425670
+      Boar_NPC_Animation_16: 1743575815
+      Boar_NPC_Animation_17: -1459292032
+      Boar_NPC_Animation_18: 723940033
+      Boar_NPC_Animation_19: 1880388418
+      Boar_NPC_Animation_2: 109444501
+      Boar_NPC_Animation_20: -104449885
+      Boar_NPC_Animation_21: -1943192835
+      Boar_NPC_Animation_22: -1492045753
+      Boar_NPC_Animation_23: 867292696
+      Boar_NPC_Animation_24: -446608267
+      Boar_NPC_Animation_25: -1303486671
+      Boar_NPC_Animation_26: 501461736
+      Boar_NPC_Animation_27: 72046007
+      Boar_NPC_Animation_28: -607386683
+      Boar_NPC_Animation_29: 1925382570
+      Boar_NPC_Animation_3: 1009033032
+      Boar_NPC_Animation_30: 1347389045
+      Boar_NPC_Animation_31: 905462179
+      Boar_NPC_Animation_32: 1331924689
+      Boar_NPC_Animation_33: -359408583
+      Boar_NPC_Animation_34: 1245973353
+      Boar_NPC_Animation_35: 110447638
+      Boar_NPC_Animation_36: 1426548791
+      Boar_NPC_Animation_37: 1124340586
+      Boar_NPC_Animation_38: -1898144238
+      Boar_NPC_Animation_39: 1567203005
+      Boar_NPC_Animation_4: -1687965986
+      Boar_NPC_Animation_40: -903248487
+      Boar_NPC_Animation_5: 2002100210
+      Boar_NPC_Animation_6: 1973724734
+      Boar_NPC_Animation_7: -300416342
+      Boar_NPC_Animation_8: 1629668998
+      Boar_NPC_Animation_9: 1593218100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

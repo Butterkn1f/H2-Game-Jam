@@ -26,6 +26,16 @@ public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
         FrenzyEnabled.Value.Subscribe(enabled =>
         {
             DOTween.timeScale = enabled ? 1.5f : 1;
+
+            if (enabled)
+            {
+                AudioManager.Instance.PlayAudio(SoundUID.FRENZY_AUDIO, false, AudioManager.Instance.GetCurrentMusicTime() / 1.5f);
+            }
+            else
+            {
+                AudioManager.Instance.PlayAudio(SoundUID.MAIN_GAME_AUDIO, false, AudioManager.Instance.GetCurrentMusicTime() * 1.5f);
+
+            }
         }).AddTo(this);
     }
 
