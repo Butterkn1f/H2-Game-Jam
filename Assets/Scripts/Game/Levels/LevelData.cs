@@ -36,13 +36,15 @@ public class LevelData : ScriptableObject
 
     // Other information (delete if needed)
     [Tooltip("Amount to be removed when calculating revenue")]
-    public float IngredientCost = 0;
+    public float DishCost = 10;
+    [Tooltip("Amount to be removed when calculating revenue")]
+    public float IngredientCost = 3;
+    [Tooltip("Amount to be removed when calculating revenue")]
+    public float RestaurantFees = 100;
 
-    // Due to lack of time, will be saving values here.
-    // super super super bad but :(
-    [Header("Saved Values")]
-    public bool IsUnlocked = false;
-    [HideInInspector] public int StarsEarned = 0;
+    // Star benchmark
+    public float TwoStarMarker = 100;
+    public float ThreeStarMarker = 300;
 }
 #endregion
 

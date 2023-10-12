@@ -51,14 +51,14 @@ public class CustomerBehavior : MonoBehaviour
                 // Deactivate the update loop 
                 _activeBehaviour = false;
 
-                if (MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_WAIT)
+                if (MainGameManager.Instance.isEOD())
                 {
                     return;
                 }
 
                 // Tell the customer manager that the current customer should leave 
                 // Next customer will come in 
-                CustomerManager.Instance.LeaveCurrentCustomer();
+                CustomerManager.Instance.LeaveCurrentCustomer(false);
 
                 // Tell game that the customer left due to lack of patience
                 MainGameManager.Instance.BreakOrder();

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   LevelNumber: 1
-  LevelName: Singapore 1-1
+  LevelName: Level 1
   BackgroundImage: {fileID: 21300000, guid: c27c028ae1dcc3e4a86fd5342c4e22da, type: 3}
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
   ChatID: '#LVLTHREE'
@@ -49,6 +49,8 @@ MonoBehaviour:
     MaxShapes: 5
     Ingredients: 000000000100000002000000
     AllowedShapes: 000000000100000003000000
-  IngredientCost: 0
-  IsUnlocked: 1
-  StarsEarned: 0
+  DishCost: 10
+  IngredientCost: 3
+  RestaurantFees: 100
+  TwoStarMarker: 100
+  ThreeStarMarker: 300

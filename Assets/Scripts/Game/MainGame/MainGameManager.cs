@@ -17,6 +17,9 @@ public class MainGameManager : Singleton<MainGameManager>
     // Customer Manager
     CustomerManager _customerManager;
 
+    // Money Manager
+    MoneyManager _moneyManager;
+
     // Day Timer
     DayTimer _dayTimer;
 
@@ -34,6 +37,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _customerManager.SetCustomerList(LevelManager.Instance.CurrLevel.LevelLocation.CustomerList);
         DishManager.Instance.InitializeIngredientButtons();
         ChatGetter.Instance.StartChat(LevelManager.Instance.CurrLevel.ChatID);
+        _moneyManager = MoneyManager.Instance;
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();
@@ -48,11 +52,14 @@ public class MainGameManager : Singleton<MainGameManager>
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("Huh");
-
             FinishOrder();
         }
         
+    }
+
+    public bool isEOD()
+    {
+        return _dayTimer.IsEOD();
     }
 
     /// <summary>
@@ -84,9 +91,10 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy.BreakFrenzyMeter();
 
         // Customer should leave
-        _customerManager.LeaveCurrentCustomer(false);
+        _customerManager.LeaveCurrentCustomer(true, false);
 
         // Calculate money
+        _moneyManager.CalculateProfit();
 
         // Trigger animations
         GameState.SetValue(MainGameState.GAME_OVER);
@@ -104,10 +112,17 @@ public class MainGameManager : Singleton<MainGameManager>
             return;
         }
 
-        // Send the next customer in 
-        _customerManager.LeaveCurrentCustomer();
+        if (isEOD())
+        {
+            return;
+        }
 
         // Calculate tips and money
+        _moneyManager.AddMoney(_customerManager.CurrentCustomerObject.GetComponent<CustomerBehavior>().PatiencePercentage.GetValue());
+
+        // Send the next customer in 
+        _customerManager.LeaveCurrentCustomer(false);
+        _customerManager.SetSuccessfulOrder();
 
         // Get frenzy num
         _frenzy.AddFrenzyMeter();
@@ -122,6 +137,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy.BreakFrenzyMeter();
 
         // Calculate tips and money
+        _moneyManager.ThrowAwayFood();
     }
 
 }

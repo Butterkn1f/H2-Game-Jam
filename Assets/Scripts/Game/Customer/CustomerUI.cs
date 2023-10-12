@@ -32,6 +32,7 @@ public class CustomerUI : MonoBehaviour
 
     // UI elements
     [SerializeField] private GameObject _feelingBubble;
+    [SerializeField] private Image _patienceMeter;
     [SerializeField] private Image _currentMoodImage;
     private CustomerMood _currentMood;
 
@@ -60,15 +61,22 @@ public class CustomerUI : MonoBehaviour
     }
 
     // Outro animation
-    public void OutroAnim()
+    public void OutroFoodAnim()
+    {
+        _isActive = false;
+
+        Sequence introSequence = DOTween.Sequence();
+        introSequence.Append(_foodBubble.GetComponent<RectTransform>().DOScale(1.25f, 0.1f));
+        introSequence.Append(_foodBubble.GetComponent<RectTransform>().DOScale(0, 0.25f));
+    }
+
+    public void OutroEmotionAnim()
     {
         _isActive = false;
 
         Sequence introSequence = DOTween.Sequence();
         introSequence.Append(_feelingBubble.GetComponent<RectTransform>().DOScale(1.25f, 0.1f));
-        introSequence.Join(_foodBubble.GetComponent<RectTransform>().DOScale(1.25f, 0.1f));
         introSequence.Append(_feelingBubble.GetComponent<RectTransform>().DOScale(0, 0.25f));
-        introSequence.Join(_foodBubble.GetComponent<RectTransform>().DOScale(0, 0.25f));
     }
 
     private void SetMoodImage(float patiencePercentage)
@@ -80,21 +88,27 @@ public class CustomerUI : MonoBehaviour
 
         CustomerMood _previousMood = _currentMood;
 
+        _patienceMeter.fillAmount = patiencePercentage;
+
         if (patiencePercentage > 0.66)
         {
             _currentMood = CustomerMood.HAPPY;
+            _patienceMeter.color = new Color(0.42f,0.89f,0.24f);
         }
         else if (patiencePercentage > 0.33)
         {
             _currentMood = CustomerMood.NEUTRAL;
+            _patienceMeter.color = new Color(0.95f, 0.69f, 0.26f);
         }
         else if (patiencePercentage > 0.05)
         {
             _currentMood = CustomerMood.ANGRY;
+            _patienceMeter.color = new Color(0.98f, 0.2f, 0.01f);
         }
         else
         {
             _currentMood = CustomerMood.VERY_ANGRY;
+            _patienceMeter.color = new Color(0.98f, 0.2f, 0.01f);
         }
 
         if (_currentMood != _previousMood)
@@ -109,6 +123,19 @@ public class CustomerUI : MonoBehaviour
 
         _currentMoodImage.sprite = _moodEmojis.Where(x => x.Mood == _currentMood).Select(x => x.Emoji).FirstOrDefault();
         
+    }
+
+    public void SetHeart()
+    {
+        _currentMood = CustomerMood.LOVE;
+        _currentMoodImage.sprite = _moodEmojis.Where(x => x.Mood == _currentMood).Select(x => x.Emoji).FirstOrDefault();
+        RectTransform _feelingBubbleRectTransform = _feelingBubble.GetComponent<RectTransform>();
+        Sequence shakeSequence = DOTween.Sequence();
+        _patienceMeter.gameObject.SetActive(false);
+
+        // TODO: make this more impact
+        shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.5f, 0.2f).SetEase(Ease.OutCubic));
+        shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.0f, 0.2f).SetEase(Ease.InCubic));
     }
 }
 
