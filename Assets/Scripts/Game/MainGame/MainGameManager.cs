@@ -39,9 +39,7 @@ public class MainGameManager : Singleton<MainGameManager>
         {
             FinishOrder();
         }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-        }
+        
     }
 
     /// <summary>
