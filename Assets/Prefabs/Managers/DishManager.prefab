@@ -45,7 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dishItemPrefab: {fileID: 2860153864162391233, guid: 9e6f12520b4007c42aba48fe1e037eb1, type: 3}
+  _ingredientItemPrefab: {fileID: 2860153864162391233, guid: 928f1ac2483183441b8f4c2839c9b807, type: 3}
   _tableParentTransform: {fileID: 0}
+  _ingredientButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Ingredients:
   - NormalSprite: {fileID: 21300000, guid: e343df0d06912054693288f8f48377af, type: 3}
     FrenzySprite: {fileID: 21300000, guid: 09285a01ec81c43419a8be9305ca2aff, type: 3}
@@ -64,17 +70,17 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: 7bf8b30c96cb2ee4f95ff4aa0c80348a, type: 3}
     MinShapes: 4
     MaxShapes: 5
-    Ingredients: 
+    Ingredients: 000000000100000002000000
     AllowedShapes: 000000000100000003000000
   - Name: Carrot Cake
     Sprite: {fileID: 21300000, guid: f0cad740376d96a49a89e673fbbd64aa, type: 3}
     MinShapes: 2
     MaxShapes: 3
-    Ingredients: 
+    Ingredients: 0000000003000000
     AllowedShapes: 0000000002000000
   - Name: Satay
     Sprite: {fileID: 21300000, guid: 28d7ebfd7dfb08541aa014dd2409b942, type: 3}
     MinShapes: 2
     MaxShapes: 2
-    Ingredients: 
+    Ingredients: 0300000001000000
     AllowedShapes: 0100000002000000

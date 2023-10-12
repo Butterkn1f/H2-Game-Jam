@@ -17,8 +17,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     [SerializeField] private TemplateReviewPanel _templateReviewPanel;
 
     [SerializeField] private Canvas _templateCanvas;
-
-    [SerializeField] private Gradient _frenzyColor;
     #endregion
 
     private GestureTemplates _templates => GestureTemplates.Get();
@@ -73,11 +71,13 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     {
         if (_state == RecognizerState.RECOGNITION)
         {
+            MainGameManager.Instance.GameState.SetValue(MainGameState.DEBUG);
             _templateCanvas.gameObject.SetActive(true);
             SetupState(RecognizerState.TEMPLATE);
         }
         else
         {
+            MainGameManager.Instance.GameState.SetValue(MainGameState.NONE);
             _templateCanvas.gameObject.SetActive(false);
             SetupState(RecognizerState.RECOGNITION);
         }
@@ -95,14 +95,16 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 
         // If state is not recognition, subscribe to space check to invoke draw finished
         _drawManager.SubscribeDrawFinished(state != RecognizerState.RECOGNITION);
-
-        if (state == RecognizerState.TEMPLATE_REVIEW)
+        if (MainGameManager.Instance.GameState.GetValue() == MainGameState.DEBUG)
         {
-            DrawManager.Instance.SubscribePressEvents(false);
-        }
-        else
-        {
-            DrawManager.Instance.SubscribePressEvents(true);
+            if (state == RecognizerState.TEMPLATE_REVIEW)
+            {
+                DrawManager.Instance.SubscribePressEvents(false);
+            }
+            else
+            {
+                DrawManager.Instance.SubscribePressEvents(true);
+            }
         }
         _drawManager.ResetDrawing();
     }
@@ -126,24 +128,13 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
     {
         //  (string, float) result = _dollarOneRecognizer.DoRecognition(points, 64, _templates.GetTemplates());
         (string, float) result = _currentRecognizer.DoRecognition(points, 64, _templates.RawTemplates);
-        Debug.Log($"Recognized: {result.Item1}, Distance: {result .Item2}");
+        //Debug.Log($"Recognized: {result.Item1}, Distance: {result .Item2}");
 
         Shape shape = null;
         lineSequence = DOTween.Sequence();
         Color2 currColor = _drawManager._lineObject.GetCurrentColor2();
 
-        if (Frenzy.Instance.FrenzyEnabled.GetValue())
-        {
-            // Correct no matter what is drawn
-            // Blend from default to frenzy line's color
-            Color2 tarColor = new Color2(_frenzyColor.colorKeys[0].color, _frenzyColor.colorKeys[1].color);
-            lineSequence.Append(_drawManager._lineObject._lineRenderer
-                .DOColor(currColor, tarColor, 0.25f))
-                .AppendInterval(0.15f);
-
-            currColor = tarColor;
-        }
-        else if (result.Item2 <= 2)
+        if (result.Item2 <= 2 && !Frenzy.Instance.FrenzyEnabled.GetValue())
         {
             // Check for shape recognition
             ShapeType shapeType = (ShapeType)System.Enum.Parse(typeof(ShapeType), result.Item1);
@@ -176,6 +167,6 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 
     public void StopLineAnimation()
     {
-        lineSequence.Kill();
+        lineSequence?.Kill();
     }
 }

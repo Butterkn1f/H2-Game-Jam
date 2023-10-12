@@ -27,9 +27,13 @@ public class LevelData : ScriptableObject
     [Tooltip("Start of level chat ID")]
     public string ChatID;
 
-    // Available recipes in this level
-    // TO LI LIAN: add the level specific recipes in here 
-    
+    [Header("Cooking")]
+    [Tooltip("Available ingredients in this level")]
+    public List<Ingredient> Ingredients = new List<Ingredient>();
+    [Tooltip("Available dishes in this level")]
+    public List<Dish> Dishes = new List<Dish>();
+
+
     // Other information (delete if needed)
     [Tooltip("Amount to be removed when calculating revenue")]
     public float IngredientCost = 0;

@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 5762072751070929748}
   - component: {fileID: 3757132353627152544}
   - component: {fileID: 5217705935883164029}
-  - component: {fileID: 7416495233000297603}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -596,18 +595,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!210 &7416495233000297603
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4738778581713981195}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_SortAtRoot: 0
 --- !u!1 &6720450824954474636
 GameObject:
   m_ObjectHideFlags: 0

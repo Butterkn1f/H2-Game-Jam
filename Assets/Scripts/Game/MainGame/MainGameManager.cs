@@ -59,7 +59,7 @@ public class MainGameManager : Singleton<MainGameManager>
     /// </summary>
     public void StartGameAnimation()
     {
-        GameState.SetValue(MainGameState.MAIN_GAME);
+        GameState.SetValue(MainGameState.GAME_START);
         
     }
 
@@ -86,7 +86,8 @@ public class MainGameManager : Singleton<MainGameManager>
     /// </summary>
     public void FinishOrder()
     {
-        if (GameState.GetValue() != MainGameState.MAIN_GAME)
+        // Todo: Change this to only run serve state
+        if (GameState.GetValue() == MainGameState.NONE || GameState.GetValue() == MainGameState.CHAT || GameState.GetValue() == MainGameState.GAME_WAIT || GameState.GetValue() == MainGameState.GAME_OVER)
         {
             return;
         }
@@ -108,8 +109,6 @@ public class MainGameManager : Singleton<MainGameManager>
         // Get frenzy num
         _frenzy.BreakFrenzyMeter();
 
-        DishManager.Instance.ResetDish();
-
         // Calculate tips and money
     }
 
@@ -119,6 +118,11 @@ public enum MainGameState
 {
     NONE,
     CHAT,
-    MAIN_GAME,
-    GAME_OVER
+    GAME_START,
+    GAME_PREPARE,
+    GAME_COOK,
+    GAME_SERVE, // Not used currently
+    GAME_WAIT,
+    GAME_OVER,
+    DEBUG
 }

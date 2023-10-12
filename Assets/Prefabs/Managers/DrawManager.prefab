@@ -49,15 +49,45 @@ MonoBehaviour:
   Shapes:
   - Type: 0
     Color: {r: 1, g: 0.94675124, b: 0, a: 1}
-    Sprite: {fileID: 21300000, guid: 2240f2ddf99d31941ba6be8a0dd77d1f, type: 3}
+    Sprite: {fileID: 21300000, guid: b2ee148cee44c9e44aef0f973c7d705b, type: 3}
   - Type: 2
     Color: {r: 1, g: 0.13757902, b: 0, a: 1}
-    Sprite: {fileID: 21300000, guid: 0f01a50a285b2604e92c0d0f81843970, type: 3}
+    Sprite: {fileID: 21300000, guid: 2fd671735dfd1074492d20bb5a03c735, type: 3}
   - Type: 3
     Color: {r: 0.040607452, g: 0, b: 1, a: 1}
-    Sprite: {fileID: 21300000, guid: fca6d3e9890e16145bbf66bd0e997ad0, type: 3}
+    Sprite: {fileID: 21300000, guid: dec6a0f78cf2ecb428b23dc345a21d91, type: 3}
   - Type: 1
     Color: {r: 0, g: 1, b: 0.25293803, a: 1}
-    Sprite: {fileID: 21300000, guid: ffaeff4943ae3a8469abb9a19ce43322, type: 3}
+    Sprite: {fileID: 21300000, guid: 6c0f779c14a85b845a509073b1f65b96, type: 3}
+  FrenzyColor:
+    serializedVersion: 2
+    key0: {r: 0, g: 1, b: 0.9538593, a: 1}
+    key1: {r: 0.43221045, g: 0.09718758, b: 0.990566, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
   IsOverDrawingArea: 0
   _lineObject: {fileID: 0}

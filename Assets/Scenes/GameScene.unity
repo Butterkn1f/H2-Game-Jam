@@ -179,6 +179,22 @@ PrefabInstance:
       propertyPath: _tableParentTransform
       value: 
       objectReference: {fileID: 5616682030411236315}
+    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
+      propertyPath: _ingredientButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 566328339}
+    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
+      propertyPath: _ingredientButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 169493927}
+    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
+      propertyPath: _ingredientButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 944136556}
+    - target: {fileID: 6548631266368549118, guid: 38949a6dfd0f0094cb4bd938c311d8a2, type: 3}
+      propertyPath: _ingredientButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 563874874}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -340,6 +356,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163536861}
   m_CullTransparentMesh: 1
+--- !u!114 &169493927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1368641284321943431, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+  m_PrefabInstance: {fileID: 1697503824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0e2808184415428a25f363c549e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &234703779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -751,30 +778,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5616682030411236318}
     - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.b
-      value: 0.9538593
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key0.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.b
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.g
-      value: 0.09718758
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
-      propertyPath: _frenzyColor.key1.r
-      value: 0.43221045
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363131248053303301, guid: f050fd4e33ef1e4499d6aae029d7e67b, type: 3}
       propertyPath: _templateModeButton
       value: 
       objectReference: {fileID: 5616682030411236319}
@@ -1159,6 +1162,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534873701}
   m_CullTransparentMesh: 1
+--- !u!114 &563874874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2602262722773266803, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+  m_PrefabInstance: {fileID: 1697503824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0e2808184415428a25f363c549e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &566328339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5558752241578205925, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+  m_PrefabInstance: {fileID: 1697503824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0e2808184415428a25f363c549e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &573939390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2181c0453741a9a47af400ed74803ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _frenzyBarDecreaseRate: 0.025
+  _frenzyBarDecreaseRate: 0
   _frenzyDuration: 10
 --- !u!114 &573939392
 MonoBehaviour:
@@ -1283,8 +1308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52c843637a507e469f565132c9f4a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentLevelData: {fileID: 11400000, guid: 45a287b894b98c54fb95a4357bf7fc1c, type: 2}
+  _levels:
+  - {fileID: 11400000, guid: 45a287b894b98c54fb95a4357bf7fc1c, type: 2}
+  - {fileID: 11400000, guid: 33a8701ac70815e4895353500abe1c06, type: 2}
   _backgroundImage: {fileID: 5663444356006050245}
+  _currLevelIndex: 0
 --- !u!114 &596267447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,6 +1601,17 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &944136556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4989926802666437005, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+  m_PrefabInstance: {fileID: 1697503824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0e2808184415428a25f363c549e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &954579647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2346,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 516317402}
     m_Modifications:
+    - target: {fileID: 565660457836476457, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+      propertyPath: m_Name
+      value: TL_IngredientButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135682791910744897, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+      propertyPath: m_Name
+      value: BL_IngredientButton
+      objectReference: {fileID: 0}
     - target: {fileID: 1571820387328394752, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
       propertyPath: m_Name
       value: IngredientsArea
@@ -2390,6 +2437,14 @@ PrefabInstance:
     - target: {fileID: 3200108302971359374, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342024270726464843, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+      propertyPath: m_Name
+      value: TR_IngredientButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989419474285177791, guid: 3faf1510160b7434883b73d7c61094e7, type: 3}
+      propertyPath: m_Name
+      value: BR_IngredientButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -35,10 +35,13 @@ public class MainGameUI : Singleton<MainGameUI>
             case MainGameState.CHAT:
                 _chatUI.OutroResult();
                 break;
-            case MainGameState.MAIN_GAME:
-                _gameAnimation.TruckOutroSequence(1.0f);
+            case MainGameState.GAME_START:
+                // TO Timothy: Any other way of doing this?
+                //_gameAnimation.TruckOutroSequence(1.0f);
                 break;
             case MainGameState.GAME_OVER:
+                break;
+            default:
                 break;
         }
 
@@ -47,11 +50,14 @@ public class MainGameUI : Singleton<MainGameUI>
             case MainGameState.CHAT:
                 _chatUI.SetUpChat();
                 break;
-            case MainGameState.MAIN_GAME:
+            case MainGameState.GAME_START:
                 _gameAnimation.TruckIntroSequence(1.0f);
                 break;
             case MainGameState.GAME_OVER:
+                _gameAnimation.TruckOutroSequence(1.0f);
                 _resultsUI.IntroResult(_gameAnimation.OutroSeqDuration);
+                break;
+            default:
                 break;
         }
 

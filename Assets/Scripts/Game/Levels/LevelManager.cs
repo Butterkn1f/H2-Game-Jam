@@ -7,18 +7,19 @@ using UnityEngine.UI;
 /// This class contains the overall behaviors for the level 
 /// This includes setting the whole level up, and other things (undecided)
 /// </summary>
-public class LevelManager : MonoBehaviour
+// TODO: Change this to singleton persistent
+public class LevelManager : Common.DesignPatterns.Singleton<LevelManager>
 {
     #region level-specific variables
-
-    [SerializeField] private LevelData _currentLevelData;
-
+    [SerializeField] private List<LevelData> _levels;
+    public LevelData CurrLevel => _levels[_currLevelIndex];
     #endregion
 
     #region level editable variables 
 
     [SerializeField] private Image _backgroundImage;
     private CustomerManager _customerManager;
+    [SerializeField] private int _currLevelIndex = 0; //TEMP serializefield Level index, wil be changing in level manager later
 
     #endregion
 
@@ -27,12 +28,15 @@ public class LevelManager : MonoBehaviour
     {
         // Set background image
         // Should be in a different class
-        _backgroundImage.sprite = _currentLevelData.BackgroundImage;
+        _backgroundImage.sprite = CurrLevel.BackgroundImage;
 
         _customerManager = CustomerManager.Instance;
-        _customerManager.SetCustomerList(_currentLevelData.LevelLocation.CustomerList);
+        _customerManager.SetCustomerList(CurrLevel.LevelLocation.CustomerList);
 
-        ChatGetter.Instance.StartChat(_currentLevelData.ChatID);
+        // TODO: Initialize dishes from level data here
+        DishManager.Instance.InitializeIngredientButtons();
+
+        ChatGetter.Instance.StartChat(CurrLevel.ChatID);
     }
 
     
