@@ -9,12 +9,13 @@ public class Truck : MonoBehaviour
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _drag = 0.5f;
     [SerializeField] private RectTransform parent;
+    [SerializeField] private List<LevelSelectNode> _nodes;
     //[SerializeField] private GameObject _hitEffect;
     //private Animator _animator;
     private Rigidbody2D _rigidbody;
-    private CompositeDisposable _pressDisposables;
-
     private Vector3? _targetPos;
+
+    [HideInInspector] public bool IsOverInfo = false;
 
     /// <summary>
     /// Initialize variables
@@ -26,16 +27,26 @@ public class Truck : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _targetPos = null;
 
+        SetSpawnLocation();
         SubscribePressFunctions();
+    }
+
+    private void SetSpawnLocation()
+    {
+        var currNode = _nodes.Find((n) => n._levelIndex == LevelManager.Instance._currLevelIndex);
+
+        if (currNode)
+        {
+            transform.position = currNode.transform.position;
+        }
     }
 
     private void SubscribePressFunctions()
     {
-        _pressDisposables = new CompositeDisposable();
         Observable.EveryUpdate()
-            .Where(_ => Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
+            .Where(_ => !IsOverInfo && (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)))
             .Subscribe(_ => MoveToMouseTap())
-            .AddTo(_pressDisposables);
+            .AddTo(this);
     }
 
     void Update()
@@ -45,7 +56,7 @@ public class Truck : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //_rigidbody.velocity = Vector3.zero;
+        _rigidbody.velocity = Vector3.zero;
         _targetPos = null;
         //_animator.SetBool("IsRunning", false);
     }
@@ -60,7 +71,6 @@ public class Truck : MonoBehaviour
     {
         var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _targetPos = new Vector3(pos.x, pos.y, 0);
-        Debug.Log(_targetPos);
 
         Vector3 destination = _targetPos.Value;
         float distance = Vector3.Distance(destination, transform.position);
