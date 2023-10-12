@@ -36,6 +36,9 @@ public class LevelManager : Common.DesignPatterns.Singleton<LevelManager>
         // TODO: Initialize dishes from level data here
         DishManager.Instance.InitializeIngredientButtons();
 
+        // Money
+        MoneyManager.Instance.SetLevelData(CurrLevel.DishCost, CurrLevel.RestaurantFees, CurrLevel.IngredientCost);
+
         ChatGetter.Instance.StartChat(CurrLevel.ChatID);
     }
 
