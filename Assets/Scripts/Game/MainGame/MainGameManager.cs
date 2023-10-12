@@ -4,6 +4,7 @@ using UnityEngine;
 
 using Common.DesignPatterns;
 using UniRx.Extention;
+using UnityEngine.UI;
 
 public class MainGameManager : Singleton<MainGameManager>
 {
@@ -22,12 +23,23 @@ public class MainGameManager : Singleton<MainGameManager>
     // Day Timer
     DayTimer _dayTimer;
 
+    [SerializeField] private Image _backgroundImage;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Set background image
+        // Should be in a different class
+        _backgroundImage.sprite = LevelManager.Instance.CurrLevel.BackgroundImage;
+
         // Send the first customer
         _customerManager = CustomerManager.Instance;
+        _customerManager.SetCustomerList(LevelManager.Instance.CurrLevel.LevelLocation.CustomerList);
+        DishManager.Instance.InitializeIngredientButtons();
+        ChatGetter.Instance.StartChat(LevelManager.Instance.CurrLevel.ChatID);
         _moneyManager = MoneyManager.Instance;
+        // Money
+        _moneyManager.SetLevelData(LevelManager.Instance.CurrLevel.DishCost, LevelManager.Instance.CurrLevel.RestaurantFees, LevelManager.Instance.CurrLevel.IngredientCost);
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();

@@ -45,6 +45,12 @@ public class LevelData : ScriptableObject
     // Star benchmark
     public float TwoStarMarker = 100;
     public float ThreeStarMarker = 300;
+
+    // Due to lack of time, will be saving values here.
+    // super super super bad but :(
+    [Header("Saved Values")]
+    public bool IsUnlocked = false;
+    [HideInInspector] public int StarsEarned = 0;
 }
 #endregion
 
