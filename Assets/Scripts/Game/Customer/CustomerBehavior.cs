@@ -58,7 +58,7 @@ public class CustomerBehavior : MonoBehaviour
 
                 // Tell the customer manager that the current customer should leave 
                 // Next customer will come in 
-                CustomerManager.Instance.LeaveCurrentCustomer();
+                CustomerManager.Instance.LeaveCurrentCustomer(false);
 
                 // Tell game that the customer left due to lack of patience
                 MainGameManager.Instance.BreakOrder();
