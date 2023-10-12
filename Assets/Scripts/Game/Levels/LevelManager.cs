@@ -23,20 +23,6 @@ public class LevelManager : Common.DesignPatterns.SingletonPersistent<LevelManag
     // Start is called before the first frame update
     void Start()
     {
-        // Set background image
-        // Should be in a different class
-        _backgroundImage.sprite = CurrLevel.BackgroundImage;
-
-        _customerManager = CustomerManager.Instance;
-        _customerManager.SetCustomerList(CurrLevel.LevelLocation.CustomerList);
-
-        // TODO: Initialize dishes from level data here
-        DishManager.Instance.InitializeIngredientButtons();
-
-        // Money
-        MoneyManager.Instance.SetLevelData(CurrLevel.DishCost, CurrLevel.RestaurantFees, CurrLevel.IngredientCost);
-
-        ChatGetter.Instance.StartChat(CurrLevel.ChatID);
     }
 
     public int GetLastUnlockedLevelIndex()

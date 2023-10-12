@@ -38,6 +38,8 @@ public class MainGameManager : Singleton<MainGameManager>
         DishManager.Instance.InitializeIngredientButtons();
         ChatGetter.Instance.StartChat(LevelManager.Instance.CurrLevel.ChatID);
         _moneyManager = MoneyManager.Instance;
+        // Money
+        _moneyManager.SetLevelData(LevelManager.Instance.CurrLevel.DishCost, LevelManager.Instance.CurrLevel.RestaurantFees, LevelManager.Instance.CurrLevel.IngredientCost);
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();
