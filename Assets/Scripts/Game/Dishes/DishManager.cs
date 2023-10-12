@@ -20,12 +20,8 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     private int _currItemIndex = -1;
     private List<ITableItem> _items = new List<ITableItem>(); // TODO: Object pool this
 
-    private LevelData _currLevel;
-
     private void Start()
     {
-        _currLevel = LevelManager.Instance.CurrLevel;
-
         SubscribeGameState();
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
         {
@@ -65,7 +61,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     {
         for(int i = 0; i < _currDish.Ingredients.Count; ++i)
         {
-            var ingredient = _currLevel.Ingredients.Find(ing => ing.Type == _currDish.Ingredients[i]);
+            var ingredient = LevelManager.Instance.CurrLevel.Ingredients.Find(ing => ing.Type == _currDish.Ingredients[i]);
             var sign = (i % 2 == 0) ? 1 : -1;
             var floatOffset = Random.Range(10f, 30f) * sign;
 
@@ -181,7 +177,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     public void RandomizeNewDish()
     {
-        _currDish = _currLevel.Dishes[Random.Range(0, _currLevel.Dishes.Count)];
+        _currDish = LevelManager.Instance.CurrLevel.Dishes[Random.Range(0, LevelManager.Instance.CurrLevel.Dishes.Count)];
         CustomerManager.Instance.CurrentCustomerObject.GetComponent<CustomerUI>().OrderImage.sprite = _currDish.Sprite;
 
         InitializeIngredients();
@@ -251,12 +247,12 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     public void InitializeIngredientButtons()
     {
-        for (int i = 0; i < _currLevel.Ingredients.Count; ++i)
+        for (int i = 0; i < LevelManager.Instance.CurrLevel.Ingredients.Count; ++i)
         {
-            _ingredientButtons[i].Initialize(_currLevel.Ingredients[i]);
+            _ingredientButtons[i].Initialize(LevelManager.Instance.CurrLevel.Ingredients[i]);
         }
 
-        for (int j = _currLevel.Ingredients.Count; j < _ingredientButtons.Count; ++j)
+        for (int j = LevelManager.Instance.CurrLevel.Ingredients.Count; j < _ingredientButtons.Count; ++j)
         {
             // For remaining indexes, set button to inactive
             _ingredientButtons[j].gameObject.SetActive(false);
