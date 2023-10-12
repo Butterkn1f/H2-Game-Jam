@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tracks:
   - UniqueIdentifier: 1
-    Type: 1
+    Type: 0
     Clip: {fileID: 8300000, guid: fd500eb51ffa9b948aaa89f1a0a41d66, type: 3}
     Loop: 0

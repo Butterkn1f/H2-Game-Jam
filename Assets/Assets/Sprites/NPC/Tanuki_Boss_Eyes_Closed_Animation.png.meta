@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 7635d7f27ffa0334ea9a61c7f903a68a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee62d4b9abde74448864308292dfc0a1
+      internalID: -594049139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c92a00f5405af4e8b4aeaee55a324b
+      internalID: 661349119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596c7128af8b62640ada918865fefb84
+      internalID: -1559251371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f068255070bec9440ac6d771210be2a4
+      internalID: -1629802538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b999f833fcb71fb4a9260ce44fe2cfbc
+      internalID: 473836214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b975117eb78e549bb4c5cdfce56efc
+      internalID: 23732916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a747854ea64203a44920bd3c5fca9622
+      internalID: 4231177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72298e1d189567f4090beae5c7685215
+      internalID: 1638876358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540f1e031570e3f488f059518f1e452e
+      internalID: -2057025728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f57227f5370dd94d899144636cdb339
+      internalID: 1808166234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f6c7d5fd1dd444db46ff6b9398d451
+      internalID: -1228633121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edc71cd53bcacf4ab45cc3c69855a5b
+      internalID: 2069084646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe9809b2dcbbc44f99e0c0a01ebd1ed
+      internalID: 668553294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d6ada055b56a74d9883a4c4bd8244c
+      internalID: -1560114146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb96fcff13baedf45a8745aef8df90fa
+      internalID: 243502009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a23ad31ce729c4781f85b400dfbb77
+      internalID: 1090189034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583590915aee11241ab47c918b87fe71
+      internalID: 65292681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8292ddccffdae0c498fcc885cc2d6db5
+      internalID: 274807126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75d74c0cd0a12f4189369251dcc34a8
+      internalID: 738084511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21472d9b61f9d364589dc510198bf92d
+      internalID: 131407012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614972baf2ff15a4984c4eb324670dca
+      internalID: -1950531162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17680b48beb42a840b8aa004dc5bf9ef
+      internalID: 107274843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66982a0dbe318784cb89de4d56de53d3
+      internalID: -1840865540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db027d541bcb22447a10b7818b9ab7f7
+      internalID: -1879869093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faa08ca5e91e55498044e3d3ec637e1
+      internalID: -782484150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9670f34b5a24b4fab662d7f281d5be
+      internalID: 1899053055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7a89fb5c3fe7f47b79b08b128f87e5
+      internalID: 496600855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb8259c86dce4a4787305e017614e6f
+      internalID: -26212952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b22a3d28ebf5374da6095aabd01ed8d
+      internalID: 1458050415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89a11d7993982846af44d1f37e127ea
+      internalID: -862441400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e99a46d597b345ac11587e2c6892e
+      internalID: -698012065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12add7daea6b98e41a57add276adb588
+      internalID: -344399703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382e9b0596dd3a4cb5ea0dcb40b5525
+      internalID: -103141895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf89c10197d3ee64c89feea1cdae5357
+      internalID: 276692678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11833927843f0234398f7fb56423e36e
+      internalID: -1142757796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4f0ef7bad596e47bedba60822221bc
+      internalID: -1195795132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e49d110854080e48b98b659d396768f
+      internalID: -1947004220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269d70d8a29071841add86e711ec14fc
+      internalID: -1216360468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b5e06dab9a1d14998ea638ef445e78
+      internalID: 65725872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f3d198936560848aed9f8c68b5411c
+      internalID: -219543077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Eyes_Closed_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d13709aeaec73f46a34f0f9688bab65
+      internalID: -152791181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tanuki_Boss_Eyes_Closed_Animation_0: -594049139
+      Tanuki_Boss_Eyes_Closed_Animation_1: 661349119
+      Tanuki_Boss_Eyes_Closed_Animation_10: -1228633121
+      Tanuki_Boss_Eyes_Closed_Animation_11: 2069084646
+      Tanuki_Boss_Eyes_Closed_Animation_12: 668553294
+      Tanuki_Boss_Eyes_Closed_Animation_13: -1560114146
+      Tanuki_Boss_Eyes_Closed_Animation_14: 243502009
+      Tanuki_Boss_Eyes_Closed_Animation_15: 1090189034
+      Tanuki_Boss_Eyes_Closed_Animation_16: 65292681
+      Tanuki_Boss_Eyes_Closed_Animation_17: 274807126
+      Tanuki_Boss_Eyes_Closed_Animation_18: 738084511
+      Tanuki_Boss_Eyes_Closed_Animation_19: 131407012
+      Tanuki_Boss_Eyes_Closed_Animation_2: -1559251371
+      Tanuki_Boss_Eyes_Closed_Animation_20: -1950531162
+      Tanuki_Boss_Eyes_Closed_Animation_21: 107274843
+      Tanuki_Boss_Eyes_Closed_Animation_22: -1840865540
+      Tanuki_Boss_Eyes_Closed_Animation_23: -1879869093
+      Tanuki_Boss_Eyes_Closed_Animation_24: -782484150
+      Tanuki_Boss_Eyes_Closed_Animation_25: 1899053055
+      Tanuki_Boss_Eyes_Closed_Animation_26: 496600855
+      Tanuki_Boss_Eyes_Closed_Animation_27: -26212952
+      Tanuki_Boss_Eyes_Closed_Animation_28: 1458050415
+      Tanuki_Boss_Eyes_Closed_Animation_29: -862441400
+      Tanuki_Boss_Eyes_Closed_Animation_3: -1629802538
+      Tanuki_Boss_Eyes_Closed_Animation_30: -698012065
+      Tanuki_Boss_Eyes_Closed_Animation_31: -344399703
+      Tanuki_Boss_Eyes_Closed_Animation_32: -103141895
+      Tanuki_Boss_Eyes_Closed_Animation_33: 276692678
+      Tanuki_Boss_Eyes_Closed_Animation_34: -1142757796
+      Tanuki_Boss_Eyes_Closed_Animation_35: -1195795132
+      Tanuki_Boss_Eyes_Closed_Animation_36: -1947004220
+      Tanuki_Boss_Eyes_Closed_Animation_37: -1216360468
+      Tanuki_Boss_Eyes_Closed_Animation_38: 65725872
+      Tanuki_Boss_Eyes_Closed_Animation_39: -219543077
+      Tanuki_Boss_Eyes_Closed_Animation_4: 473836214
+      Tanuki_Boss_Eyes_Closed_Animation_40: -152791181
+      Tanuki_Boss_Eyes_Closed_Animation_5: 23732916
+      Tanuki_Boss_Eyes_Closed_Animation_6: 4231177
+      Tanuki_Boss_Eyes_Closed_Animation_7: 1638876358
+      Tanuki_Boss_Eyes_Closed_Animation_8: -2057025728
+      Tanuki_Boss_Eyes_Closed_Animation_9: 1808166234
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

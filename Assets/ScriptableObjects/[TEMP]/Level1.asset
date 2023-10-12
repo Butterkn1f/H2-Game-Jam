@@ -16,7 +16,7 @@ MonoBehaviour:
   LevelName: Level 1
   BackgroundImage: {fileID: 21300000, guid: c27c028ae1dcc3e4a86fd5342c4e22da, type: 3}
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
-  ChatID: '#PEEPEE'
+  ChatID: '#LVLTHREE'
   Ingredients:
   - NormalSprite: {fileID: 21300000, guid: e343df0d06912054693288f8f48377af, type: 3}
     FrenzySprite: {fileID: 21300000, guid: 09285a01ec81c43419a8be9305ca2aff, type: 3}

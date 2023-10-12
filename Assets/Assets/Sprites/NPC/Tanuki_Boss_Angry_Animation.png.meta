@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 7fcb9b0c024cf0a4cae77c93f1e30ef1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d7062cc20665548a1a94d6fa5d8273
+      internalID: -1525236273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cccc9f2cb78a64896a4cc58ec8c4d2
+      internalID: 1038489205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922704a086790bf4ebddea61c3c39d5f
+      internalID: -212721401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4416af0454b0bd0488a3adbf02806c44
+      internalID: -1692216495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67563e3262fbfc04c865eed17d62fa6d
+      internalID: 1527698739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1494
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ad33b0e16d9be4193f0121f0300446
+      internalID: 1936433524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aae5580e9325b41bced3cb3518969a
+      internalID: 276330719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94d21246ee20542bee078b66cd74df
+      internalID: 1686254776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b750f7eb3fb9cb4fa7de8ae4a564e4d
+      internalID: -1655121683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0879afc061ae447b793cd7fae9538b
+      internalID: 1762919269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1428d7d56d3e6344922960cdc20bb8e
+      internalID: -1427371089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1245
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8374291ccabad049bffbb48287fb0e4
+      internalID: 777701655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c221d3655ec64999bee9b7881c847
+      internalID: 1169765155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7a8037d68a7374786a1c5942a529e7
+      internalID: -1284774068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f107533350cfcf42a1b58e23dbd7f83
+      internalID: -1255698837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac04f962c4f96244914782d96f6816f
+      internalID: 121896098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245269da98d3bdb43a49acc49834ed33
+      internalID: -564810483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 996
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf20fc401bc27bd41a21bfbcf32cd465
+      internalID: 1585872679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c95dda94565034b96a2a9dde00f0e9
+      internalID: 719420591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178ed1d46f849e64babd5bc4f6607d8c
+      internalID: -552575109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8235c3459ed054c831d098d483660d
+      internalID: -2021010520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1ccfa76b45d7f4283b47d282f74543
+      internalID: 1407447174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f39f18a545e1b8438dba5cef0d2bc47
+      internalID: 505346117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 747
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be80aa7940beb34d9c8627005887259
+      internalID: 1752462475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123fa366d8ef80345962c0097f1efd73
+      internalID: 1219210054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a89b78427468ea42b01bbad23f11e87
+      internalID: -713887181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138f0075e9f74664ea02de0750b89364
+      internalID: -858346608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651625e9dbcc23a4794f4d305539c1f6
+      internalID: 95959557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a5782bc92be9446ad88c50f8fa4021
+      internalID: -777505740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 498
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85c58066ac683142b7d0474a6778c4f
+      internalID: -1565494844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6c282cdc129054ba987f0df4db4ee1
+      internalID: 2130520362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa31d7590cba0c4f888f2f65f4f20ed
+      internalID: -498250772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4079cb8df47a1b8499f3fe6ed74db51c
+      internalID: -120384109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afd03dbda0c9e547af1ad26b1e77449
+      internalID: -814565478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4356ee9e7615994985e40078edd519a
+      internalID: 1137941772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 249
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab11ff627b584f943857ac65ab104666
+      internalID: -1297314144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee53040884e4e74ba38208bee80f39b
+      internalID: 723949941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1761f66549a701e4aa047b9fc7aeec11
+      internalID: 146468687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 0
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34176a0231da9824d9db8c78729128dc
+      internalID: -1511770878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 0
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8308820432ac8824993ad9152248e106
+      internalID: -1310347444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Angry_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 0
+        width: 201
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6799242f548502a41b1fb130cfa60033
+      internalID: 468604682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tanuki_Boss_Angry_Animation_0: -1525236273
+      Tanuki_Boss_Angry_Animation_1: 1038489205
+      Tanuki_Boss_Angry_Animation_10: -1427371089
+      Tanuki_Boss_Angry_Animation_11: 777701655
+      Tanuki_Boss_Angry_Animation_12: 1169765155
+      Tanuki_Boss_Angry_Animation_13: -1284774068
+      Tanuki_Boss_Angry_Animation_14: -1255698837
+      Tanuki_Boss_Angry_Animation_15: 121896098
+      Tanuki_Boss_Angry_Animation_16: -564810483
+      Tanuki_Boss_Angry_Animation_17: 1585872679
+      Tanuki_Boss_Angry_Animation_18: 719420591
+      Tanuki_Boss_Angry_Animation_19: -552575109
+      Tanuki_Boss_Angry_Animation_2: -212721401
+      Tanuki_Boss_Angry_Animation_20: -2021010520
+      Tanuki_Boss_Angry_Animation_21: 1407447174
+      Tanuki_Boss_Angry_Animation_22: 505346117
+      Tanuki_Boss_Angry_Animation_23: 1752462475
+      Tanuki_Boss_Angry_Animation_24: 1219210054
+      Tanuki_Boss_Angry_Animation_25: -713887181
+      Tanuki_Boss_Angry_Animation_26: -858346608
+      Tanuki_Boss_Angry_Animation_27: 95959557
+      Tanuki_Boss_Angry_Animation_28: -777505740
+      Tanuki_Boss_Angry_Animation_29: -1565494844
+      Tanuki_Boss_Angry_Animation_3: -1692216495
+      Tanuki_Boss_Angry_Animation_30: 2130520362
+      Tanuki_Boss_Angry_Animation_31: -498250772
+      Tanuki_Boss_Angry_Animation_32: -120384109
+      Tanuki_Boss_Angry_Animation_33: -814565478
+      Tanuki_Boss_Angry_Animation_34: 1137941772
+      Tanuki_Boss_Angry_Animation_35: -1297314144
+      Tanuki_Boss_Angry_Animation_36: 723949941
+      Tanuki_Boss_Angry_Animation_37: 146468687
+      Tanuki_Boss_Angry_Animation_38: -1511770878
+      Tanuki_Boss_Angry_Animation_39: -1310347444
+      Tanuki_Boss_Angry_Animation_4: 1527698739
+      Tanuki_Boss_Angry_Animation_40: 468604682
+      Tanuki_Boss_Angry_Animation_5: 1936433524
+      Tanuki_Boss_Angry_Animation_6: 276330719
+      Tanuki_Boss_Angry_Animation_7: 1686254776
+      Tanuki_Boss_Angry_Animation_8: -1655121683
+      Tanuki_Boss_Angry_Animation_9: 1762919269
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

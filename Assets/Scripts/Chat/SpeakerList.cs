@@ -16,12 +16,12 @@ public class Speaker
     public string name;
     public SpeakerId SpeakerId;
     // All the different mood sprites
-    public List<Sprite> moodImages;
+    public List<string> animations;
 }
 
 public enum SpeakerId
 {
     // a unique ID for each character (for easy management)
     TOAST,
-    TOASTE
+    MR_TANUKI
 }

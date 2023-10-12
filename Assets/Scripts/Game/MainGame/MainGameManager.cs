@@ -30,6 +30,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _dayTimer = GetComponent<DayTimer>();
 
         GameState.SetValue(MainGameState.CHAT);
+        AudioManager.Instance.PlayAudio(SoundUID.CHAT_AUDIO);
     }
 
     // Update is called once per frame
@@ -37,6 +38,8 @@ public class MainGameManager : Singleton<MainGameManager>
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
+            Debug.Log("Huh");
+
             FinishOrder();
         }
         
@@ -58,7 +61,8 @@ public class MainGameManager : Singleton<MainGameManager>
     public void StartGameAnimation()
     {
         GameState.SetValue(MainGameState.GAME_START);
-        
+        AudioManager.Instance.PlayAudio(SoundUID.MAIN_GAME_AUDIO);
+
     }
 
     public void EndGame()
