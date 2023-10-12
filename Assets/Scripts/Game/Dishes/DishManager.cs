@@ -24,7 +24,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void Start()
     {
-        _currLevel = LevelManager.Instance._currentLevelData;
+        _currLevel = LevelManager.Instance.CurrLevel;
 
         SubscribeGameState();
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>

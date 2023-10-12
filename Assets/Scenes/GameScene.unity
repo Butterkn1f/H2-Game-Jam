@@ -1308,8 +1308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52c843637a507e469f565132c9f4a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentLevelData: {fileID: 11400000, guid: 45a287b894b98c54fb95a4357bf7fc1c, type: 2}
+  _levels:
+  - {fileID: 11400000, guid: 45a287b894b98c54fb95a4357bf7fc1c, type: 2}
+  - {fileID: 11400000, guid: 33a8701ac70815e4895353500abe1c06, type: 2}
   _backgroundImage: {fileID: 5663444356006050245}
+  _currLevelIndex: 0
 --- !u!114 &596267447
 MonoBehaviour:
   m_ObjectHideFlags: 0
