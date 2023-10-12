@@ -60,3 +60,6 @@ TagManager:
   - name: VFX
     uniqueID: 3568263793
     locked: 0
+  - name: Pause
+    uniqueID: 1244831879
+    locked: 0

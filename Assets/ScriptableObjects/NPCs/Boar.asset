@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Boar
   m_EditorClassIdentifier: 
   Name: BOAR
-  CharacterSprite: {fileID: 21300000, guid: 5d5dc20abc1709e4b8f015bad0ce0f5f, type: 3}
+  CustomerPrefab: {fileID: 1574223426170646692, guid: c634a391f1ab29549a11e382ac793909, type: 3}
   PatienceDuration: 9

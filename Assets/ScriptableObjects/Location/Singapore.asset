@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdf2259f2f8065e469d25254498fe155, type: 3}
-  m_Name: Temp Location
+  m_Name: Singapore
   m_EditorClassIdentifier: 
   LocationName: Singapore
   CustomerList:
   - {fileID: 11400000, guid: 9b9b125c9fe94db4bb653f7c2ed81409, type: 2}
   - {fileID: 11400000, guid: ec69b2ea3da0af245841c5722ef4a8e1, type: 2}
   - {fileID: 11400000, guid: b054d55c8d54be544b89cb1f4e58ce0c, type: 2}
+  - {fileID: 11400000, guid: ceb1be5a86aa7ab4d87fab8182a4dfad, type: 2}
+  - {fileID: 11400000, guid: 15861b25bd137b54d9c4ae99a593168b, type: 2}

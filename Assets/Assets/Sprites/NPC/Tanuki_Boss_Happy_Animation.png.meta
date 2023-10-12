@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 067eaf2fc24d7af4aab4d39e34be6a53
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fbbc7a93b1e844f90bf973bf28c4ed
+      internalID: 950203781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa10d09cc9949947882fba60da88e7f
+      internalID: 2104864061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59eb2ce83b93fc438168ca6d4103bca
+      internalID: 1257308629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ec27409b0044347a8d5d1853fc88e3
+      internalID: 738242379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703f88878ede5a64788b06325344ec23
+      internalID: -1684614555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1470
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b5f48ff7516014cb9964d78820c19e
+      internalID: 1253071374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b37e27da5c60db4e83a142bd3f30da5
+      internalID: -1517575495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8aa6fcab860c9b4f871240464a8db97
+      internalID: 293109976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a824b41f5c4f5d9468b3eaa4173269a7
+      internalID: -1062371192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e5e28828f4fb24e91e5911584387f8
+      internalID: -955713387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ae06df8d134f743a1968a3390f2652
+      internalID: 1838925467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1225
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533b65378b7a40146b85ddc27de543da
+      internalID: 1801242288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aebb914a2ceb4d4aa4ffc68b6625f8e
+      internalID: 897703370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fb78bc64f929a42b420d295c248100
+      internalID: 504104604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a758d3f8e4364e64abae59affdfa48a7
+      internalID: 1442454433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6abb8ef1c4d9d4a8c096aa8d4c5563
+      internalID: 149251333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d1df1b121ce764fa4d31b48c972c00
+      internalID: -1830299599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 980
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e27547c84ada584f8f59312144b35ef
+      internalID: -816538921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f22ba6db71b0dd498cbacde095bbfd4
+      internalID: -2035942125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77820ee8fcdfa234896bc1d2c2ba2ef2
+      internalID: -599180592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2fded61f87d1241805ec4cb27f9102
+      internalID: -1071990138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e189b257bc2bcd4bb24a44656084025
+      internalID: 64271656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5368e42e479744aa48b5de9b0c7d17
+      internalID: -303073455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 735
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c67d1fad737f5541b2695cf7ee309c1
+      internalID: 1123009609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3632bf279a83284bbdb9160f0718217
+      internalID: -1520564581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949996dc51483f34fbbeec7e38957e7f
+      internalID: -1562961520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215364192c7b07c4a8497dcfc55d5453
+      internalID: 146918342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba1ad6ead5fce74db13a88712a3932f
+      internalID: 1163728306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5d916980d324444a5ec626ff6f5baa
+      internalID: 424219884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 490
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d2621d8412dc34f8250b5bfc1d2beb
+      internalID: -93750057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad2708e411baec4bb67e223f09596fc
+      internalID: -103601515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d48a4381ce8284e98730410c035c20
+      internalID: -2116864266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75619c483aa76c84ba705ab5eabb383b
+      internalID: 1298642185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c7c7c882b93df40a657573a7642463
+      internalID: 1187250269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e675f0fb92541d42b9174be19ff7068
+      internalID: 1305668183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 245
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec01c5a9909c6db4a8f0492c3dbf560b
+      internalID: 1256689526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1b9da1abad61449841b6fe7d0cf14f
+      internalID: -411016897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce82b3115053b54db985167698a210e
+      internalID: -388907748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e76c0cf2bbfdb40985e1b8f8c64acd
+      internalID: 2123725439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e9ac9b823ef024e848de9bfb63988c
+      internalID: 1898715120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanuki_Boss_Happy_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c5f5b8b2d81aa4f919543b4eadb256
+      internalID: -1069535309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tanuki_Boss_Happy_Animation_0: 950203781
+      Tanuki_Boss_Happy_Animation_1: 2104864061
+      Tanuki_Boss_Happy_Animation_10: 1838925467
+      Tanuki_Boss_Happy_Animation_11: 1801242288
+      Tanuki_Boss_Happy_Animation_12: 897703370
+      Tanuki_Boss_Happy_Animation_13: 504104604
+      Tanuki_Boss_Happy_Animation_14: 1442454433
+      Tanuki_Boss_Happy_Animation_15: 149251333
+      Tanuki_Boss_Happy_Animation_16: -1830299599
+      Tanuki_Boss_Happy_Animation_17: -816538921
+      Tanuki_Boss_Happy_Animation_18: -2035942125
+      Tanuki_Boss_Happy_Animation_19: -599180592
+      Tanuki_Boss_Happy_Animation_2: 1257308629
+      Tanuki_Boss_Happy_Animation_20: -1071990138
+      Tanuki_Boss_Happy_Animation_21: 64271656
+      Tanuki_Boss_Happy_Animation_22: -303073455
+      Tanuki_Boss_Happy_Animation_23: 1123009609
+      Tanuki_Boss_Happy_Animation_24: -1520564581
+      Tanuki_Boss_Happy_Animation_25: -1562961520
+      Tanuki_Boss_Happy_Animation_26: 146918342
+      Tanuki_Boss_Happy_Animation_27: 1163728306
+      Tanuki_Boss_Happy_Animation_28: 424219884
+      Tanuki_Boss_Happy_Animation_29: -93750057
+      Tanuki_Boss_Happy_Animation_3: 738242379
+      Tanuki_Boss_Happy_Animation_30: -103601515
+      Tanuki_Boss_Happy_Animation_31: -2116864266
+      Tanuki_Boss_Happy_Animation_32: 1298642185
+      Tanuki_Boss_Happy_Animation_33: 1187250269
+      Tanuki_Boss_Happy_Animation_34: 1305668183
+      Tanuki_Boss_Happy_Animation_35: 1256689526
+      Tanuki_Boss_Happy_Animation_36: -411016897
+      Tanuki_Boss_Happy_Animation_37: -388907748
+      Tanuki_Boss_Happy_Animation_38: 2123725439
+      Tanuki_Boss_Happy_Animation_39: 1898715120
+      Tanuki_Boss_Happy_Animation_4: -1684614555
+      Tanuki_Boss_Happy_Animation_40: -1069535309
+      Tanuki_Boss_Happy_Animation_5: 1253071374
+      Tanuki_Boss_Happy_Animation_6: -1517575495
+      Tanuki_Boss_Happy_Animation_7: 293109976
+      Tanuki_Boss_Happy_Animation_8: -1062371192
+      Tanuki_Boss_Happy_Animation_9: -955713387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

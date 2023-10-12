@@ -15,11 +15,13 @@ MonoBehaviour:
   speakerList:
   - name: Toast
     SpeakerId: 0
-    moodImages:
-    - {fileID: 21300000, guid: bf1edeb26b759e443937ced8681af32f, type: 3}
-    - {fileID: 21300000, guid: 76f6ddb37aaaeb0459a90272131a50c0, type: 3}
-  - name: Toast_Other
+    animations:
+    - Toast_Idle
+    - Toast_Happy
+    - Toast_Happy
+  - name: Mr. Tanuki
     SpeakerId: 1
-    moodImages:
-    - {fileID: 21300000, guid: bf1edeb26b759e443937ced8681af32f, type: 3}
-    - {fileID: 21300000, guid: 76f6ddb37aaaeb0459a90272131a50c0, type: 3}
+    animations:
+    - Boss_Idle
+    - Boss_Happy
+    - Boss_Angry

@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 5bdd867b48bf2fe4aaee8ad2db1826cb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7da76ce6f43477458da8399b56f9997
+      internalID: 114853803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900b92dec44f2ee4782e8032d75d4767
+      internalID: 1849983367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60fdf3d4c50eb40839c2fa97d40d23
+      internalID: -1693800204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4bf3ddacf075540a67a48778a7f94c
+      internalID: -1228487053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f678521c96cc04eb95d4934e3d96d5
+      internalID: -790751135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1296
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbf865422ddd0b44bc2d3bd5410a342
+      internalID: 198259813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876eeb2a8fd110445850b1f4b4ff7773
+      internalID: -2080905366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e18691326015ed4a9b335b08ed5b1de
+      internalID: -1317891118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd5b4582afc2a04a9f920fa356aaf30
+      internalID: 1076464392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadde39e6795a6541aecebca28c93cef
+      internalID: -590225816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3744affd15d445241b1315a12e785bc7
+      internalID: 1997588369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1080
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efbeb7b147dab44e8310ee68e3b6fac
+      internalID: 1133375588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b031360160707346867c99f49727be6
+      internalID: 1971992182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d96f91d6a3a264faebf4d165de4ba3
+      internalID: 1140459492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6af8cc48ad03047b53842d8880d212
+      internalID: 2052525335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1563b655d5e9e4fa733d8499d1d211
+      internalID: -1520965427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ceef79f1e38d04db53d0f487c0a69d
+      internalID: -2010502596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 864
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4071f01a36c1865458dad80952a61818
+      internalID: -1818571085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a2eccb49ee5cb47bf100bade99cbd3
+      internalID: -496049719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4374ebf52baa50649baad60a0fc6705d
+      internalID: 1783951115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e25240c749b1c34fa9528cd43aa189a
+      internalID: 380964153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77aaa8b81f8c4144aa4e7a008fb65bf
+      internalID: -1107521190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5731169f9bd88045a431642639dd670
+      internalID: 886092537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 648
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f909bc9830f400b4d819a08873514e5d
+      internalID: 416236174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284209e2105eb0748850dea4577d4d56
+      internalID: -1886609122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383c67d5c4e84a84fb82110501059895
+      internalID: -326758144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11f975f866b37e48946e976a4c229c5
+      internalID: 205860861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e84f57a6acea91429dfe70b505a8067
+      internalID: 320785827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fefdd72ceb91248884ddf204c9027a
+      internalID: -858350313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 432
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533d7bdf8fd230a4b8abcc026b0f7aa2
+      internalID: -1875137136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242c4ef4bc2d5d542b1d01b37eb7429e
+      internalID: 1524134084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43448ec00ca5b584f9bb4ae0577a7f5a
+      internalID: -1711829254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c86b6969d6b7d54996afc3d36ae8fb5
+      internalID: -1558819888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c25a7b6c104694dbd46073748ec461
+      internalID: -1476769629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cba7b59a0ed8474694550087272ec03
+      internalID: 1985019790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 216
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20500fd8064687b47ab716472a5b225e
+      internalID: -1753816909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dcc8d5ee570484ba273d5fc01df6d4
+      internalID: 328802975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bf7b01787202e468ed4ee26dbd6b52
+      internalID: 234410466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc65cc57ea79ffe4a850a41be90535d9
+      internalID: 908483166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66121ca1f1c8e541bb50e880eb56931
+      internalID: -2113058462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear_NPC_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 204
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec25d7478f773049bf66779b4259c16
+      internalID: 93111505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bear_NPC_Animation_0: 114853803
+      Bear_NPC_Animation_1: 1849983367
+      Bear_NPC_Animation_10: 1997588369
+      Bear_NPC_Animation_11: 1133375588
+      Bear_NPC_Animation_12: 1971992182
+      Bear_NPC_Animation_13: 1140459492
+      Bear_NPC_Animation_14: 2052525335
+      Bear_NPC_Animation_15: -1520965427
+      Bear_NPC_Animation_16: -2010502596
+      Bear_NPC_Animation_17: -1818571085
+      Bear_NPC_Animation_18: -496049719
+      Bear_NPC_Animation_19: 1783951115
+      Bear_NPC_Animation_2: -1693800204
+      Bear_NPC_Animation_20: 380964153
+      Bear_NPC_Animation_21: -1107521190
+      Bear_NPC_Animation_22: 886092537
+      Bear_NPC_Animation_23: 416236174
+      Bear_NPC_Animation_24: -1886609122
+      Bear_NPC_Animation_25: -326758144
+      Bear_NPC_Animation_26: 205860861
+      Bear_NPC_Animation_27: 320785827
+      Bear_NPC_Animation_28: -858350313
+      Bear_NPC_Animation_29: -1875137136
+      Bear_NPC_Animation_3: -1228487053
+      Bear_NPC_Animation_30: 1524134084
+      Bear_NPC_Animation_31: -1711829254
+      Bear_NPC_Animation_32: -1558819888
+      Bear_NPC_Animation_33: -1476769629
+      Bear_NPC_Animation_34: 1985019790
+      Bear_NPC_Animation_35: -1753816909
+      Bear_NPC_Animation_36: 328802975
+      Bear_NPC_Animation_37: 234410466
+      Bear_NPC_Animation_38: 908483166
+      Bear_NPC_Animation_39: -2113058462
+      Bear_NPC_Animation_4: -790751135
+      Bear_NPC_Animation_40: 93111505
+      Bear_NPC_Animation_5: 198259813
+      Bear_NPC_Animation_6: -2080905366
+      Bear_NPC_Animation_7: -1317891118
+      Bear_NPC_Animation_8: 1076464392
+      Bear_NPC_Animation_9: -590225816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

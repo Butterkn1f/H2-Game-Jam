@@ -16,8 +16,8 @@ public class ChatSectionUIDisplay : MonoBehaviour
     [Tooltip("Overall container for other people chat")] [SerializeField] private TextMeshProUGUI _otherMainBody;
 
     // TODO: make this spine 
-    [Tooltip("Character mood sprite")] [SerializeField] private Image _selfImage;
-    [Tooltip("Character mood sprite")] [SerializeField] private Image _otherImage;
+    [Tooltip("Character mood sprite")] [SerializeField] private GameObject _selfImage;
+    [Tooltip("Character mood sprite")] [SerializeField] private GameObject _otherImage;
     #endregion
 
     // This functions displays a chat node, given a chat node and speaker
@@ -36,15 +36,8 @@ public class ChatSectionUIDisplay : MonoBehaviour
 
             _otherChatItem.SetActive(false);
 
-            // retrieve the mood sprite from the speaker class based on the mood indicated in the CSV file
-            if ((int)chatNode.Mood <= speaker.moodImages.Count)
-            {
-                _selfImage.sprite = speaker.moodImages[(int)chatNode.Mood];
-            }
-            else
-            {
-                _selfImage.sprite = speaker.moodImages[0];
-            }
+            _selfImage.GetComponent<Animator>().CrossFade(speaker.animations[chatNode.Mood], 0, 0);
+                
 
             // TODO: Animate the text 
 
@@ -56,15 +49,8 @@ public class ChatSectionUIDisplay : MonoBehaviour
             _otherChatItem.SetActive(true);
             _selfChatItem.SetActive(false);
 
-            // retrieve the mood sprite from the speaker class based on the mood indicated in the CSV file
-            if ((int)chatNode.Mood <= speaker.moodImages.Count)
-            {
-                _otherImage.sprite = speaker.moodImages[(int)chatNode.Mood];
-            }
-            else 
-            {
-                _otherImage.sprite = speaker.moodImages[0];  
-            }
+            _otherImage.GetComponent<Animator>().CrossFade(speaker.animations[chatNode.Mood], 0, 0);
+
             _otherMainBody.text = chatNode.BodyText;
             _otherChatSpeakerName.text = speaker.name;
         }

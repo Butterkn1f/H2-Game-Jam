@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Otter
   m_EditorClassIdentifier: 
   Name: OTTER
-  CharacterSprite: {fileID: 21300000, guid: 747656de1dc427c4a9eb5e0009a986c5, type: 3}
+  CustomerPrefab: {fileID: 1574223426170646692, guid: 89a4087f79c700c4eb69b6ee586f081c, type: 3}
   PatienceDuration: 10

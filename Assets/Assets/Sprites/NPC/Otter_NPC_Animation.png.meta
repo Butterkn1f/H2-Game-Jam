@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: fa7ce85037996404aba3cc55f98f315d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946ce8d7e3f25b240bbf123af3716511
+      internalID: 916335884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db2436b84ea9e24190b3f17e2fdc4d9
+      internalID: 1176306928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f577e8e306fcb9498a8e605e59a1c7c
+      internalID: -1350746691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5153d9bbc9f11f447933480e3eb48b66
+      internalID: -331038651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f4b155b7d874a428f0c539e1045cfa
+      internalID: -1380295289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1344
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e888290ba047f5c4cadaad17303c72f6
+      internalID: 291412771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb750c95aa808d446bccb2fe40e3bd6d
+      internalID: 149471868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ba8c1e27567794b9db0ae10482be6d
+      internalID: 96335507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c39f87b723b984d8352b89f5329653
+      internalID: 622674019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dd99c436d2e5349b200ef51778e20b
+      internalID: -781001838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a781589131e8f458ef0ae1313310b4
+      internalID: 771654628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1120
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09f623789f2cef4fb934aa2fb1f9121
+      internalID: -1140873238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c27a9b9c8561d147b88bc8fae02fe30
+      internalID: -1326896147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9bceac4e443ee40b940c42460fd9be
+      internalID: 1708293078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdbf943267400e45890d6bb6ffade2d
+      internalID: 14314578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad81336cf7758af4ea4ed85e8e39d3b3
+      internalID: -1781775597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77c9ab402883d64b977d52a62723b28
+      internalID: 1037368347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 896
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a01b7f2eb8ced044a476693cbd53f78
+      internalID: -1449768141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f296fe2ce56975641b4e6cefcd7c33aa
+      internalID: -1754803372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7b5ee31a398b74686c6db3ace219f8
+      internalID: -1818849482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fe56a71a641614a9836b74bfe8e678
+      internalID: -1014298318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed7da6a5930f44cb21a6a0207e301b
+      internalID: -1358987335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9876fdacd2b8df42aa398e8ff2121c0
+      internalID: 247452923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 672
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c18b288e2ba4e4e9edb2bb1ef6d4e1
+      internalID: -1524864767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2623250354335934f8e783a5c3c0270d
+      internalID: -488860752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ec9581681a2d449b7e60d60f7e998b
+      internalID: -77652810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e7a193c076be49b189f9734b3068e
+      internalID: 1182714861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa806c231ea4f154486f7ab89bce6755
+      internalID: -1208000961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98587f8cd473b4e4a9a897513e1c9cdf
+      internalID: 270006713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 448
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040cd70fa8024cf4881bc534d711b848
+      internalID: 717342527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ad1e4feba39684c87fe84c70068560
+      internalID: 1052362596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b5ab5c08ae2474ea99646053b2445c
+      internalID: 2111176150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771cee8cea6c67841a6119ecfe864d4d
+      internalID: 1322651439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15279fa67b0e72f498ed5e9089f86e5a
+      internalID: 1395002551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b383714a7ca7745b7961fc6484400d
+      internalID: -762958873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 224
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c5bea3f28857c4fad125e71c67dbb2
+      internalID: 1315998671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265556a54030b304ca92b8cd5b9f1952
+      internalID: 310244983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b0e7fac138d6143a6ae70f142b15f8
+      internalID: 606828606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8de7f94f3bb2d4fb0e5a2b03463646
+      internalID: -1208951002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e219a3d915fa14ca028386df6dd442
+      internalID: 1978606705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Otter_NPC_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 188
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d6d7599c2c024596db9cc6d96d590
+      internalID: 1113562960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Otter_NPC_Animation_0: 916335884
+      Otter_NPC_Animation_1: 1176306928
+      Otter_NPC_Animation_10: 771654628
+      Otter_NPC_Animation_11: -1140873238
+      Otter_NPC_Animation_12: -1326896147
+      Otter_NPC_Animation_13: 1708293078
+      Otter_NPC_Animation_14: 14314578
+      Otter_NPC_Animation_15: -1781775597
+      Otter_NPC_Animation_16: 1037368347
+      Otter_NPC_Animation_17: -1449768141
+      Otter_NPC_Animation_18: -1754803372
+      Otter_NPC_Animation_19: -1818849482
+      Otter_NPC_Animation_2: -1350746691
+      Otter_NPC_Animation_20: -1014298318
+      Otter_NPC_Animation_21: -1358987335
+      Otter_NPC_Animation_22: 247452923
+      Otter_NPC_Animation_23: -1524864767
+      Otter_NPC_Animation_24: -488860752
+      Otter_NPC_Animation_25: -77652810
+      Otter_NPC_Animation_26: 1182714861
+      Otter_NPC_Animation_27: -1208000961
+      Otter_NPC_Animation_28: 270006713
+      Otter_NPC_Animation_29: 717342527
+      Otter_NPC_Animation_3: -331038651
+      Otter_NPC_Animation_30: 1052362596
+      Otter_NPC_Animation_31: 2111176150
+      Otter_NPC_Animation_32: 1322651439
+      Otter_NPC_Animation_33: 1395002551
+      Otter_NPC_Animation_34: -762958873
+      Otter_NPC_Animation_35: 1315998671
+      Otter_NPC_Animation_36: 310244983
+      Otter_NPC_Animation_37: 606828606
+      Otter_NPC_Animation_38: -1208951002
+      Otter_NPC_Animation_39: 1978606705
+      Otter_NPC_Animation_4: -1380295289
+      Otter_NPC_Animation_40: 1113562960
+      Otter_NPC_Animation_5: 291412771
+      Otter_NPC_Animation_6: 149471868
+      Otter_NPC_Animation_7: 96335507
+      Otter_NPC_Animation_8: 622674019
+      Otter_NPC_Animation_9: -781001838
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

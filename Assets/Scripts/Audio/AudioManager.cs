@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using UniRx.Extention;
 using UniRx;
+using DG.Tweening;
 
 public class AudioManager : Singleton<AudioManager>
 {
@@ -44,7 +45,7 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    public void PlayAudio(SoundUID soundUID)
+    public void PlayAudio(SoundUID soundUID, bool fade = true, float playAtTime = 0)
     {
         // Get the audio track
         AudioTrack _audioTrackToPlay = _currentAudioList._tracks.Where(track => track.UniqueIdentifier == soundUID).FirstOrDefault();
@@ -52,14 +53,36 @@ public class AudioManager : Singleton<AudioManager>
         // Get the audio type
         AudioType _trackAudioType = _audioTrackToPlay.Type;
 
+
         // Play based on the specifications
         switch (_trackAudioType)
         {
             case AudioType.MUSIC:
-                _musicPlayer.clip = _audioTrackToPlay.Clip;
-                _musicPlayer.volume = MusicVolume.GetValue();
-                _musicPlayer.loop = _audioTrackToPlay.Loop;
-                _musicPlayer.Play();
+                Sequence fadeAudio = DOTween.Sequence();
+
+                // Check if is currently playing anyt
+                if (_musicPlayer.isPlaying)
+                {
+                    fadeAudio.Append(_musicPlayer.DOFade(0, 0.25f));
+                    fadeAudio.AppendCallback(() => _musicPlayer.Stop());
+                    fadeAudio.AppendCallback(() =>
+                    {
+                        _musicPlayer.clip = _audioTrackToPlay.Clip;
+                        _musicPlayer.volume = MusicVolume.GetValue();
+                        _musicPlayer.loop = _audioTrackToPlay.Loop;
+                        _musicPlayer.time = playAtTime;
+                        _musicPlayer.Play();
+                    });
+                }
+                else
+                {
+                    _musicPlayer.clip = _audioTrackToPlay.Clip;
+                    _musicPlayer.volume = MusicVolume.GetValue();
+                    _musicPlayer.loop = _audioTrackToPlay.Loop;
+                    _musicPlayer.time = playAtTime;
+                    _musicPlayer.Play();
+                }
+                
                 break;
             case AudioType.SFX:
                 _sfxPlayer.volume = SfxVolume.GetValue();
@@ -93,8 +116,7 @@ public class AudioManager : Singleton<AudioManager>
         MasterVolume.SetValue(newMasterVolume);
 
         // Also change the volumes of the Music and SFX (for a more visible effect ig)
-        ChangeMusicVolume(MusicVolume.GetValue() * newMasterVolume);
-        ChangeSFXVolume(SfxVolume.GetValue() * newMasterVolume);
+        ChangeMusicVolume(MusicVolume.GetValue());
     }
 
     public void ChangeMusicVolume(float newMusicVolume)
@@ -106,14 +128,28 @@ public class AudioManager : Singleton<AudioManager>
         SfxVolume.SetValue(newSFXVolume);
     }
 
-
+    public float GetCurrentMusicTime()
+    {
+        return _musicPlayer.time;
+    }
 }
 
 
 public enum SoundUID
 {
     NONE,
-    TEST_AUDIO
+    TEST_AUDIO,
+
+    // Music
+    CHAT_AUDIO,
+    MAIN_GAME_AUDIO,
+    FRENZY_AUDIO,
+    RESULTS_AUDIO,
+
+    MENU_AUDIO,
+    MAP_SELECT_AUDIO,
+
+    // SFX
 }
 
 
