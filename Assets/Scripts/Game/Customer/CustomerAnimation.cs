@@ -16,7 +16,7 @@ public class CustomerAnimation : MonoBehaviour
     void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
-        _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x + GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
+        _rectTransform.anchoredPosition = new Vector2(GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
     }
 
     /// <summary>
@@ -30,7 +30,7 @@ public class CustomerAnimation : MonoBehaviour
         _rectTransform.anchoredPosition = new Vector2(GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y);
 
         // Slide to the left
-        _rectTransform.DOMoveX(0, 1.0f).SetEase(Ease.OutCubic);
+        _rectTransform.DOAnchorPosX(140, 1.0f).SetEase(Ease.OutCubic);
     }
 
     /// <summary>
@@ -40,7 +40,7 @@ public class CustomerAnimation : MonoBehaviour
     {
         Sequence seq = DOTween.Sequence();
 
-        seq.Append(_rectTransform.DOAnchorPos(new Vector2(_rectTransform.anchoredPosition.x - GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y), 1.0f).SetEase(Ease.InCubic));
+        seq.Append(_rectTransform.DOAnchorPos(new Vector2(-GetComponentInParent<RectTransform>().rect.width * 2, _rectTransform.anchoredPosition.y), 1.0f).SetEase(Ease.InCubic));
 
         // Deactivate the gameobject
         seq.AppendCallback(() => { this.gameObject.SetActive(false); });

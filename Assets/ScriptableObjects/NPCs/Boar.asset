@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Boar
   m_EditorClassIdentifier: 
   Name: BOAR
-  CustomerPrefab: {fileID: 1574223426170646692, guid: c634a391f1ab29549a11e382ac793909, type: 3}
+  CustomerPrefab: {fileID: 8574523052336630470, guid: 60758bcfe73475b4da7b81f24a01ba5e, type: 3}
   PatienceDuration: 9

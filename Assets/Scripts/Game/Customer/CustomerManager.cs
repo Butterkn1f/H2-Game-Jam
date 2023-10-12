@@ -110,10 +110,14 @@ public class CustomerManager : Singleton<CustomerManager>
         CurrentCustomerObject.GetComponent<CustomerBehavior>().SetTimer(_currentCustomer.PatienceDuration); // Start the timer after animation is done
     }
 
-    private IEnumerator OutroAnimationSequence(bool sendNextCharacter = true)
+    private IEnumerator OutroAnimationSequence(bool removeUIOutroAnim = false, bool sendNextCharacter = true)
     {
         // For testing only?? Probably should delete this soon
-        CurrentCustomerObject.GetComponent<CustomerUI>().OutroAnim();
+        if (removeUIOutroAnim)
+        {
+            CurrentCustomerObject.GetComponent<CustomerUI>().OutroEmotionAnim();
+        }
+        CurrentCustomerObject.GetComponent<CustomerUI>().OutroFoodAnim();
 
         yield return new WaitForSeconds(0.25f);
 
@@ -129,10 +133,16 @@ public class CustomerManager : Singleton<CustomerManager>
     /// <summary>
     /// Make the customer leave the current screen
     /// </summary>
-    public void LeaveCurrentCustomer(bool sendNextCharacter = true)
+    public void LeaveCurrentCustomer(bool removeUIOutroAnim = true, bool sendNextCharacter = true)
     {
         MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_WAIT);
-        StartCoroutine(OutroAnimationSequence(sendNextCharacter));
+        StartCoroutine(OutroAnimationSequence(removeUIOutroAnim, sendNextCharacter));
+    }
+
+    public void SetSuccessfulOrder()
+    {
+        CurrentCustomerObject.GetComponent<CustomerUI>().SetHeart();
+
     }
 
     private void Update()

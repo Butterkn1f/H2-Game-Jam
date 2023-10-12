@@ -22,6 +22,7 @@ public class ChatGetter : Singleton<ChatGetter>
     [SerializeField] private ChatList _chatListContainer;
     // The container containing all the speakers
     [SerializeField] private SpeakerList _speakerListContainer;
+    [Tooltip("Next Button")][SerializeField] private GameObject _button;
     private UnityEvent _postSpeakingAction;
 
     // Start the chatting system
@@ -30,6 +31,7 @@ public class ChatGetter : Singleton<ChatGetter>
         _currentNodes = GetChatList(ID);
         _currentIndex = 0;
         _speaker = GetSpeaker(_currentNodes[_currentIndex].Speaker);
+        _button.SetActive(true);
 
         // Start the chat UI 
         // Display the first node
@@ -59,6 +61,7 @@ public class ChatGetter : Singleton<ChatGetter>
 
             if (MainGameManager.Instance.GameState.GetValue() == MainGameState.CHAT)
             {
+                _button.SetActive(false);
                 _chatDisplayUI.CloseAllChatDisplay();
                 MainGameManager.Instance.StartGameAnimation();
             }

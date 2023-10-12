@@ -74,7 +74,7 @@ public class MainGameManager : Singleton<MainGameManager>
         _frenzy.BreakFrenzyMeter();
 
         // Customer should leave
-        _customerManager.LeaveCurrentCustomer(false);
+        _customerManager.LeaveCurrentCustomer(true, false);
 
         // Calculate money
 
@@ -95,8 +95,8 @@ public class MainGameManager : Singleton<MainGameManager>
         }
 
         // Send the next customer in 
-        _customerManager.LeaveCurrentCustomer();
-
+        _customerManager.LeaveCurrentCustomer(false);
+        _customerManager.SetSuccessfulOrder();
         // Calculate tips and money
 
         // Get frenzy num

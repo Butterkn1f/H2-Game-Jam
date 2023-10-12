@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Uwu_Guy
   m_EditorClassIdentifier: 
   Name: UWU_GUY
-  CustomerPrefab: {fileID: 1574223426170646692, guid: d7700b3559dbdb3459193196ead5aa3a, type: 3}
+  CustomerPrefab: {fileID: 8574523052336630470, guid: 0d6eb9d4097d9b943bced0f6f8bc75f3, type: 3}
   PatienceDuration: 9
