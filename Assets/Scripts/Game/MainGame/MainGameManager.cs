@@ -137,6 +137,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // Get frenzy num
         _frenzy.AddFrenzyMeter();
+        AudioManager.Instance.PlayAudio(SoundUID.CORRECT_ORDER);
     }
 
     /// <summary>
@@ -153,6 +154,8 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // Calculate tips and money
         _moneyManager.ThrowAwayFood();
+
+        AudioManager.Instance.PlayAudio(SoundUID.WRONG_ORDER);
     }
 
     public void PauseGame(bool pauseCharaAnimations = true)

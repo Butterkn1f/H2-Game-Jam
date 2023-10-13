@@ -134,6 +134,17 @@ public class AudioManager : SingletonPersistent<AudioManager>
     {
         return _musicPlayer.time;
     }
+
+    public void PlayClickSound()
+    {
+        PlayAudio(SoundUID.CLICK_SOUND);
+    }
+
+    public void PlayBellSound()
+    {
+        PlayAudio(SoundUID.CLICK_SOUND);
+    }
+
 }
 
 
@@ -152,6 +163,12 @@ public enum SoundUID
     MAP_SELECT_AUDIO,
 
     // SFX
+    CORRECT_ORDER,
+    WRONG_ORDER,
+    POOF,
+    CLICK_SOUND,
+    METAL_SHUTTER,
+    BELL
 }
 
 
