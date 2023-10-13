@@ -18,7 +18,8 @@ MonoBehaviour:
     animations:
     - Toast_Idle
     - Toast_Happy
-    - Toast_Happy
+    - Toast_sad
+    - Toast_Ok
   - name: Mr. Tanuki
     SpeakerId: 1
     animations:
