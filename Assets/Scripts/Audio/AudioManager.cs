@@ -32,16 +32,6 @@ public class AudioManager : SingletonPersistent<AudioManager>
         ChangeSFXVolume(1f);
     }
 
-    private void Update()
-    {
-        
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            ChangeMasterVolume(0.5f);
-        }
-    }
-
     public void PlayAudio(SoundUID soundUID, bool fade = true, float playAtTime = 0)
     {
         // Get the audio track
@@ -171,6 +161,9 @@ public enum SoundUID
     BELL,
     OVER_NODE,
     CAR_HORN,
+
+    WATER_BUBBLE,
+    FAIRY
 }
 
 

@@ -14,6 +14,8 @@ public abstract class ITableItem : MonoBehaviour
 
     public virtual Sequence AnimateActivate()
     {
+        AudioManager.Instance.PlayAudio(SoundUID.FAIRY);
+
         // Grow to a lighter color, then shrink back to original color and target color
         sequence = DOTween.Sequence();
         sequence.Append(_image.rectTransform.DOScale(new Vector3(1.3f, 1.3f, 1.3f), 0.25f))

@@ -55,20 +55,6 @@ public class MainGameManager : Singleton<MainGameManager>
         PausedGame.SetValue(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            FinishOrder();
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            PauseGame(false);
-        }
-    }
-
     public bool isEOD()
     {
         return _dayTimer.IsEOD();

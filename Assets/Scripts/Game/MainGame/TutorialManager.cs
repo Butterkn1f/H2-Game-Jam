@@ -44,7 +44,7 @@ public class TutorialManager : Common.DesignPatterns.Singleton<TutorialManager>
         }
         else
         {
-            MainGameManager.Instance.PauseGame(true);
+            MainGameManager.Instance.PauseHardcode(false);
             CustomerManager.Instance.PauseTimer(false);
             _isTutorialActive = false;
         }
@@ -53,7 +53,7 @@ public class TutorialManager : Common.DesignPatterns.Singleton<TutorialManager>
 
     public void StopTutorial()
     {
-        MainGameManager.Instance.PauseGame(true);
+        MainGameManager.Instance.PauseHardcode(false);
         CustomerManager.Instance.PauseTimer(false);
         _tutorialPanels[_currTutorialIndex].FadeOut();
         _tutorialPanels[0].gameObject.transform.parent.gameObject.SetActive(false);

@@ -9,6 +9,7 @@ public class IngredientItem : ITableItem
 
     public Sequence AnimateActivate(Ingredient ingredient)
     {
+        AudioManager.Instance.PlayAudio(SoundUID.WATER_BUBBLE);
         Ingredient = ingredient;
         IsActive = true;
         _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ?
