@@ -16,6 +16,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     [SerializeField] private List<IngredientButton> _ingredientButtons;
     [SerializeField] private CanvasGroup _wokSoup;
     [SerializeField] private CanvasGroup _wokLid;
+    [SerializeField] private GameObject _poof;
     #endregion
 
     private Dish _currDish = null;
@@ -26,6 +27,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     private void Start()
     {
         SubscribeGameState();
+        _poof.SetActive(false);
         Frenzy.Instance.FrenzyEnabled.Value.Subscribe(enabled =>
         {
             foreach (var item in _items)
@@ -168,7 +170,8 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
         mergeSequence.OnComplete(() =>
         {
-            // TODO: poof!
+            _poof.SetActive(true);
+            _poof.GetComponent<Animator>().Play("POOF", -1, 0.0f);
 
             // Destroy dishes behind poof
             ClearTableItems();

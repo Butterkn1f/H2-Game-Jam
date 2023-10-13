@@ -61,10 +61,10 @@ public class RecognitionManager : Common.DesignPatterns.Singleton<RecognitionMan
 
     private void SubscribeTemplateEditing()
     {
-        Observable.EveryUpdate()
+/*        Observable.EveryUpdate()
             .Where(_ => Input.GetKeyUp(KeyCode.Semicolon))
             .Subscribe(_ => SwitchEditingMode())
-            .AddTo(this);
+            .AddTo(this);*/
     }
 
     private void SwitchEditingMode()

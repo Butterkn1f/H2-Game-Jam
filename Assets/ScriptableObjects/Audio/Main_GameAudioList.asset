@@ -65,3 +65,11 @@ MonoBehaviour:
     Type: 1
     Clip: {fileID: 8300000, guid: 43435ce8dec3c794bbe87f168350fee6, type: 3}
     Loop: 1
+  - UniqueIdentifier: 16
+    Type: 1
+    Clip: {fileID: 8300000, guid: 9355c1a9240626146a57cb6388ccdb15, type: 3}
+    Loop: 0
+  - UniqueIdentifier: 17
+    Type: 1
+    Clip: {fileID: 8300000, guid: da63adeb8a376484d9386bb8b50ecd04, type: 3}
+    Loop: 0
