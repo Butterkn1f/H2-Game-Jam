@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class TutorialManager : Common.DesignPatterns.Singleton<TutorialManager>
 {
-    [SerializeField] List<GameObject> _tutorialPanels;
+    [SerializeField] List<TutorialPanel> _tutorialPanels;
     private int _currTutorialIndex = 0;
     private bool _isTutorialActive = false;
 
@@ -19,17 +19,28 @@ public class TutorialManager : Common.DesignPatterns.Singleton<TutorialManager>
 
     public void BeginTutorial()
     {
-        _tutorialPanels[_currTutorialIndex].SetActive(true);
-        // TODO: Integrate stopping customer patience etc here
+        _tutorialPanels[_currTutorialIndex].FadeIn();
+        MainGameManager.Instance.PauseGame(false);
+        CustomerManager.Instance.PauseTimer(false);
     }
 
-    public void AdvanceTutorial(int? index = null)
+    public void AdvanceTutorial(int index)
     {
-        if (!index.HasValue)
-        {
-            index = _currTutorialIndex + 1;
-        }
+        if (!_isTutorialActive || _currTutorialIndex == index)
+            return;
 
+        _tutorialPanels[_currTutorialIndex].FadeOut();
+
+        if (index < _tutorialPanels.Count)
+        {
+            _tutorialPanels[index].FadeIn();
+        }
+        else
+        {
+            MainGameManager.Instance.PauseGame(false);
+            CustomerManager.Instance.PauseTimer(true);
+            _isTutorialActive = false;
+        }
 
     }
 }
