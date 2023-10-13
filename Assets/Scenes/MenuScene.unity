@@ -1303,6 +1303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Credits: {fileID: 499784058}
+  toastTransform: {fileID: 1138717223}
+  toastImage: {fileID: 1138717225}
 --- !u!4 &1602181682
 Transform:
   m_ObjectHideFlags: 0
