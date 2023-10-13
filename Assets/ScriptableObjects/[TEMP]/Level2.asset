@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelNumber: 2
   LevelName: Singapore 1-2
-  BackgroundImage: {fileID: 21300000, guid: c27c028ae1dcc3e4a86fd5342c4e22da, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 9abfdc3256582ad4095fd71be4cbeacc, type: 3}
   LevelLocation: {fileID: 11400000, guid: 96363e1ff59191b458827d8e36df73ba, type: 2}
   ChatID: '#PEEPEE'
   Ingredients:
@@ -32,7 +32,6 @@ MonoBehaviour:
     Ingredients: 0100000003000000
     AllowedShapes: 0100000002000000
   DishCost: 10
-  IngredientCost: 0
   RestaurantFees: 100
   TwoStarMarker: 100
   ThreeStarMarker: 300

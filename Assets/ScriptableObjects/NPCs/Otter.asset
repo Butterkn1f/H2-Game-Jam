@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: OTTER
   CustomerPrefab: {fileID: 8574523052336630470, guid: 6d250307f36eef841b895f1a2cfa30ed, type: 3}
-  PatienceDuration: 10
+  PatienceDuration: 20

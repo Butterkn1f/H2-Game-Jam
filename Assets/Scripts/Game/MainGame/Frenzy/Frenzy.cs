@@ -4,6 +4,8 @@ using UniRx.Extention;
 using UnityEngine;
 using UniRx;
 using DG.Tweening;
+using UnityEngine.Rendering;
+using JetBrains.Annotations;
 
 public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
 {
@@ -16,6 +18,7 @@ public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
     // Frenzy mode variables
     public ReactiveProp<bool> FrenzyEnabled = new ReactiveProp<bool>();
     private float _frenzyModeTimer;
+    private bool _pause;
 
     // Start is called before the first frame update
     void Start()
@@ -44,10 +47,14 @@ public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
     {
         if (!FrenzyEnabled.GetValue())
         {
+            
             if (_frenzyPercentage.GetValue() > 0)
             {
-                // Slowly decrease the frenzy decrease rate
-                _frenzyPercentage.SetValue(_frenzyPercentage.GetValue() - _frenzyBarDecreaseRate * Time.deltaTime);
+                if (!_pause)
+                {
+                    // Slowly decrease the frenzy decrease rate
+                    _frenzyPercentage.SetValue(_frenzyPercentage.GetValue() - _frenzyBarDecreaseRate * Time.deltaTime);
+                }
             }
         }
         else
@@ -69,7 +76,10 @@ public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
         }
     }
 
-    
+    public void PauseFrenzy(bool isPaused)
+    {
+        _pause = isPaused;
+    }
 
     public void AddFrenzyMeter(float amountToAdd = 0.25f)
     {

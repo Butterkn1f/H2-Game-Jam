@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MainGameAnimation : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class MainGameAnimation : MonoBehaviour
 
         Sequence introSeq = DOTween.Sequence();
         introSeq.PrependInterval(delay);
+        introSeq.AppendCallback(() => AudioManager.Instance.PlayAudio(SoundUID.METAL_SHUTTER));
         introSeq.Append(_shutter.GetComponent<RectTransform>().DOAnchorPosY(400, 1.0f));
         introSeq.Append(_roof.GetComponent<RectTransform>().DOAnchorPosY(-30, 1.0f));
 
@@ -85,6 +87,7 @@ public class MainGameAnimation : MonoBehaviour
         outroSeq.Join(_dayOverText.GetComponent<TextMeshProUGUI>().DOFade(0, 1.0f));
         outroSeq.AppendCallback(() => _dayStartText.SetActive(false));
 
+        outroSeq.AppendCallback(() => AudioManager.Instance.PlayAudio(SoundUID.METAL_SHUTTER));
         outroSeq.Append(_roof.GetComponent<RectTransform>().DOAnchorPosY(_defaultRoofingYPos, 1.0f));
         outroSeq.Append(_shutter.GetComponent<RectTransform>().DOAnchorPosY(_defaultShutterYPos, 1.0f));
 

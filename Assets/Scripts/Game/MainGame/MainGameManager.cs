@@ -6,6 +6,7 @@ using Common.DesignPatterns;
 using UniRx.Extention;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class MainGameManager : Singleton<MainGameManager>
 {
@@ -160,6 +161,11 @@ public class MainGameManager : Singleton<MainGameManager>
 
     public void PauseGame(bool pauseCharaAnimations = true)
     {
+        if (TutorialManager.Instance._isTutorialActive)
+        {
+            return;
+        }
+
         if (PausedGame.GetValue())
         {
             PausedGame.SetValue(false);
@@ -172,6 +178,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
         _customerManager.PauseTimer(PausedGame.GetValue());
         _dayTimer.PauseTimer(PausedGame.GetValue());
+        _frenzy.PauseFrenzy(PausedGame.GetValue());
 
         if (pauseCharaAnimations)
         {
@@ -186,6 +193,22 @@ public class MainGameManager : Singleton<MainGameManager>
         }
     }
 
+    public void PauseHardcode(bool isPause)
+    {
+        _customerManager.PauseTimer(isPause);
+        _dayTimer.PauseTimer(isPause);
+        _frenzy.PauseFrenzy(isPause);
+    }
+
+    public void ChangeSceneToLevelSelect()
+    {
+        SceneManager.LoadScene("LevelSelectScene");
+    }
+
+    public void ReplayScene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
 }
 
 public enum MainGameState

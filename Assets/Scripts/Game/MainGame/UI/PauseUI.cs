@@ -12,10 +12,7 @@ public class PauseUI : MonoBehaviour
     [SerializeField] private GameObject _pauseStuff;
     [SerializeField] private GameObject _settingsStuff;
 
-    // Sliders for volume
-    [SerializeField] private Slider _masterSlider;
-    [SerializeField] private Slider _musicSlider;
-    [SerializeField] private Slider _sfxSlider;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +20,8 @@ public class PauseUI : MonoBehaviour
         _pausePanel.SetActive(false);
         _pauseStuff.SetActive(false);
         _settingsStuff.SetActive(false);
+
+        
     }
 
     // Update is called once per frame
@@ -41,6 +40,11 @@ public class PauseUI : MonoBehaviour
 
     public void IntroPausePanel()
     {
+        if (TutorialManager.Instance._isTutorialActive)
+        {
+            return;
+        }
+
         _pausePanel.GetComponent<Image>().color = Color.clear;
         _pausePanel.SetActive(true);
         _pauseStuff.SetActive(true);
@@ -72,18 +76,5 @@ public class PauseUI : MonoBehaviour
         _pauseStuff.SetActive(true);
     }
 
-    public void SetMasterSlider()
-    {
-        AudioManager.Instance.ChangeMasterVolume(_masterSlider.value);
-    }
-
-    public void SetMusicSlider()
-    {
-        AudioManager.Instance.ChangeMusicVolume(_musicSlider.value);
-    }
-
-    public void SetSFXSlider()
-    {
-        AudioManager.Instance.ChangeSFXVolume(_sfxSlider.value);
-    }
+    
 }

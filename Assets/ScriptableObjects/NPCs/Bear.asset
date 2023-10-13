@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: BEAR
   CustomerPrefab: {fileID: 4441184457199874417, guid: 98c30b7687a77e1499d647e39c25a072, type: 3}
-  PatienceDuration: 8
+  PatienceDuration: 20
