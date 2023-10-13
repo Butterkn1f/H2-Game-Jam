@@ -5,6 +5,7 @@ using UnityEngine;
 using Common.DesignPatterns;
 using UniRx.Extention;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class MainGameManager : Singleton<MainGameManager>
 {
@@ -25,6 +26,9 @@ public class MainGameManager : Singleton<MainGameManager>
 
     [SerializeField] private Image _backgroundImage;
 
+    private float currentAnimSpeed;
+    private bool pausedGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,8 +42,7 @@ public class MainGameManager : Singleton<MainGameManager>
         DishManager.Instance.InitializeIngredientButtons();
         ChatGetter.Instance.StartChat(LevelManager.Instance.CurrLevel.ChatID);
         _moneyManager = MoneyManager.Instance;
-        // Money
-        _moneyManager.SetLevelData(LevelManager.Instance.CurrLevel.DishCost, LevelManager.Instance.CurrLevel.RestaurantFees, LevelManager.Instance.CurrLevel.IngredientCost);
+        _moneyManager.SetData(LevelManager.Instance.CurrLevel.DishCost, LevelManager.Instance.CurrLevel.TwoStarMarker, LevelManager.Instance.CurrLevel.ThreeStarMarker);
 
         // Get indiv components
         _frenzy = GetComponent<Frenzy>();
@@ -47,6 +50,8 @@ public class MainGameManager : Singleton<MainGameManager>
 
         GameState.SetValue(MainGameState.CHAT);
         AudioManager.Instance.PlayAudio(SoundUID.CHAT_AUDIO);
+
+        pausedGame = false;
     }
 
     // Update is called once per frame
@@ -56,7 +61,11 @@ public class MainGameManager : Singleton<MainGameManager>
         {
             FinishOrder();
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            PauseGame(false);
+        }
     }
 
     public bool isEOD()
@@ -144,6 +153,33 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // Calculate tips and money
         _moneyManager.ThrowAwayFood();
+    }
+
+    public void PauseGame(bool pauseCharaAnimations = false)
+    {
+        if (pausedGame)
+        {
+            pausedGame = false;
+        }
+        else
+        {
+            pausedGame = true;
+        }
+
+        _customerManager.PauseTimer(pausedGame);
+        _dayTimer.PauseTimer(pausedGame);
+
+        if (pauseCharaAnimations)
+        {
+            if (pausedGame == false)
+            {
+                Time.timeScale = 1;
+            }
+            else
+            {
+                Time.timeScale = 0;
+            }
+        }
     }
 
 }

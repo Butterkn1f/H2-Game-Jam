@@ -9,15 +9,14 @@ public class MoneyManager : Singleton<MoneyManager>
     public float Profit;
     public float AmountEarned;
     public float Tips;
-    public float IngredientFees;
     public float WasteCost;
 
     [SerializeField, Range(0, 1)] private float _maxTipPercentage = 0.75f;
     private float _dishCost;
-    private float _ingredientCost;
-    private float _restaurantFee;
 
-    public float NumStarsEarned;
+    public int NumStarsEarned;
+    private float _twoStarCriteria;
+    private float _threeStarCriteria;
 
     // Start is called before the first frame update
     void Start()
@@ -25,36 +24,30 @@ public class MoneyManager : Singleton<MoneyManager>
         Profit = 0;
         AmountEarned = 0;
         Tips = 0;
-        IngredientFees = 0;
         WasteCost = 0;
     }
 
-    public void SetLevelData(float dishCost, float restaurantFee, float ingredientCost)
+    public void SetData(float dishCost, float twoStarCriteria, float threeStarCriteria)
     {
         _dishCost = dishCost;
-        _restaurantFee = restaurantFee;
-        _ingredientCost = ingredientCost;
+        _twoStarCriteria = twoStarCriteria;
+        _threeStarCriteria = threeStarCriteria;
     }
 
-    public void SetStarsData(float twoStarCriteria, float threeStarCriteria)
+    public void CalculateStars()
     {
         if (Profit > 0)
         {
             NumStarsEarned += 1;
         }
-        if (Profit >= twoStarCriteria)
+        if (Profit >= _twoStarCriteria)
         {
             NumStarsEarned += 1;
         }
-        if (Profit >= twoStarCriteria)
+        if (Profit >= _threeStarCriteria)
         {
             NumStarsEarned += 1;
         }
-    }
-
-    public void SetRestaurantFees(float newRestaurantFee)
-    {
-        IngredientFees = newRestaurantFee;
     }
 
     public void AddMoney(float patienceMeter)
@@ -62,15 +55,13 @@ public class MoneyManager : Singleton<MoneyManager>
         AmountEarned += _dishCost;
 
         // Will give anywhere from 0 - 75% tip based on patience meter
-        float tips = _dishCost * (patienceMeter * 0.75f);
+        float tips = _dishCost * (patienceMeter * _maxTipPercentage);
         Tips += tips;
-        IngredientFees += _ingredientCost;
     }
 
     public void ThrowAwayFood()
     {
         WasteCost += _dishCost;
-        IngredientFees += _ingredientCost;
     }
 
     // For tutorial
@@ -81,6 +72,7 @@ public class MoneyManager : Singleton<MoneyManager>
 
     public void CalculateProfit()
     {
-        Profit = (AmountEarned + Tips) - (IngredientFees + _restaurantFee + WasteCost);
+        Profit = (AmountEarned + Tips) - (WasteCost);
+        CalculateStars();
     }
 }

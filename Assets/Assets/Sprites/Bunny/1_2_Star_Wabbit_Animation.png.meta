@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c5fee6fba93a246bf9cee7bc3ab24a
+      internalID: 1746292116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4d3180253c240409dd36281a5e1854
+      internalID: -1082738768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d422305508c0b3469e6648d30e3c4ba
+      internalID: -452615178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1802901dbcd4544b8b362b17dda411e
+      internalID: 1831841774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a774d1f7455023848b5d6dbf669168f3
+      internalID: 2000067576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1848
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a5a78193399fd4daf6fc082c0c1015
+      internalID: -640199889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b5e2445280c94197b2a13f40619c3
+      internalID: -1339720522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e8260a830332a4dbc41253e404a84a
+      internalID: -356932084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2e9adace21b15428371cfe1e47d6ac
+      internalID: 569799368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a1d0f6d37b0b648aaf10a5258c0815
+      internalID: -1644568348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9935209f0a1ba04caf74b2d078a262d
+      internalID: 1546279007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1540
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2dcac97810f694d933c9b631b457d1
+      internalID: 772528552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b57abc850f6d243b6858a503c41de5
+      internalID: -64608742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b09fe212d68d7248b55cff0fe63512f
+      internalID: 129492848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef5ea2e78c1d344a9652feef3971804
+      internalID: -676545442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c04ec1b012f114b9937624ad0210db
+      internalID: 1388513514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404f26fdfe18c2e439f497a93b6dcfc5
+      internalID: 725249327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1232
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a314d795d6ac044af8eabd212888dd
+      internalID: 144613656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bd92f17043ddd4a972d900ce66f6c9
+      internalID: -892206228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defda7bbd9a39bd4dade56f311efc47e
+      internalID: -442571260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e946518e517d42ada577a5c978100
+      internalID: 954696903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c545821dad0cae04aa5aeff0b7b19f0f
+      internalID: -1076144065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b925a438de30274689070181086e636
+      internalID: -263360580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 924
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b9caf1796f4a34c85e3f6e0ccb5de0
+      internalID: 1412817919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a22f4bdb7c0713418f2bb2b66b2b0f0
+      internalID: 230303670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bffe2e0f359c4c49add52358cbdc044
+      internalID: -976883109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3a5c57392d5ea4b97ce406fc2d6865
+      internalID: -398655777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddb66aadd6d0ae49a156c9a0057345c
+      internalID: 1827175699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc96f1fb3a1194347b77ec58df8f7099
+      internalID: 1679491849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 616
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce893798d33a09d45845c19c1a7137f8
+      internalID: -1786353527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62ca6dc3ae34de4bbd8a977c9d8f1b3
+      internalID: -1850498092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1eacb6422cea3a4cb24bd2eefe3f3e5
+      internalID: -1786222788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0599d458f1e3054abbaf7f813d903f6
+      internalID: 990695143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e0c8affdc40a84bb4f3a90d40131b5
+      internalID: -901433316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8c71b6943b5c64289527daf7caa564
+      internalID: -567643603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 308
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416f39caa6da0dc468cea9517ec73a79
+      internalID: -459412937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01271717581f46540a7a828c4769ea06
+      internalID: 783056457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5921bd165759a549a854aa15ed0d2aa
+      internalID: -617124343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622b13aedcd51f048ba16741399c1445
+      internalID: -2083540512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71eaf138c695b344bbf35127761cd206
+      internalID: -1297948217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c382b9b98069a384b945bec7a28f75f4
+      internalID: -52790199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2_Star_Wabbit_Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 0
+        width: 316
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19276291466011642b665bf6ee4b7cab
+      internalID: 357541381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +1014,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      1_2_Star_Wabbit_Animation_0: 1746292116
+      1_2_Star_Wabbit_Animation_1: -1082738768
+      1_2_Star_Wabbit_Animation_10: 1546279007
+      1_2_Star_Wabbit_Animation_11: 772528552
+      1_2_Star_Wabbit_Animation_12: -64608742
+      1_2_Star_Wabbit_Animation_13: 129492848
+      1_2_Star_Wabbit_Animation_14: -676545442
+      1_2_Star_Wabbit_Animation_15: 1388513514
+      1_2_Star_Wabbit_Animation_16: 725249327
+      1_2_Star_Wabbit_Animation_17: 144613656
+      1_2_Star_Wabbit_Animation_18: -892206228
+      1_2_Star_Wabbit_Animation_19: -442571260
+      1_2_Star_Wabbit_Animation_2: -452615178
+      1_2_Star_Wabbit_Animation_20: 954696903
+      1_2_Star_Wabbit_Animation_21: -1076144065
+      1_2_Star_Wabbit_Animation_22: -263360580
+      1_2_Star_Wabbit_Animation_23: 1412817919
+      1_2_Star_Wabbit_Animation_24: 230303670
+      1_2_Star_Wabbit_Animation_25: -976883109
+      1_2_Star_Wabbit_Animation_26: -398655777
+      1_2_Star_Wabbit_Animation_27: 1827175699
+      1_2_Star_Wabbit_Animation_28: 1679491849
+      1_2_Star_Wabbit_Animation_29: -1786353527
+      1_2_Star_Wabbit_Animation_3: 1831841774
+      1_2_Star_Wabbit_Animation_30: -1850498092
+      1_2_Star_Wabbit_Animation_31: -1786222788
+      1_2_Star_Wabbit_Animation_32: 990695143
+      1_2_Star_Wabbit_Animation_33: -901433316
+      1_2_Star_Wabbit_Animation_34: -567643603
+      1_2_Star_Wabbit_Animation_35: -459412937
+      1_2_Star_Wabbit_Animation_36: 783056457
+      1_2_Star_Wabbit_Animation_37: -617124343
+      1_2_Star_Wabbit_Animation_38: -2083540512
+      1_2_Star_Wabbit_Animation_39: -1297948217
+      1_2_Star_Wabbit_Animation_4: 2000067576
+      1_2_Star_Wabbit_Animation_40: -52790199
+      1_2_Star_Wabbit_Animation_41: 357541381
+      1_2_Star_Wabbit_Animation_5: -640199889
+      1_2_Star_Wabbit_Animation_6: -1339720522
+      1_2_Star_Wabbit_Animation_7: -356932084
+      1_2_Star_Wabbit_Animation_8: 569799368
+      1_2_Star_Wabbit_Animation_9: -1644568348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
