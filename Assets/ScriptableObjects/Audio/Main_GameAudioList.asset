@@ -29,3 +29,31 @@ MonoBehaviour:
     Type: 0
     Clip: {fileID: 8300000, guid: 0b4af310ff79c224e96095341e20b2b6, type: 3}
     Loop: 1
+  - UniqueIdentifier: 8
+    Type: 1
+    Clip: {fileID: 8300000, guid: b789c5cf5967bd4489b31d7ce2379892, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 9
+    Type: 1
+    Clip: {fileID: 8300000, guid: 592471baade3e12419cd222c24e02057, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 10
+    Type: 1
+    Clip: {fileID: 8300000, guid: 1f69caeea7819a041a1f52c1956c7c8f, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 10
+    Type: 1
+    Clip: {fileID: 8300000, guid: 1f69caeea7819a041a1f52c1956c7c8f, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 11
+    Type: 1
+    Clip: {fileID: 8300000, guid: 797a18750a9142e45a78a3ec81e42951, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 13
+    Type: 1
+    Clip: {fileID: 8300000, guid: 73aae2a8fd59bec40a28779b4c1edf81, type: 3}
+    Loop: 1
+  - UniqueIdentifier: 12
+    Type: 1
+    Clip: {fileID: 8300000, guid: 9f77b55783570f040bce6d5b1fd76112, type: 3}
+    Loop: 1
