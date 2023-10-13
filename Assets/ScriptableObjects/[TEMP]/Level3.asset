@@ -26,11 +26,15 @@ MonoBehaviour:
     Type: 3
   Dishes:
   - Name: Satay
-    Sprite: {fileID: 21300000, guid: 28d7ebfd7dfb08541aa014dd2409b942, type: 3}
+    Sprite: {fileID: 21300000, guid: ae822f079d25ddf45b0193d4ebdd7440, type: 3}
     MinShapes: 2
     MaxShapes: 3
     Ingredients: 0100000003000000
     AllowedShapes: 0100000002000000
+  DishCost: 10
   IngredientCost: 0
+  RestaurantFees: 100
+  TwoStarMarker: 100
+  ThreeStarMarker: 300
   IsUnlocked: 0
   StarsEarned: 0

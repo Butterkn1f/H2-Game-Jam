@@ -105,6 +105,7 @@ public class IngredientButton : MonoBehaviour
         if (DishManager.Instance.CheckAddIngredient(Ingredient))
         {
             AnimateFlyToPot();
+            _button.interactable = false;
         }
     }
 }

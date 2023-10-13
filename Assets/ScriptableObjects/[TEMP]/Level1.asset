@@ -32,19 +32,19 @@ MonoBehaviour:
     Type: 3
   Dishes:
   - Name: Satay
-    Sprite: {fileID: 21300000, guid: 28d7ebfd7dfb08541aa014dd2409b942, type: 3}
+    Sprite: {fileID: 21300000, guid: ae822f079d25ddf45b0193d4ebdd7440, type: 3}
     MinShapes: 2
     MaxShapes: 3
     Ingredients: 0100000003000000
     AllowedShapes: 0100000002000000
   - Name: Carrot Cake
-    Sprite: {fileID: 21300000, guid: f0cad740376d96a49a89e673fbbd64aa, type: 3}
+    Sprite: {fileID: 21300000, guid: 71d302e3060d26e429548b40019f9596, type: 3}
     MinShapes: 3
     MaxShapes: 4
     Ingredients: 0000000003000000
     AllowedShapes: 0000000002000000
   - Name: Chicken Rice
-    Sprite: {fileID: 21300000, guid: 7bf8b30c96cb2ee4f95ff4aa0c80348a, type: 3}
+    Sprite: {fileID: 21300000, guid: 417e65d3cb97d9e43ad2976353e2ae37, type: 3}
     MinShapes: 3
     MaxShapes: 5
     Ingredients: 000000000100000002000000
