@@ -52,6 +52,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
                     break;
 
                 case MainGameState.GAME_WAIT:
+                    TutorialManager.Instance.AdvanceTutorial(5);
                     ResetDish();
                     _wokSoup.DOFade(0, 0.25f);
                     _wokLid.DOFade(0, 0.25f);
@@ -81,6 +82,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     private void InitializeDishItems()
     {
+        TutorialManager.Instance.AdvanceTutorial(4);
         ClearTableItems();
         _currItemIndex = 0;
 

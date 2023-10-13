@@ -40,6 +40,7 @@ public class CustomerUI : MonoBehaviour
     [SerializeField] private CanvasGroup _ingredientsParent;
     [SerializeField] private List<Image> _ingredients;
     public Image OrderImage;
+    private Sequence sequence;
 
     // Start is called before the first frame update
     void Start()
@@ -51,15 +52,19 @@ public class CustomerUI : MonoBehaviour
 
     public void OnPointerDownFoodBubble()
     {
-        var sequence = DOTween.Sequence();
+        sequence?.Kill();
+        sequence = DOTween.Sequence();
         sequence.Append(OrderImage.DOFade(0, 0.25f))
             .Append(_ingredientsParent.DOFade(1, 0.25f));
+
+        TutorialManager.Instance.AdvanceTutorial(3);
 
     }
 
     public void OnPointerUpFoodBubble()
     {
-        var sequence = DOTween.Sequence();
+        sequence?.Kill();
+        sequence = DOTween.Sequence();
         sequence.Append(_ingredientsParent.DOFade(0, 0.1f))
             .Append(OrderImage.DOFade(1, 0.1f));
     }
