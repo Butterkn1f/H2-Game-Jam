@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: UWU_GIRL
   CustomerPrefab: {fileID: 8574523052336630470, guid: 3a41798ffeb2b0142a801b63b3091642, type: 3}
-  PatienceDuration: 11
+  PatienceDuration: 20

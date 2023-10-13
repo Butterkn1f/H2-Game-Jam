@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Common.DesignPatterns;
+using TMPro;
 
 public class MoneyManager : Singleton<MoneyManager> 
 {
@@ -17,6 +18,8 @@ public class MoneyManager : Singleton<MoneyManager>
     public int NumStarsEarned;
     private float _twoStarCriteria;
     private float _threeStarCriteria;
+
+    public TextMeshProUGUI _moneySign;
 
     // Start is called before the first frame update
     void Start()
@@ -57,11 +60,16 @@ public class MoneyManager : Singleton<MoneyManager>
         // Will give anywhere from 0 - 75% tip based on patience meter
         float tips = _dishCost * (patienceMeter * _maxTipPercentage);
         Tips += tips;
+
+        _moneySign.text = ((int)(AmountEarned + Tips - WasteCost)).ToString();
     }
 
     public void ThrowAwayFood()
     {
         WasteCost += _dishCost;
+
+        _moneySign.text = ((int)(AmountEarned + Tips - WasteCost)).ToString();
+
     }
 
     // For tutorial

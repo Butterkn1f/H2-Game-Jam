@@ -31,6 +31,10 @@ public class ResultsUI : Singleton<ResultsUI>
 
     [SerializeField] private GameObject _toast;
 
+    [SerializeField] private GameObject _button1;
+    [SerializeField] private GameObject _button2;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +65,8 @@ public class ResultsUI : Singleton<ResultsUI>
         _star3.SetActive(false);
 
         _toast.SetActive(false);
+        _button1.SetActive(false);
+        _button2.SetActive(false);
 
         _paper.SetActive(false);
         _paper.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, _background.GetComponent<RectTransform>().rect.height * 2);
@@ -130,6 +136,10 @@ public class ResultsUI : Singleton<ResultsUI>
 
         seq.Append(_toast.GetComponent<RectTransform>().DOAnchorPosY(-550, 0.5f));
         seq.Join(_toast.GetComponent<Image>().DOFade(1, 0.5f));
+
+        seq.AppendCallback(() => _button1.SetActive(true));
+        seq.AppendCallback(() => _button2.SetActive(true));
+
 
         switch (numStars)
         {

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: UWU_GUY
   CustomerPrefab: {fileID: 8574523052336630470, guid: 0d6eb9d4097d9b943bced0f6f8bc75f3, type: 3}
-  PatienceDuration: 9
+  PatienceDuration: 20
