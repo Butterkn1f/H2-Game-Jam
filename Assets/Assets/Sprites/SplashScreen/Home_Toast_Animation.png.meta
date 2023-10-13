@@ -1,0 +1,1090 @@
+fileFormatVersion: 2
+guid: 98ae4c909552cbc4db57f5f510489ee6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Home_Toast_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad46c1a9bb9c83b4cb8b2e7fe796c964
+      internalID: -291288469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9a918e0469f534a991b9c475883d86
+      internalID: -657205406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2f3d0c1eca63a428c718e3c7db0c38
+      internalID: 1236464866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39757f92fef8c4240b14fd70f4536ba2
+      internalID: 422665383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b6d1045e78ae744bb373ad34f8ae2f
+      internalID: -337726104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 2370
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464424b09ed33d046a47fe42c5f7fb31
+      internalID: -1030765009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa51bb689c8e9e4f9b40f6eb7cddeb3
+      internalID: -1615730404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141577d4fb8be80418148fda81fc24e0
+      internalID: 966915927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20273341dc1b16c41bc2a9d112d7669c
+      internalID: 1219329587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1a39884fa767e479b36888f6091236
+      internalID: 1225289494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271539cc4d4df0a48bb0e51f7b906547
+      internalID: -1764658799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1975
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c169d65ac268be41b58378439a12932
+      internalID: 1122651064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de792697f63dc64681c9e0710269d95
+      internalID: 1265193181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f0375dbc41e48418c9f43451ebea9f
+      internalID: 1327679346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a734c8d57fea4a9f913d49e05e981
+      internalID: -1878549773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5ca011a19a16e4b92256a266daba32
+      internalID: 2000658782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065a7dfd891d2f5469f2785087c0b2af
+      internalID: -206568114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1580
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e3fd31c447ba14eae3283517d822d3
+      internalID: 930572532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a88f8c7364fea43a293a3f7ee6992e
+      internalID: 1672662419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd4ec706ed4a5c46bb25b4053e3c129
+      internalID: -1651759677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36b08dff91832140b9148dbe21bad01
+      internalID: -884935234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c806618147e9b0409861faa2cbfffec
+      internalID: -735453247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e0877f2a9b4a446bf992b80ee37e49
+      internalID: 2092117226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1185
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f381b5250353e44804a4f2e944f4b7
+      internalID: -1983703477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052c741407c77c24fb7b41d90c8555ec
+      internalID: 1401387155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356ce0a8114ac4c4bb6287aa1600eb6f
+      internalID: 1435896624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf5848c0cea5164db6c47226c8e361a
+      internalID: -917318389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c176ce65f2721584f8c9035f714c3887
+      internalID: 401894751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e607f8d4e7e7ac545adaa26f306576df
+      internalID: -1548480246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 790
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd12ccd25a20ac4ba1aa1ef8d1c5bf3
+      internalID: 397989538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c281caa268c432846a400e102a039cda
+      internalID: -542180250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdaddfc2f4d0714999cce980ffd0822
+      internalID: 1451980913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3d577328891894e86ab6238baa9c21
+      internalID: -1696372386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d5bfa77ea104740a15b27e35e7fb84
+      internalID: -1044690380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd94d5520bad6ae429fe5df2e18b6364
+      internalID: -1107402376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 395
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f531d9771a09740bbba8090c93cf75
+      internalID: 2028777043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf9a0bb9ba3669468b42219623f57c3
+      internalID: 1248696362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b58011431fd3249a7e6b889f8dd872
+      internalID: 825024083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf2c7308d006f741b2db2959049cede
+      internalID: -667811336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a8e78995d0aff4ca7cfb2b0a313a88
+      internalID: 572208563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc7ea5ba2ef72143b4e41423b26070c
+      internalID: 2018124574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Toast_Animation_41
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 0
+        width: 435
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954987b488b318e498aaaf1f9e3e60d4
+      internalID: -863814327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Home_Toast_Animation_0: -291288469
+      Home_Toast_Animation_1: -657205406
+      Home_Toast_Animation_10: -1764658799
+      Home_Toast_Animation_11: 1122651064
+      Home_Toast_Animation_12: 1265193181
+      Home_Toast_Animation_13: 1327679346
+      Home_Toast_Animation_14: -1878549773
+      Home_Toast_Animation_15: 2000658782
+      Home_Toast_Animation_16: -206568114
+      Home_Toast_Animation_17: 930572532
+      Home_Toast_Animation_18: 1672662419
+      Home_Toast_Animation_19: -1651759677
+      Home_Toast_Animation_2: 1236464866
+      Home_Toast_Animation_20: -884935234
+      Home_Toast_Animation_21: -735453247
+      Home_Toast_Animation_22: 2092117226
+      Home_Toast_Animation_23: -1983703477
+      Home_Toast_Animation_24: 1401387155
+      Home_Toast_Animation_25: 1435896624
+      Home_Toast_Animation_26: -917318389
+      Home_Toast_Animation_27: 401894751
+      Home_Toast_Animation_28: -1548480246
+      Home_Toast_Animation_29: 397989538
+      Home_Toast_Animation_3: 422665383
+      Home_Toast_Animation_30: -542180250
+      Home_Toast_Animation_31: 1451980913
+      Home_Toast_Animation_32: -1696372386
+      Home_Toast_Animation_33: -1044690380
+      Home_Toast_Animation_34: -1107402376
+      Home_Toast_Animation_35: 2028777043
+      Home_Toast_Animation_36: 1248696362
+      Home_Toast_Animation_37: 825024083
+      Home_Toast_Animation_38: -667811336
+      Home_Toast_Animation_39: 572208563
+      Home_Toast_Animation_4: -337726104
+      Home_Toast_Animation_40: 2018124574
+      Home_Toast_Animation_41: -863814327
+      Home_Toast_Animation_5: -1030765009
+      Home_Toast_Animation_6: -1615730404
+      Home_Toast_Animation_7: 966915927
+      Home_Toast_Animation_8: 1219329587
+      Home_Toast_Animation_9: 1225289494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
