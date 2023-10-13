@@ -84,7 +84,7 @@ public class Frenzy : Common.DesignPatterns.Singleton<Frenzy>
         if (_frenzyPercentage.GetValue() >= 1)
         {
             FrenzyEnabled.SetValue(true);
-            GetComponent<FrenzyUI>().StartFrenzy();
+            GetComponent<FrenzyUI>().StartFrenzy(_frenzyDuration);
             _frenzyModeTimer = _frenzyDuration;
         }
     }

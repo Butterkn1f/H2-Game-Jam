@@ -19,7 +19,7 @@ public class FrenzyUI : MonoBehaviour
 
     // Frenzy Mode Variables
     [SerializeField] private GameObject _frenzyBackground;
-    [SerializeField] private GameObject _frenzyRushlines;
+    [SerializeField] private GameObject _frenzyMoneyDrop;
     [SerializeField] private GameObject _frenzyText;
     [SerializeField] private GameObject _bunnyZoomImage; // The bunny image to pop up
 
@@ -29,7 +29,7 @@ public class FrenzyUI : MonoBehaviour
         GetComponent<Frenzy>()._frenzyPercentage.Value.Subscribe(x => UpdateFrenzyBar(x));
 
         _frenzyBackground.SetActive(false);
-        _frenzyRushlines.SetActive(false);
+        _frenzyMoneyDrop.SetActive(false);
         _frenzyText.SetActive(false);
         _bunnyZoomImage.SetActive(false);
     }
@@ -39,37 +39,31 @@ public class FrenzyUI : MonoBehaviour
         _frenzyBar.DOValue(newFrenzyBar, 0.25f);
     }
 
-    private void FrenzyBackgroundIntro()
+    private void FrenzyBackgroundIntro(float _frenzyDuration)
     {
-        RectTransform rectTransform = _frenzyBackground.GetComponent<RectTransform>();
-        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, - (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2));
-        _frenzyRushlines.GetComponent<RectTransform>().localScale = new Vector2(3, 3);
+        RectTransform moneyRectTransform = _frenzyMoneyDrop.GetComponent<RectTransform>();
+        RectTransform bgRectTransform = _frenzyBackground.GetComponent<RectTransform>();
+        moneyRectTransform.anchoredPosition = new Vector2(moneyRectTransform.anchoredPosition.x, (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2));
+        bgRectTransform.anchoredPosition = new Vector2(bgRectTransform.anchoredPosition.x,  (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height));
+        _frenzyMoneyDrop.SetActive(true);
         _frenzyBackground.SetActive(true);
-        _frenzyRushlines.SetActive(true);
-        rectTransform.DOAnchorPosY(0, 1.0f).SetEase(Ease.OutCubic);
-        Sequence seq = DOTween.Sequence();
-        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1, 1), 2.0f).SetEase(Ease.OutCubic));
-        seq.AppendCallback(() => FrenzyRushBob());
-        
-    }
+        moneyRectTransform.DOAnchorPosY(-(_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height), _frenzyDuration + 10).SetEase(Ease.Linear);
 
-    public void FrenzyRushBob()
-    {
         Sequence seq = DOTween.Sequence();
-        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1.25f, 1.25f), 1.0f));
-        seq.Append(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(1f, 1f), 1.0f));
-        seq.SetLoops(-1);
+        seq.Append(bgRectTransform.DOAnchorPosY(500, 0.5f).SetEase(Ease.OutCubic));
+        seq.Join(bgRectTransform.DOAnchorPosY(-450, _frenzyDuration + 10).SetEase(Ease.Linear));
+
     }
 
     private void FrenzyBackgroundOutro()
     {
-        DOTween.Kill(_frenzyRushlines);
+        DOTween.Kill(_frenzyMoneyDrop);
         RectTransform rectTransform = _frenzyBackground.GetComponent<RectTransform>();
         Sequence seq = DOTween.Sequence();
         seq.Append(rectTransform.DOAnchorPosY(- (_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
-        seq.Join(_frenzyRushlines.GetComponent<RectTransform>().DOScale(new Vector2(3, 3), 1.0f).SetEase(Ease.OutCubic));
+        seq.Join(_frenzyMoneyDrop.GetComponent<RectTransform>().DOAnchorPosY(-(_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height * 2),  1).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _frenzyBackground.SetActive(false));
-        seq.AppendCallback(() => _frenzyRushlines.SetActive(false));
+        seq.AppendCallback(() => _frenzyMoneyDrop.SetActive(false));
 
     }
 
@@ -105,9 +99,9 @@ public class FrenzyUI : MonoBehaviour
         seq.AppendCallback(() => _bunnyZoomImage.SetActive(false));
     }
 
-    public void StartFrenzy()
+    public void StartFrenzy(float frenzyDuration)
     {
-        FrenzyBackgroundIntro();
+        FrenzyBackgroundIntro(frenzyDuration);
         FrenzyTextIntro();
         BunnyIntro();
     }
