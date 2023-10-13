@@ -14,6 +14,8 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     [SerializeField] private GameObject _ingredientItemPrefab;
     [SerializeField] private RectTransform _tableParentTransform;
     [SerializeField] private List<IngredientButton> _ingredientButtons;
+    [SerializeField] private CanvasGroup _wokSoup;
+    [SerializeField] private CanvasGroup _wokLid;
     #endregion
 
     private Dish _currDish = null;
@@ -46,10 +48,13 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
                 case MainGameState.GAME_COOK:
                     InitializeDishItems();
+                    _wokLid.DOFade(1, 0.5f);
                     break;
 
                 case MainGameState.GAME_WAIT:
                     ResetDish();
+                    _wokSoup.DOFade(0, 0.25f);
+                    _wokLid.DOFade(0, 0.25f);
                     break;
 
                 default:
@@ -253,6 +258,11 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
             {
                 if (!item.IsActive)
                 {
+                    if (_addedIngredients.Count == 0)
+                    {
+                        _wokSoup.DOFade(1, 0.5f);
+                    }
+
                     _addedIngredients.Add(ingredient.Type);
                     item.AnimateActivate(ingredient).OnComplete(() =>
                     {
