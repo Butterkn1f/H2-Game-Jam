@@ -1,8 +1,18 @@
-#PEEPEE,1,TOAST,0,This is a demonstration.
-#PEEPEE,2,MR_TANUKI,1,Good Demonstration!
-#LVLTHREE,1,TOAST,2,Ugh.. Yesterday was so tiring..
-#LVLTHREE,2,MR_TANUKI,1,Good Job yesterday! You sure know how to make some good food..
-#LVLTHREE,3,TOAST,0,Thank you// Mr. Tanuki! 
-#LVLTHREE,4,MR_TANUKI,2,That being said// you still did mess up a bit..
-#LVLTHREE,5,MR_TANUKI,2,Try not to do that again// because it'll come out of your paycheck this time.
-#LVLTHREE,6,TOAST,2,.........
+#LVLONE,1,TOAST,1,Alrighty// first day of work!
+#LVLONE,2,TOAST,0,Time to put what I know about magic and cooking to good use! My adventure as a wizard chef starts today!
+#LVLONE,3,TOAST,0,Oh// Boss is here!
+#LVLONE,4,MR_TANUKI,0,Ay// I see ya bright and early. Everythin' up and runnin'?
+#LVLONE,5,TOAST,1,Yes// sir!
+#LVLTWO,1,MR_TANUKI,1,Hey hey! Looks like you did well during your first day! Praises// kid.
+#LVLTWO,2,TOAST,1,Ehe// I'm glad to hear that Boss! I'll keep it up today as well!
+#LVLTWO,3,MR_TANUKI,0,Oh BTW// there's a popular dish 'round here// so you're gonna be servin' it right up too// hear that?
+#LVLTWO,4,MR_TANUKI,1,All the better to earn some shiny coin with! Wahaha!
+#LVLTWO,5,TOAST,3,(That's so sudden.. but it's okay! I got this! Just gotta keep an eye out for whatever that new order is!)
+#LVLTHREE,1,TOAST,0,Whew.. the chicken rice was a surprise// but I think I managed well!
+#LVLTHREE,2,MR_TANUKI,1,Ya sure did// kiddo! Look at all that sweet sweet moo-lah ya made!
+#LVLTHREE,3,TOAST,1,Boss! Heh// thank you!
+#LVLTHREE,4,MR_TANUKI,2,Anyways// here to tell ya that it looks like sum' went wrong with that magic wok o' years.
+#LVLTHREE,5,TOAST,2,Oh.. oh no!!!
+#LVLTHREE,6,MR_TANUKI,2,Aye// gonna have to cast 5 symbols no matter what. But it's no biggie// an up-n-comin' wizard like ya can handle it// right?
+#LVLTHREE,7,TOAST,3,5 symbols no matter what understood! I'll do my best!
+#LVLTHREE,8,MR_TANUKI,1,Then shutter's up kid// and get cookin'!

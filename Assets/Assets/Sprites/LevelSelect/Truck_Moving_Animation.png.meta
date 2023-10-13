@@ -1,0 +1,1090 @@
+fileFormatVersion: 2
+guid: ff9dd7aa7a24751428c67da6f8b42c08
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b97124102d79d4dae155143fda1a34
+      internalID: 1066577593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338320efd6cccfd49a2ed2795c4316c1
+      internalID: 1272861338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d382b3f92ff4cac498c45a7307d07fff
+      internalID: 561549662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d80b14293d7234bb6166aa4c6f5838
+      internalID: 466419248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f79655a68d12045990ce84c254d1a4
+      internalID: -1775336770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1278
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc9501d5603aac478907fdc4bbb198b
+      internalID: 369536349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f0a09432286c54aac20c21a34aad01
+      internalID: -1299407650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dac0e189adeb04f8093804170864c8
+      internalID: 1212188294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b5677d44c585c4db8d8f4b2c22db3c
+      internalID: 308888726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3cfbf53871bd442a8c30a0993576c0
+      internalID: -1701026970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222fc51382b699147a213e4039e8f176
+      internalID: -1588059014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1065
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db32764ad9a017438302d4f3125aeaa
+      internalID: 958536670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b2ca9640039754a8b70a7f238bdc17
+      internalID: 2139971928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4272fac229eee4b9140efce3845839
+      internalID: -1881065905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085b44ed5eddc26438f0b370c4c2c1a1
+      internalID: -711057930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48893379d831e418a2f5cc12aec35d
+      internalID: -1031520762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76dc3d00d7945c49905b3b73811c318
+      internalID: -1935737992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 852
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d463420e3fe1edd449fb541555358913
+      internalID: 1852929499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8620a06a09a824988bb154e5ca93a9
+      internalID: 1720941779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfae267f8cbab74b88bd1a299447ae4
+      internalID: -1524783851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0ec42e7e8bc45408ab8963a644fbed
+      internalID: 963087553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f29d2ef3ff6e640974979a528ce326
+      internalID: -1739824848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a49940a51c6234f9eeb9ccd9b13efe
+      internalID: -1183190592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 639
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53367da99de13542ae2662192708f6f
+      internalID: 2123582131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f97956e4c7af4499869691bc9f5891
+      internalID: -2034055382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca2ce79e82fb564993c1dace1c0e8ed
+      internalID: -101036837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d660343e6845fd640b89dddb84175fcb
+      internalID: -435957985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7803c4d9c3f63248b69a01082be15c1
+      internalID: 1263786935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a863fedafe85f4b8ebdd5da2791975
+      internalID: -455333306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 426
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62734716610b2c408b06e11fda07885
+      internalID: 1192831954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c8d9c5024a1554eb1acfa358700915
+      internalID: 635897836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ed3fd42c5d513468b2b73c31e09419
+      internalID: -7237133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0371376f95643541a7bd47312dbe731
+      internalID: 865018201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74a5e55386bc7c4e9674b18ecf132a2
+      internalID: -200017582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba721cb2145f444b959911910d93cf6
+      internalID: 692464876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 213
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bddce4b148dd0a4e88b18c75bfd3f30
+      internalID: -304195590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9697c6dec529f45a0dc7d90836a2bc
+      internalID: 1536557194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_37
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfba2db3457aa64a9363a49155c8e9c
+      internalID: 1585928303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_38
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6cf477b2dc22a41a785462c8aad350
+      internalID: 743770315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_39
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e610dfefde410bc43af9cfd9deb1a3de
+      internalID: 1723524737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 0
+        width: 295
+        height: 213
+      alignment: 9
+      pivot: {x: 0.424, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e740f572173a348ab58d19bf2f905a
+      internalID: 921054092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truck_Moving_Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 295
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7fe560a6b26564d81db0bf76deff84
+      internalID: 876630390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Truck_Moving_Animation_0: 1066577593
+      Truck_Moving_Animation_1: 1272861338
+      Truck_Moving_Animation_10: -1588059014
+      Truck_Moving_Animation_11: 958536670
+      Truck_Moving_Animation_12: 2139971928
+      Truck_Moving_Animation_13: -1881065905
+      Truck_Moving_Animation_14: -711057930
+      Truck_Moving_Animation_15: -1031520762
+      Truck_Moving_Animation_16: -1935737992
+      Truck_Moving_Animation_17: 1852929499
+      Truck_Moving_Animation_18: 1720941779
+      Truck_Moving_Animation_19: -1524783851
+      Truck_Moving_Animation_2: 561549662
+      Truck_Moving_Animation_20: 963087553
+      Truck_Moving_Animation_21: -1739824848
+      Truck_Moving_Animation_22: -1183190592
+      Truck_Moving_Animation_23: 2123582131
+      Truck_Moving_Animation_24: -2034055382
+      Truck_Moving_Animation_25: -101036837
+      Truck_Moving_Animation_26: -435957985
+      Truck_Moving_Animation_27: 1263786935
+      Truck_Moving_Animation_28: -455333306
+      Truck_Moving_Animation_29: 1192831954
+      Truck_Moving_Animation_3: 466419248
+      Truck_Moving_Animation_30: 635897836
+      Truck_Moving_Animation_31: -7237133
+      Truck_Moving_Animation_32: 865018201
+      Truck_Moving_Animation_33: -200017582
+      Truck_Moving_Animation_34: 692464876
+      Truck_Moving_Animation_35: -304195590
+      Truck_Moving_Animation_36: 1536557194
+      Truck_Moving_Animation_37: 1585928303
+      Truck_Moving_Animation_38: 743770315
+      Truck_Moving_Animation_39: 1723524737
+      Truck_Moving_Animation_4: -1775336770
+      Truck_Moving_Animation_40: 921054092
+      Truck_Moving_Animation_41: 876630390
+      Truck_Moving_Animation_5: 369536349
+      Truck_Moving_Animation_6: -1299407650
+      Truck_Moving_Animation_7: 1212188294
+      Truck_Moving_Animation_8: 308888726
+      Truck_Moving_Animation_9: -1701026970
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

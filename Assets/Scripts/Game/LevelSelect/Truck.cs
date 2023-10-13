@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
 
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Truck : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class Truck : MonoBehaviour
     [SerializeField] private float _drag = 0.5f;
     [SerializeField] private RectTransform parent;
     [SerializeField] private List<LevelSelectNode> _nodes;
-    //[SerializeField] private GameObject _hitEffect;
-    //private Animator _animator;
+    [SerializeField] private GameObject _hitEffect;
+    private Animator _animator;
     private Rigidbody2D _rigidbody;
     private Vector3? _targetPos;
 
@@ -23,7 +24,7 @@ public class Truck : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        //_animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _targetPos = null;
 
@@ -47,6 +48,11 @@ public class Truck : MonoBehaviour
             .Where(_ => !IsOverInfo && (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)))
             .Subscribe(_ => MoveToMouseTap())
             .AddTo(this);
+
+        Observable.EveryUpdate()
+            .Where(_ => !IsOverInfo && (Input.GetMouseButtonDown(0)))
+            .Subscribe(_ => HitEffect())
+            .AddTo(this);
     }
 
     void Update()
@@ -58,14 +64,14 @@ public class Truck : MonoBehaviour
     {
         _rigidbody.velocity = Vector3.zero;
         _targetPos = null;
-        //_animator.SetBool("IsRunning", false);
+        _animator.SetBool("IsRunning", false);
     }
 
-    /*private void HitEffect()
+    private void HitEffect()
     {
         var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Instantiate(_hitEffect, new Vector3(pos.x, pos.y, 0), Quaternion.identity);
-    }*/
+    }
 
     private void MoveToMouseTap()
     {
@@ -79,7 +85,7 @@ public class Truck : MonoBehaviour
         Vector3 direction = (destination - transform.position).normalized;
 
         _rigidbody.velocity = direction * speedNeeded;
-        //_animator.SetBool("IsRunning", true);
+        _animator.SetBool("IsRunning", true);
     }
 
     private void CheckIfReachTarget()
@@ -91,7 +97,7 @@ public class Truck : MonoBehaviour
         {
             _rigidbody.velocity = Vector3.zero;
             _targetPos = null;
-            //_animator.SetBool("IsRunning", false);
+            _animator.SetBool("IsRunning", false);
         }
     }
     private Vector3 Round(Vector3 vector3, int decimalPlaces = 1)
