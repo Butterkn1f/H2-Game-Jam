@@ -20,17 +20,6 @@ public class PauseUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MainGameManager.Instance.PausedGame.Value.Subscribe(isPause =>
-        {
-            if (isPause)
-            {
-                IntroPausePanel();
-            }
-            else
-            {
-                OutroPausePanel();
-            }
-        });
         _pausePanel.SetActive(false);
         _pauseStuff.SetActive(false);
         _settingsStuff.SetActive(false);

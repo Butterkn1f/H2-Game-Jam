@@ -30,13 +30,18 @@ public class CustomerBehavior : MonoBehaviour
     {
         _maxTimerDuration = TimerMaxDuration;
         _currentTimerDuration = _maxTimerDuration;
-        _activeBehaviour = true;
+
+        if (!TutorialManager.Instance._isTutorialActive)
+        {
+            _activeBehaviour = true;
+        }
         _hasActivatedBehaviour = true;
     }
 
     public void PauseTimer(bool IsPaused)
     {
         _activeBehaviour = !IsPaused;
+        Debug.Log("Active behaviour: " + _activeBehaviour);
     }
 
 
