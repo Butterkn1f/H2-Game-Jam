@@ -54,7 +54,7 @@ public class DishItem : ITableItem
     {
         Shape = shape;
         _image.color = _initialColor;
-        targetColor = Frenzy.Instance.FrenzyEnabled.GetValue() ? Color.white : shape.Color;
+        targetColor = shape.Color;
         _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ? _frenzySprite : shape.Sprite;
         BeginFloatAnimation();
 
@@ -73,7 +73,7 @@ public class DishItem : ITableItem
     public override void ToggleFrenzySprite(bool isFrenzy)
     {
         _image.sprite = isFrenzy ? _frenzySprite : Shape.Sprite;
-        targetColor = isFrenzy ? Color.white : Shape.Color;
+        targetColor = Shape.Color;
 
         // Also update color if changing frenzy but already activated
         if (_image.color.a == 1)

@@ -79,8 +79,8 @@ public class MainGameManager : Singleton<MainGameManager>
     public void StartGame()
     {
         _dayTimer.StartTimer();
-
         _customerManager.SendNewCustomer();
+        TutorialManager.Instance.BeginTutorial();
     }
 
     /// <summary>

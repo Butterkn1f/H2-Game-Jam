@@ -13,7 +13,8 @@ public class LevelSelectNodeInfo : MonoBehaviour, IPointerEnterHandler, IPointer
     [SerializeField] private List<Image> _stars = new List<Image>();
     [SerializeField] private Button _playBtn;
     [SerializeField] private GameObject _infosParent;
-    [SerializeField] private Color _darkStarColor = new Color(0.2f, 0.2f, 0.2f, 0.4f);
+    [SerializeField] private Sprite _starEnabledSprite;
+    [SerializeField] private Sprite _starEmptySprite;
     private Truck _truck;
 
     private RectTransform _rectTransform;
@@ -49,7 +50,7 @@ public class LevelSelectNodeInfo : MonoBehaviour, IPointerEnterHandler, IPointer
         _levelTitle.text = level.LevelName;
         for (int i = 0; i < _stars.Count; ++i)
         {
-            _stars[i].color = i < level.StarsEarned ? Color.white : _darkStarColor;
+            _stars[i].sprite = i < level.StarsEarned ? _starEnabledSprite : _starEmptySprite;
         }
 
         _playBtn.onClick.AddListener(() => OnPressPlay(level.LevelNumber - 1));
