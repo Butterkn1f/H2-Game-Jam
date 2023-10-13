@@ -176,6 +176,19 @@ public class CustomerUI : MonoBehaviour
         shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.5f, 0.2f).SetEase(Ease.OutCubic));
         shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.0f, 0.2f).SetEase(Ease.InCubic));
     }
+
+    public void SetAngry()
+    {
+        _currentMood = CustomerMood.VERY_ANGRY;
+        _currentMoodImage.sprite = _moodEmojis.Where(x => x.Mood == _currentMood).Select(x => x.Emoji).FirstOrDefault();
+        RectTransform _feelingBubbleRectTransform = _feelingBubble.GetComponent<RectTransform>();
+        Sequence shakeSequence = DOTween.Sequence();
+        _patienceMeter.gameObject.SetActive(false);
+
+        // TODO: make this more impact
+        shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.5f, 0.2f).SetEase(Ease.OutCubic));
+        shakeSequence.Append(_feelingBubbleRectTransform.DOScale(1.0f, 0.2f).SetEase(Ease.InCubic));
+    }
 }
 
 // The four moods the customer will have

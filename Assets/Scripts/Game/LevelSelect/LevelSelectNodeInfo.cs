@@ -72,6 +72,7 @@ public class LevelSelectNodeInfo : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPressPlay(int index)
     {
+        AudioManager.Instance.PlayAudio(SoundUID.CAR_HORN);
         LevelManager.Instance.SetCurrLevel(index);
     }
 }

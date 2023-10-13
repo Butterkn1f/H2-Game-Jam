@@ -27,6 +27,7 @@ public class LevelSelectNode : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Truck"))
         {
+            AudioManager.Instance.PlayAudio(SoundUID.OVER_NODE);
             ToggleShowInfo(true);
         }
     }

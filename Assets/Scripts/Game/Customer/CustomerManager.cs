@@ -147,6 +147,12 @@ public class CustomerManager : Singleton<CustomerManager>
         StartCoroutine(OutroAnimationSequence(removeUIOutroAnim, sendNextCharacter));
     }
 
+    public void BreakPatience()
+    {
+        CurrentCustomerObject.GetComponent<CustomerUI>().SetAngry();
+
+    }
+
     public void SetSuccessfulOrder()
     {
         CurrentCustomerObject.GetComponent<CustomerUI>().SetHeart();

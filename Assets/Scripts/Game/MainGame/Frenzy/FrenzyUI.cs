@@ -22,6 +22,7 @@ public class FrenzyUI : MonoBehaviour
     [SerializeField] private GameObject _frenzyMoneyDrop;
     [SerializeField] private GameObject _frenzyText;
     [SerializeField] private GameObject _bunnyZoomImage; // The bunny image to pop up
+    [SerializeField] private GameObject _frenzyLine; // The bunny image to pop up
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class FrenzyUI : MonoBehaviour
         _frenzyMoneyDrop.SetActive(false);
         _frenzyText.SetActive(false);
         _bunnyZoomImage.SetActive(false);
+        _frenzyLine.SetActive(false);
     }
 
     private void UpdateFrenzyBar(float newFrenzyBar)
@@ -87,13 +89,13 @@ public class FrenzyUI : MonoBehaviour
     private void BunnyIntro()
     {
         RectTransform rectTransform = _bunnyZoomImage.GetComponent<RectTransform>();
-        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x,  - (_bunnyZoomImage.gameObject.GetComponentInParent<RectTransform>().rect.height * 2));
+        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 350);
 
         _bunnyZoomImage.SetActive(true);
+        _frenzyLine.SetActive(true);
         Sequence seq = DOTween.Sequence();
-        seq.Append(rectTransform.DOAnchorPosY(350, 1.0f).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _bunnyZoomImage.GetComponent<Animator>().SetTrigger("Frenzy"));
-        seq.AppendCallback(() => _bunnyZoomImage.GetComponent<Animator>().ResetTrigger("Frenzy"));
+        seq.AppendCallback(() => _frenzyLine.GetComponent<Animator>().SetTrigger("Frenzy"));
         seq.AppendInterval(1.0f);
         seq.Append(rectTransform.DOAnchorPosY(-(_bunnyZoomImage.gameObject.GetComponentInParent<RectTransform>().rect.height * 2), 1.0f).SetEase(Ease.OutCubic));
         seq.AppendCallback(() => _bunnyZoomImage.SetActive(false));

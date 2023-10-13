@@ -32,6 +32,7 @@ public class PauseUI : MonoBehaviour
 
     public void PlayBellAnim()
     {
+        AudioManager.Instance.PlayAudio(SoundUID.BELL);
         Sequence seq = DOTween.Sequence();
         seq.Append(_bell.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, 30), 0.25f).SetEase(Ease.OutCubic));
         seq.Append(_bell.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, -30), 0.25f).SetEase(Ease.OutCubic));
