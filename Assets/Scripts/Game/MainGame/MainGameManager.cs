@@ -27,7 +27,7 @@ public class MainGameManager : Singleton<MainGameManager>
     [SerializeField] private Image _backgroundImage;
 
     private float currentAnimSpeed;
-    private bool pausedGame;
+    public ReactiveProp<bool> PausedGame = new ReactiveProp<bool>();
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +51,7 @@ public class MainGameManager : Singleton<MainGameManager>
         GameState.SetValue(MainGameState.CHAT);
         AudioManager.Instance.PlayAudio(SoundUID.CHAT_AUDIO);
 
-        pausedGame = false;
+        PausedGame.SetValue(false);
     }
 
     // Update is called once per frame
@@ -155,23 +155,24 @@ public class MainGameManager : Singleton<MainGameManager>
         _moneyManager.ThrowAwayFood();
     }
 
-    public void PauseGame(bool pauseCharaAnimations = false)
+    public void PauseGame(bool pauseCharaAnimations = true)
     {
-        if (pausedGame)
+        if (PausedGame.GetValue())
         {
-            pausedGame = false;
+            PausedGame.SetValue(false);
         }
         else
         {
-            pausedGame = true;
+            PausedGame.SetValue(true);
+            
         }
 
-        _customerManager.PauseTimer(pausedGame);
-        _dayTimer.PauseTimer(pausedGame);
+        _customerManager.PauseTimer(PausedGame.GetValue());
+        _dayTimer.PauseTimer(PausedGame.GetValue());
 
         if (pauseCharaAnimations)
         {
-            if (pausedGame == false)
+            if (PausedGame.GetValue() == false)
             {
                 Time.timeScale = 1;
             }

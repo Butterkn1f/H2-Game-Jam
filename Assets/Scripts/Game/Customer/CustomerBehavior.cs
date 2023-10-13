@@ -11,6 +11,7 @@ public class CustomerBehavior : MonoBehaviour
 {
     // Whether the customer currently has an active behaviour
     private bool _activeBehaviour = false;
+    private bool _hasActivatedBehaviour = false;
 
     #region Customer Patience
     private float _currentTimerDuration = 0; // Timer counter
@@ -30,6 +31,7 @@ public class CustomerBehavior : MonoBehaviour
         _maxTimerDuration = TimerMaxDuration;
         _currentTimerDuration = _maxTimerDuration;
         _activeBehaviour = true;
+        _hasActivatedBehaviour = true;
     }
 
     public void PauseTimer(bool IsPaused)
@@ -54,6 +56,11 @@ public class CustomerBehavior : MonoBehaviour
             // Create a switch
             else
             {
+                if (!_hasActivatedBehaviour)
+                {
+                    return;
+                }
+
                 // Deactivate the update loop 
                 _activeBehaviour = false;
 
