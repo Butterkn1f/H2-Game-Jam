@@ -34,7 +34,10 @@ public class CustomerManager : Singleton<CustomerManager>
 
     public void PauseTimer(bool IsPaused)
     {
-        CurrentCustomerObject.GetComponent<CustomerBehavior>().PauseTimer(IsPaused);
+        if (CurrentCustomerObject != null)
+        {
+            CurrentCustomerObject.GetComponent<CustomerBehavior>().PauseTimer(IsPaused);
+        }
     }
 
     /// <summary>

@@ -11,6 +11,7 @@ public class DayTimer : MonoBehaviour
     [SerializeField, Range(10, 600)] private float DayDuration = 180;
 
     private float _timeCounter = 0;
+    private bool initialised = false;
 
     // clock
     [SerializeField] private GameObject _clockHand;
@@ -18,6 +19,7 @@ public class DayTimer : MonoBehaviour
 
     public void StartTimer()
     {
+        initialised = true;
         _timerEnabled = true;
         _timeCounter = DayDuration;
         _clockHand.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 90);
@@ -30,6 +32,10 @@ public class DayTimer : MonoBehaviour
         // TODO
         if (IsPaused)
         {
+            if (!initialised)
+            {
+                return;
+            }
             DOTween.Kill(_clockHand.GetComponent<RectTransform>());
         }
         else
@@ -60,6 +66,11 @@ public class DayTimer : MonoBehaviour
             }
             else
             {
+                if (!initialised)
+                {
+                    return;
+                }
+
                 // Time is done, inform game manager to change states
                 MainGameManager.Instance.EndGame();
             }
