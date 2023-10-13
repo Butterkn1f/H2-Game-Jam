@@ -4,9 +4,10 @@ using UnityEngine;
 public class DishItem : ITableItem
 {
     [SerializeField] private Sprite _frenzySprite;
+    [SerializeField] private Sprite _rottenDish;
     [HideInInspector] public Shape Shape = null;
 
-    public void ServeCustomerAnimation()
+    public void ServeCustomerAnimation(bool isCorrect)
     {
         var dishSequence = DOTween.Sequence();
 
@@ -19,7 +20,10 @@ public class DishItem : ITableItem
             rectTransform.anchorMin = new Vector2(0f, 0.5f);
             rectTransform.localPosition = pos;
 
-            MainGameManager.Instance.FinishOrder();
+            if (isCorrect)
+                MainGameManager.Instance.FinishOrder();
+            else
+                MainGameManager.Instance.BreakOrder();
 
             dishSequence.Append(rectTransform.DOAnchorPos(new Vector2(-200, 500), 0.8f))
                 .Join(_image.DOFade(0, 0.8f).SetEase(Ease.InCirc))
@@ -37,7 +41,11 @@ public class DishItem : ITableItem
                 .OnComplete(() =>
                 {
                     Destroy(gameObject);
-                    MainGameManager.Instance.FinishOrder();
+
+                    if (isCorrect)
+                        MainGameManager.Instance.FinishOrder();
+                    else
+                        MainGameManager.Instance.BreakOrder();
                 });
         }
     }
@@ -59,7 +67,7 @@ public class DishItem : ITableItem
     {
         _image.rectTransform.localScale = new Vector3(2, 2, 2);
         _image.color = Color.white;
-        _image.sprite = dish.Sprite;
+        _image.sprite = dish != null ? dish.Sprite : _rottenDish;
     }
 
     public override void ToggleFrenzySprite(bool isFrenzy)

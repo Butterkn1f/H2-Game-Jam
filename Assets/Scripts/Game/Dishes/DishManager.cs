@@ -19,6 +19,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     private Dish _currDish = null;
     private int _currItemIndex = -1;
     private List<ITableItem> _items = new List<ITableItem>(); // TODO: Object pool this
+    private List<IngredientType> _addedIngredients = new List<IngredientType>();
 
     private void Start()
     {
@@ -61,7 +62,6 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     {
         for(int i = 0; i < _currDish.Ingredients.Count; ++i)
         {
-            var ingredient = LevelManager.Instance.CurrLevel.Ingredients.Find(ing => ing.Type == _currDish.Ingredients[i]);
             var sign = (i % 2 == 0) ? 1 : -1;
             var floatOffset = Random.Range(10f, 30f) * sign;
 
@@ -69,7 +69,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
             IngredientItem ingItem = item.GetComponent<IngredientItem>();
 
             ingItem._image.rectTransform.anchoredPosition = new Vector2(0, floatOffset);
-            ingItem.Initialize(ingredient);
+            ingItem.Initialize();
             _items.Add(ingItem);
         }
     }
@@ -127,6 +127,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
     public void ResetDish()
     {
         ClearTableItems();
+        _addedIngredients.Clear();
 
         _tableParentTransform.gameObject.GetComponent<HorizontalLayoutGroup>().enabled = true;
         _currDish = null;
@@ -169,16 +170,34 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
             // TODO: Object pool this too
             GameObject dishObject = Instantiate(_dishItemPrefab, _tableParentTransform);
             DishItem dishItem = dishObject.GetComponent<DishItem>();
-            dishItem.InitializeDish(_currDish);
+            bool isCorrect = CheckCorrectIngredients();
 
-            dishItem.ServeCustomerAnimation();
+            dishItem.InitializeDish(isCorrect ? _currDish : null);
+
+            dishItem.ServeCustomerAnimation(isCorrect);
         });
+    }
+
+    private bool CheckCorrectIngredients()
+    {
+        _addedIngredients.Sort();
+        _currDish.Ingredients.Sort();
+
+        for (int i = 0; i < _addedIngredients.Count; i++)
+        {
+            if (_addedIngredients[i] != _currDish.Ingredients[i])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public void RandomizeNewDish()
     {
         _currDish = LevelManager.Instance.CurrLevel.Dishes[Random.Range(0, LevelManager.Instance.CurrLevel.Dishes.Count)];
-        CustomerManager.Instance.CurrentCustomerObject.GetComponent<CustomerUI>().OrderImage.sprite = _currDish.Sprite;
+        CustomerManager.Instance.CurrentCustomerObject.GetComponent<CustomerUI>().InitializeFoodBubble(_currDish);
 
         InitializeIngredients();
     }
@@ -191,18 +210,23 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
         if (Frenzy.Instance.FrenzyEnabled.GetValue() && MainGameManager.Instance.GameState.GetValue() == MainGameState.GAME_PREPARE)
         {
             // Adding ingredients, slowly increment addition
-            IngredientItem item = (IngredientItem)_items.Find(i =>
-            !(i as IngredientItem).IsActive);
+            IngredientItem item = (IngredientItem)_items.Find(i =>!(i as IngredientItem).IsActive);
 
-            if (item != null)
+            IngredientType unaddedIngredient = _currDish.Ingredients.Find(i => !_addedIngredients.Contains(i));
+            var ingredient = LevelManager.Instance.CurrLevel.Ingredients.Find(ing => ing.Type == unaddedIngredient);
+
+            if (item != null && ingredient != null)
             {
-                item.AnimateActivate();
-                // Check whether all items in list are active
-                if (!_items.Any(item => (item as IngredientItem).IsActive == false))
+                _addedIngredients.Add(ingredient.Type);
+                item.AnimateActivate(ingredient).OnComplete(() =>
                 {
-                    // If so, switch to next state
-                    MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_COOK);
-                }
+                    // Check whether all items in list are active
+                    if (!_items.Any(item => (item as IngredientItem).IsActive == false))
+                    {
+                        // If so, switch to next state
+                        MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_COOK);
+                    }
+                });
             }
         }
 
@@ -223,7 +247,33 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
 
     public bool CheckAddIngredient(Ingredient ingredient)
     {
-        if (_currDish.Ingredients.Contains(ingredient.Type))
+        if (!_addedIngredients.Contains(ingredient.Type))
+        {
+            foreach(IngredientItem item in _items)
+            {
+                if (!item.IsActive)
+                {
+                    _addedIngredients.Add(ingredient.Type);
+                    item.AnimateActivate(ingredient).OnComplete(() =>
+                    {
+                        // Check whether all items in list are active
+                        if (!_items.Any(item => (item as IngredientItem).IsActive == false))
+                        {
+                            // If so, switch to next state
+                            MainGameManager.Instance.GameState.SetValue(MainGameState.GAME_COOK);
+                        }
+                    });
+
+                    break;
+                }
+            }
+            return true;
+        }
+
+
+        return false;
+
+/*        if (_currDish.Ingredients.Contains(ingredient.Type))
         {
             IngredientItem item = (IngredientItem)_items.Find(i => 
             (i as IngredientItem).Ingredient.Type == ingredient.Type);
@@ -242,7 +292,7 @@ public class DishManager : Common.DesignPatterns.Singleton<DishManager>
             }
         }
 
-        return false;
+        return false;*/
     }
 
     public void InitializeIngredientButtons()

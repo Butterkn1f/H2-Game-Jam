@@ -135,6 +135,10 @@ public class MainGameManager : Singleton<MainGameManager>
     /// </summary>
     public void BreakOrder()
     {
+        // Tell the customer manager that the current customer should leave 
+        // Next customer will come in 
+        CustomerManager.Instance.LeaveCurrentCustomer(false);
+
         // Get frenzy num
         _frenzy.BreakFrenzyMeter();
 

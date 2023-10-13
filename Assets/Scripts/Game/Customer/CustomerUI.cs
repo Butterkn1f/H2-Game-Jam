@@ -37,6 +37,8 @@ public class CustomerUI : MonoBehaviour
     private CustomerMood _currentMood;
 
     [SerializeField] private GameObject _foodBubble;
+    [SerializeField] private CanvasGroup _ingredientsParent;
+    [SerializeField] private List<Image> _ingredients;
     public Image OrderImage;
 
     // Start is called before the first frame update
@@ -45,6 +47,38 @@ public class CustomerUI : MonoBehaviour
         GetComponent<CustomerBehavior>().PatiencePercentage.Value.Subscribe(patience => SetMoodImage(patience));
         _feelingBubble.GetComponent<RectTransform>().localScale = Vector3.zero;
         _foodBubble.GetComponent<RectTransform>().localScale = Vector3.zero;
+    }
+
+    public void OnPointerDownFoodBubble()
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(OrderImage.DOFade(0, 0.25f))
+            .Append(_ingredientsParent.DOFade(1, 0.25f));
+
+    }
+
+    public void OnPointerUpFoodBubble()
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(_ingredientsParent.DOFade(0, 0.1f))
+            .Append(OrderImage.DOFade(1, 0.1f));
+    }
+
+    public void InitializeFoodBubble(Dish dish)
+    {
+        OrderImage.sprite = dish.Sprite;
+
+        foreach (var ingType in dish.Ingredients)
+        {
+            var ingredient = LevelManager.Instance.CurrLevel.Ingredients.Find(ing => ing.Type == ingType);
+            var ingUI = _ingredients.Find(ing => ing.gameObject.activeSelf == false);
+
+            if (ingredient != null && ingUI != null)
+            {
+                ingUI.sprite = ingredient.NormalSprite;
+                ingUI.gameObject.SetActive(true);
+            }
+        }
     }
 
     // Introduction animation

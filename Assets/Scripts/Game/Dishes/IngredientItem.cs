@@ -7,9 +7,12 @@ public class IngredientItem : ITableItem
 
     public bool IsActive = false;
 
-    public override Sequence AnimateActivate()
+    public Sequence AnimateActivate(Ingredient ingredient)
     {
+        Ingredient = ingredient;
         IsActive = true;
+        _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ?
+            ingredient.FrenzySprite : ingredient.NormalSprite;
 
         // Grow to a lighter color, then shrink back to original color and target color
         sequence = DOTween.Sequence();
@@ -17,18 +20,15 @@ public class IngredientItem : ITableItem
             .Join(_image.DOColor(targetColor, 0.15f))
 
             .Append(_image.rectTransform.DOScale(Vector3.one, 0.25f))
-            .Join(_image.DOColor(targetColor * new Vector4(0.95f, 0.95f, 0.95f, 1), 0.25f));
+            .Join(_image.DOColor(targetColor * new Vector4(0.95f, 0.95f, 0.95f, 1), 0.25f))
+            .AppendInterval(0.25f);
 
         return sequence;
     }
 
-    public void Initialize(Ingredient ingredient)
+    public void Initialize()
     {
-        Ingredient = ingredient;
         _image.color = _initialColor * new Vector4(1, 1, 1, 0);
-        _image.sprite = Frenzy.Instance.FrenzyEnabled.GetValue() ? 
-            ingredient.FrenzySprite : ingredient.NormalSprite;
-
         BeginFloatAnimation();
 
         // Fade in animation
@@ -38,7 +38,10 @@ public class IngredientItem : ITableItem
 
     public override void ToggleFrenzySprite(bool isFrenzy)
     {
-        _image.sprite = isFrenzy ? Ingredient.FrenzySprite : Ingredient.NormalSprite;
+        if (IsActive)
+        {
+            _image.sprite = isFrenzy ? Ingredient.FrenzySprite : Ingredient.NormalSprite;
+        }
     }
 
     public override void TransitionOut()
