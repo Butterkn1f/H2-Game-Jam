@@ -50,8 +50,8 @@ public class FrenzyUI : MonoBehaviour
         moneyRectTransform.DOAnchorPosY(-(_frenzyBackground.gameObject.GetComponentInParent<RectTransform>().rect.height), _frenzyDuration + 10).SetEase(Ease.Linear);
 
         Sequence seq = DOTween.Sequence();
-        seq.Append(bgRectTransform.DOAnchorPosY(500, 1).SetEase(Ease.OutCubic));
-        seq.Join(bgRectTransform.DOAnchorPosY(-450, _frenzyDuration + 10).SetEase(Ease.OutCubic));
+        seq.Append(bgRectTransform.DOAnchorPosY(500, 0.5f).SetEase(Ease.OutCubic));
+        seq.Join(bgRectTransform.DOAnchorPosY(-450, _frenzyDuration + 10).SetEase(Ease.Linear));
 
     }
 
