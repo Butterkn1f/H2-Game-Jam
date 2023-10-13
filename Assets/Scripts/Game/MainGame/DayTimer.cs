@@ -14,6 +14,7 @@ public class DayTimer : MonoBehaviour
 
     // clock
     [SerializeField] private GameObject _clockHand;
+    private float _step = 0;
 
     public void StartTimer()
     {
@@ -21,6 +22,20 @@ public class DayTimer : MonoBehaviour
         _timeCounter = DayDuration;
         _clockHand.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 90);
         _clockHand.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, -90), DayDuration).SetEase(Ease.Linear);
+    }
+
+    public void PauseTimer(bool IsPaused)
+    {
+        _timerEnabled = !IsPaused;
+        // TODO
+        if (IsPaused)
+        {
+            DOTween.Kill(_clockHand.GetComponent<RectTransform>());
+        }
+        else
+        {
+            _clockHand.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, -90), _timeCounter).SetEase(Ease.Linear);
+        }
     }
 
     public void EndTimer()

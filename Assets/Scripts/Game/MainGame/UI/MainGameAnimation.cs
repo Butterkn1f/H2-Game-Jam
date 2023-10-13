@@ -12,6 +12,8 @@ public class MainGameAnimation : MonoBehaviour
     [SerializeField] private GameObject _dayOverText;
     [SerializeField] private GameObject _dayStartText;
 
+
+
     private float _defaultShutterYPos;
     private float _defaultTextStartPos;
     private float _defaultRoofingYPos;
@@ -87,4 +89,6 @@ public class MainGameAnimation : MonoBehaviour
         outroSeq.Append(_shutter.GetComponent<RectTransform>().DOAnchorPosY(_defaultShutterYPos, 1.0f));
 
     }
+
+    
 }

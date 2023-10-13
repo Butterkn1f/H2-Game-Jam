@@ -32,6 +32,11 @@ public class CustomerManager : Singleton<CustomerManager>
         
     }
 
+    public void PauseTimer(bool IsPaused)
+    {
+        CurrentCustomerObject.GetComponent<CustomerBehavior>().PauseTimer(IsPaused);
+    }
+
     /// <summary>
     /// Sets the list of customers that we can choose from
     /// For area specific customers 

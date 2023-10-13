@@ -32,6 +32,12 @@ public class CustomerBehavior : MonoBehaviour
         _activeBehaviour = true;
     }
 
+    public void PauseTimer(bool IsPaused)
+    {
+        _activeBehaviour = !IsPaused;
+    }
+
+
     // Update is called once per frame
     void Update()
     {

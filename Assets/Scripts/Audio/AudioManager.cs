@@ -8,7 +8,7 @@ using UniRx.Extention;
 using UniRx;
 using DG.Tweening;
 
-public class AudioManager : Singleton<AudioManager>
+public class AudioManager : SingletonPersistent<AudioManager>
 {
     [SerializeField] private AudioSource _musicPlayer;
     [SerializeField] private AudioSource _sfxPlayer;
@@ -34,10 +34,7 @@ public class AudioManager : Singleton<AudioManager>
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            PlayAudio(SoundUID.TEST_AUDIO);
-        }
+        
 
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -63,6 +60,11 @@ public class AudioManager : Singleton<AudioManager>
                 // Check if is currently playing anyt
                 if (_musicPlayer.isPlaying)
                 {
+                    if (_musicPlayer.clip == _audioTrackToPlay.Clip)
+                    {
+                        return;
+                    }
+
                     fadeAudio.Append(_musicPlayer.DOFade(0, 0.25f));
                     fadeAudio.AppendCallback(() => _musicPlayer.Stop());
                     fadeAudio.AppendCallback(() =>

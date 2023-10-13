@@ -51,7 +51,7 @@ public class FrenzyUI : MonoBehaviour
 
         Sequence seq = DOTween.Sequence();
         seq.Append(bgRectTransform.DOAnchorPosY(500, 0.5f).SetEase(Ease.OutCubic));
-        seq.Join(bgRectTransform.DOAnchorPosY(-450, _frenzyDuration + 10).SetEase(Ease.Linear));
+        seq.Append(bgRectTransform.DOAnchorPosY(-450, _frenzyDuration + 10).SetEase(Ease.Linear));
 
     }
 

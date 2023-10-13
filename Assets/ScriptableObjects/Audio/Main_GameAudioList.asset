@@ -25,3 +25,7 @@ MonoBehaviour:
     Type: 0
     Clip: {fileID: 8300000, guid: e83fba882924839409de1d62c304f0f9, type: 3}
     Loop: 1
+  - UniqueIdentifier: 7
+    Type: 0
+    Clip: {fileID: 8300000, guid: 0b4af310ff79c224e96095341e20b2b6, type: 3}
+    Loop: 1
