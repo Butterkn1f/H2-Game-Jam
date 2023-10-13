@@ -35,5 +35,5 @@ MonoBehaviour:
   RestaurantFees: 100
   TwoStarMarker: 100
   ThreeStarMarker: 300
-  IsUnlocked: 1
+  IsUnlocked: 0
   StarsEarned: 0

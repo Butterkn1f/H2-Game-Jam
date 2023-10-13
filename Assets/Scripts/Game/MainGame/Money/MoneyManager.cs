@@ -28,6 +28,7 @@ public class MoneyManager : Singleton<MoneyManager>
         AmountEarned = 0;
         Tips = 0;
         WasteCost = 0;
+        _moneySign.text = "$0";
     }
 
     public void SetData(float dishCost, float twoStarCriteria, float threeStarCriteria)
@@ -61,14 +62,14 @@ public class MoneyManager : Singleton<MoneyManager>
         float tips = _dishCost * (patienceMeter * _maxTipPercentage);
         Tips += tips;
 
-        _moneySign.text = ((int)(AmountEarned + Tips - WasteCost)).ToString();
+        _moneySign.text = "$"+((int)(AmountEarned + Tips - WasteCost)).ToString();
     }
 
     public void ThrowAwayFood()
     {
         WasteCost += _dishCost;
 
-        _moneySign.text = ((int)(AmountEarned + Tips - WasteCost)).ToString();
+        _moneySign.text = "$"+((int)(AmountEarned + Tips - WasteCost)).ToString();
 
     }
 

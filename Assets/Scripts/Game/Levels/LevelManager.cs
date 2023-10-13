@@ -50,4 +50,20 @@ public class LevelManager : Common.DesignPatterns.SingletonPersistent<LevelManag
     {
         return _levels[index];
     }
+
+    public void UnlockNextLevel()
+    {
+        if (_levels[_currLevelIndex + 1] != null)
+        {
+            _levels[_currLevelIndex + 1].IsUnlocked = true;
+        }
+    }
+
+    public void SaveStarsEarned(int numStarsEarned)
+    {
+        if (CurrLevel.StarsEarned <= numStarsEarned)
+        {
+            CurrLevel.StarsEarned = numStarsEarned;
+        }
+    }
 }

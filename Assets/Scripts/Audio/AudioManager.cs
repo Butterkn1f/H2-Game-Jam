@@ -168,7 +168,9 @@ public enum SoundUID
     POOF,
     CLICK_SOUND,
     METAL_SHUTTER,
-    BELL
+    BELL,
+    OVER_NODE,
+    CAR_HORN,
 }
 
 

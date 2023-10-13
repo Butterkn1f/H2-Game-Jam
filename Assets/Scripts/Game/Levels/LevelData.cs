@@ -48,7 +48,7 @@ public class LevelData : ScriptableObject
     // super super super bad but :(
     [Header("Saved Values")]
     public bool IsUnlocked = false;
-    [HideInInspector] public int StarsEarned = 0;
+    public int StarsEarned = 0;
 }
 #endregion
 

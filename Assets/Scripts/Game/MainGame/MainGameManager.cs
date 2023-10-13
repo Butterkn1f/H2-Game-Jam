@@ -107,6 +107,11 @@ public class MainGameManager : Singleton<MainGameManager>
 
         // Calculate money
         _moneyManager.CalculateProfit();
+        if (_moneyManager.NumStarsEarned > 0)
+        {
+            LevelManager.Instance.UnlockNextLevel();
+            LevelManager.Instance.SaveStarsEarned(_moneyManager.NumStarsEarned);
+        }
 
         // Trigger animations
         GameState.SetValue(MainGameState.GAME_OVER);
@@ -149,6 +154,8 @@ public class MainGameManager : Singleton<MainGameManager>
         // Tell the customer manager that the current customer should leave 
         // Next customer will come in 
         CustomerManager.Instance.LeaveCurrentCustomer(false);
+
+        CustomerManager.Instance.BreakPatience();
 
         // Get frenzy num
         _frenzy.BreakFrenzyMeter();
